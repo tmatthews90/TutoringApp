@@ -1,3 +1,3 @@
 # TutoringApp
 
-THis is the tutoring app readme.
+This is the tutoring app readme.
