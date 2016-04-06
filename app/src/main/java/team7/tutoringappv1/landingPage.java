@@ -22,6 +22,7 @@ public class LandingPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent registerIntent = new Intent(view.getContext(), RegisterActivity.class);
                 startActivityForResult(registerIntent, 0);
+                finish();
             }
         });
         Button loginButton = (Button) findViewById(R.id.loginButton);
@@ -30,6 +31,7 @@ public class LandingPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent loginIntent = new Intent(view.getContext(), LoginActivity.class);
                 startActivityForResult(loginIntent, 0);
+                finish();
             }
         });
 
