@@ -14,22 +14,22 @@ public class LandingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
-        ImageView icon = (ImageView) findViewById(R.id.imageView);
-        icon.setVisibility(View.VISIBLE);
+        //ImageView icon = (ImageView) findViewById(R.id.imageView);
+        //icon.setVisibility(View.VISIBLE);
+        Button registerButton = (Button) findViewById(R.id.registerButton);
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent registerIntent = new Intent(view.getContext(), RegisterActivity.class);
+                startActivityForResult(registerIntent, 0);
+            }
+        });
         Button loginButton = (Button) findViewById(R.id.loginButton);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent loginIntent = new Intent(view.getContext(), LoginActivity.class);
                 startActivityForResult(loginIntent, 0);
-            }
-        });
-        Button registerButton = (Button) findViewById(R.id.registerButton);
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent registerIntent = new Intent(view.getContext(),RegisterActivity.class);
-                startActivityForResult(registerIntent, 0);
             }
         });
 
