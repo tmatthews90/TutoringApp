@@ -1,5 +1,6 @@
 package team7.tutoringappv1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,12 +12,15 @@ public class landingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
-        Button login = (Button) findViewById(R.id.loginButton);
-        login.setOnClickListener(new View.OnClickListener() {
+        Button loginButton = (Button) findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.activity_login);
+                Intent loginIntent = new Intent(view.getContext(),LoginActivity.class);
+                startActivityForResult(loginIntent,0);
             }
         });
+
+
     }
 }

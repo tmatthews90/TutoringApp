@@ -28,7 +28,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="team7.tutoringappv1.landingPage" />
         </activity>
-        <activity android:name=".PostLogin"></activity>
+        <activity android:name=".PostLogin" />
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>
