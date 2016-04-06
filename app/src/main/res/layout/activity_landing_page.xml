@@ -24,7 +24,8 @@
         android:id="@+id/loginButton"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_alignStart="@+id/textView"
+        android:onClick="setContentView" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
