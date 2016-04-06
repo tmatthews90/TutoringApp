@@ -18,23 +18,14 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/loginButton"
-        android:onClick="setContentView"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="111dp" />
-
-    <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/registerButton"
-        android:layout_above="@+id/loginButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="179dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -44,5 +35,14 @@
         android:src="@drawable/sign"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:layout_alignTop="@+id/registerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
 
 </RelativeLayout>
