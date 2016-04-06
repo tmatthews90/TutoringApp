@@ -24,7 +24,14 @@
         <activity android:name=".RegisterActivity" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".FilterActivity" />
+        <activity android:name=".TutorsActivity" />
+        <activity
+            android:name=".BrowseActivity"
+            android:label="@string/title_activity_browse"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
     </application>
 
 </manifest>

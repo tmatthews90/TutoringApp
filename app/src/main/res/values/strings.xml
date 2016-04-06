@@ -16,4 +16,5 @@
     </string>
     <string name="title_activity_post_login">PostLogin</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_browse">BrowseActivity</string>
 </resources>
