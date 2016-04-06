@@ -30,7 +30,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Browse Tutors"
         android:id="@+id/button2"
         android:layout_below="@+id/button"
         android:layout_centerHorizontal="true"
@@ -39,7 +39,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="My Account"
         android:id="@+id/button3"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
@@ -47,7 +47,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Logout"
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"

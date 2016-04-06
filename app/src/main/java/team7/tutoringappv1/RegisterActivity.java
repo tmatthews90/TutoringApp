@@ -18,6 +18,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent doneIntent = new Intent(view.getContext(), PostLogin.class);
                 startActivityForResult(doneIntent, 0);
+                finish(); //to stop back button from going back to main menu
             }
         });
     }
