@@ -36,4 +36,13 @@
         android:layout_above="@+id/loginButton"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="93dp"
+        android:src="@drawable/sign"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

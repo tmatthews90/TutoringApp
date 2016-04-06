@@ -14,7 +14,8 @@ public class LandingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
-
+        ImageView icon = (ImageView) findViewById(R.id.imageView);
+        icon.setVisibility(View.VISIBLE);
         Button loginButton = (Button) findViewById(R.id.loginButton);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
