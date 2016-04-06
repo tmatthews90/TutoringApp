@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the TutorinApp"
+        android:text="Welcome to the TutoringApp"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -23,8 +23,9 @@
         android:text="Login"
         android:id="@+id/loginButton"
         android:onClick="setContentView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -32,9 +33,7 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/registerButton"
-        android:layout_below="@+id/loginButton"
-        android:layout_alignLeft="@+id/loginButton"
-        android:layout_alignStart="@+id/loginButton"
-        android:layout_marginTop="73dp" />
+        android:layout_above="@+id/loginButton"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
