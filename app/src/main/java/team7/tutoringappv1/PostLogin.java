@@ -13,6 +13,9 @@ public class PostLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_login);
         Button logout = (Button) findViewById(R.id.logoutButton);
+        Button tutors = (Button) findViewById(R.id.buttonTutors);
+
+        assert logout != null;
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -21,6 +24,7 @@ public class PostLogin extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 
 
