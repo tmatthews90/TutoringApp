@@ -21,8 +21,9 @@ public class LandingPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent registerIntent = new Intent(view.getContext(), RegisterActivity.class);
-                startActivityForResult(registerIntent, 0);
+                startActivityForResult(registerIntent, 2);
                 finish();
+
             }
         });
         Button loginButton = (Button) findViewById(R.id.loginButton);
@@ -30,7 +31,7 @@ public class LandingPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent loginIntent = new Intent(view.getContext(), LoginActivity.class);
-                startActivityForResult(loginIntent, 0);
+                startActivityForResult(loginIntent, 3);
                 finish();
             }
         });
