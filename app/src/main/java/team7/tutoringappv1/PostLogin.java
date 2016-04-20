@@ -21,6 +21,10 @@ public class PostLogin extends AppCompatActivity {
                 finish();
             }
         });
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 
         Button btnTutors = (Button) findViewById(R.id.btnBrowseTutors);
         btnTutors.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +43,26 @@ public class PostLogin extends AppCompatActivity {
                 Intent loginIntent = new Intent(view.getContext(), AccountActivity.class);
                 startActivityForResult(loginIntent, 0);
                 finish();
+<<<<<<< Updated upstream
+=======
+=======
+        Button displayTutors = (Button) findViewById(R.id.browseTutors);
+        displayTutors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent displayTutorsIntent = new Intent(view.getContext(), DisplayTutors.class);
+                startActivityForResult(displayTutorsIntent, 0);
+            }
+        });
+        Button myAccount = (Button) findViewById(R.id.myAccountButton);
+        myAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myAccountIntent = new Intent(view.getContext(), LoginActivity.class);
+                startActivityForResult(myAccountIntent, 0);
+
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
             }
         });
     }
