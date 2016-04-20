@@ -18,7 +18,6 @@ public class PostLogin extends AppCompatActivity {
             public void onClick(View view) {
                 Intent logoutIntent = new Intent(view.getContext(), LoginActivity.class);
                 startActivityForResult(logoutIntent, 0);
-                finish();
             }
         });
 
@@ -28,7 +27,6 @@ public class PostLogin extends AppCompatActivity {
             public void onClick(View view) {
                 Intent registerIntent = new Intent(view.getContext(), TutorsActivity.class);
                 startActivityForResult(registerIntent, 0);
-                finish();
             }
         });
 
@@ -38,7 +36,6 @@ public class PostLogin extends AppCompatActivity {
             public void onClick(View view) {
                 Intent loginIntent = new Intent(view.getContext(), AccountActivity.class);
                 startActivityForResult(loginIntent, 0);
-                finish();
             }
         });
     }
