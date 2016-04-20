@@ -30,7 +30,7 @@ public class landingPage extends AppCompatActivity {
 
             }
         }
-        catch(IOException e){
+        catch(IOException e) {
             System.out.println("file error");
         }
         setContentView(R.layout.activity_landing_page);
