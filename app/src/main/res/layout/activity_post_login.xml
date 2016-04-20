@@ -9,21 +9,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="team7.tutoringappv1.PostLogin">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Post Logon Activity"
-        android:id="@+id/textView2"
+        android:id="@+id/title"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -31,25 +22,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Browse Tutors"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Account"
-        android:id="@+id/button3"
-        android:layout_centerVertical="true"
+        android:id="@+id/btnBrowseTutors"
+        android:layout_marginTop="103dp"
+        android:layout_below="@+id/title"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="My Account"
+        android:id="@+id/btnMyAccount"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/btnBrowseTutors"
+        android:layout_alignRight="@+id/btnBrowseTutors"
+        android:layout_alignEnd="@+id/btnBrowseTutors"
+        android:layout_alignLeft="@+id/btnBrowseTutors"
+        android:layout_alignStart="@+id/btnBrowseTutors" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Logout"
-        android:id="@+id/logoutButton"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp" />
+        android:id="@+id/btnLogout"
+        android:layout_marginBottom="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnMyAccount"
+        android:layout_alignStart="@+id/btnMyAccount"
+        android:layout_alignRight="@+id/btnMyAccount"
+        android:layout_alignEnd="@+id/btnMyAccount" />
 </RelativeLayout>

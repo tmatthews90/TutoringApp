@@ -10,6 +10,7 @@ public class Users {
     private String isTutor;
     private String loggedIn;
     //class category
+
     public Users(){
         this.setFirstName("N/A");
         this.setLastName("N/A");
