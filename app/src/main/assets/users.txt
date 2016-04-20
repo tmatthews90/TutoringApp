@@ -1,2 +1,2 @@
-False
-first:last:zipcode:phone:b_tutor:user:password
+first:last:zipcode:phone:b_tutor:user@test:password:true
+first:last:zipcode:phone:b_tutor:team7@example.com:password1:false

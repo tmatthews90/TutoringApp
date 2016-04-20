@@ -5,20 +5,26 @@ public class Users {
     private String lastName;
     private String email;
     private String password;
-    private int zipCode;
+    private String zipCode;
     private String phoneNumber;
-    private boolean isTutor;
+    private String isTutor;
+    private String loggedIn;
     //class category
     public Users(){
         this.setFirstName("N/A");
         this.setLastName("N/A");
         this.setEmail("N/A");
         this.setPassword("N/A");
-        this.setZipCode(0);
+        this.setZipCode("N/A");
         this.setPhoneNumber("N/A");
-        this.setTutor(false);
+        this.setIsTutor("N/A");
+        this.setLoggedIn("false");
     }
-
+    //login constructor
+    public Users(String userName, String password){
+        this.setPassword(password);
+        this.setEmail(userName);
+    }
     public String getFirstName() {
         return firstName;
     }
@@ -51,11 +57,11 @@ public class Users {
         this.password = password;
     }
 
-    public int getZipCode() {
+    public String getZipCode() {
         return zipCode;
     }
 
-    public void setZipCode(int zipCode) {
+    public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
 
@@ -67,11 +73,19 @@ public class Users {
         this.phoneNumber = phoneNumber;
     }
 
-    public boolean isTutor() {
+    public String getIsTutor() {
         return isTutor;
     }
 
-    public void setTutor(boolean tutor) {
-        isTutor = tutor;
+    public void setIsTutor(String isTutor) {
+        this.isTutor = isTutor;
+    }
+
+    public String getLoggedIn() {
+        return loggedIn;
+    }
+
+    public void setLoggedIn(String loggedIn) {
+        this.loggedIn = loggedIn;
     }
 }
