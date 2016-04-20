@@ -1,2 +1,6 @@
 first:last:zipcode:phone:b_tutor:user@test:password:true
 first:last:zipcode:phone:b_tutor:team7@example.com:password1:false
+john:smith:75001:9999999999:b_tutor:john.smith@gmail.com:jsmith:false
+jane:doe:67435:2342147865:b_tutor:jane@doe.com:password:false
+ryan:reynolds:76201:2143654378:b_tutor:greenlantern@marvel.com:deadpool:false
+kylo:ren:99999:2143378976:b_tutor:ren@darkside.com:deathstar:false
