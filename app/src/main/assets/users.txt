@@ -115,7 +115,6 @@ Rodger:Cooke:76436:9691457906:1:rodger.cooke@sbcglobal.net:password:false:1:1:1:
 Gabina:Cooke:76728:7987261912:0:gabina.cooke@aol.com:password:false:1:0:1:0:1:0:0:0:1:1:1:0
 Michael:Beach:76977:4637940314:1:michael.beach@me.net:password:false:1:0:0:1:1:1:1:1:1:0:0:1
 Devin:Stevens:76197:7806836305:1:devin.stevens@live.com:password:false:1:1:1:1:0:0:1:1:0:0:0:0
-Dick:Black:76772:1118150453:0:dick.black@hotmail.com:password:false:1:1:0:1:1:0:1:1:1:0:1:0
 Walter:Young:76365:5743838958:0:walter.young@uta.edu:password:false:1:0:1:0:1:1:0:0:1:0:1:0
 Sommer:Stevens:76224:6286063210:0:sommer.stevens@live.com:password:false:0:1:1:0:1:1:0:0:0:0:1:0
 Xavier:Viole:76102:5535418700:1:xavier.viole@ymail.com:password:false:1:1:1:0:1:1:0:0:1:0:1:0

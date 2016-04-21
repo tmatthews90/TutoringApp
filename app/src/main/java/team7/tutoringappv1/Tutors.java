@@ -14,7 +14,7 @@ public class Tutors {
     private Context context;
     int lineCount = 0;
 
-    ArrayList<Users> tutorList = new ArrayList<>();
+    private ArrayList<Users> tutorList = new ArrayList<>();
 
     public Tutors(Context current) {
         this.context = current;
@@ -27,12 +27,16 @@ public class Tutors {
                 }
                 else {
                     Users tempUser = new Users(line);
-                    tutorList.add(tempUser);
+                    getTutorList().add(tempUser);
                 }
             }
         } catch (IOException e) {
             System.out.println("file error");
         }
+    }
+
+    public ArrayList<Users> getTutorList() {
+        return tutorList;
     }
 
 
