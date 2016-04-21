@@ -1,6 +1,5 @@
 package team7.tutoringappv1;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,15 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
 
 public class landingPage extends AppCompatActivity {
     public static String line = null;
