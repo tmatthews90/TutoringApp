@@ -26,6 +26,9 @@ public class Users {
     private boolean t_history;
     private boolean t_musicInstrument;
     private boolean t_musicTheory;
+
+    private int tutorRate;
+    private float reviewRate;
     //class category
 
     public Users(){
@@ -68,6 +71,8 @@ public class Users {
         this.setT_history(Boolean.parseBoolean(tokens.get(17)));
         this.setT_musicInstrument(Boolean.parseBoolean(tokens.get(18)));
         this.setT_musicTheory(Boolean.parseBoolean(tokens.get(19)));
+        this.setTutorRate(Integer.parseInt(tokens.get(20)));
+        this.setReviewRate(Float.parseFloat(tokens.get(21)));
     }
 
 
@@ -229,5 +234,21 @@ public class Users {
 
     public void setT_musicTheory(boolean t_musicTheory) {
         this.t_musicTheory = t_musicTheory;
+    }
+
+    public int getTutorRate() {
+        return tutorRate;
+    }
+
+    public void setTutorRate(Integer tutorRate) {
+        this.tutorRate = tutorRate;
+    }
+
+    public float getReviewRate() {
+        return reviewRate;
+    }
+
+    public void setReviewRate(Float reviewRate) {
+        this.reviewRate = reviewRate;
     }
 }
