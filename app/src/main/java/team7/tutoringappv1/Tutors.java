@@ -22,12 +22,14 @@ public class Tutors {
             InputStream fis = context.getResources().getAssets().open("users.txt");
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
             while ((line = reader.readLine()) != null) {
-                if (lineCount == 0) {
+                if (lineCount < 2) {
                     lineCount++;
                 }
                 else {
                     Users tempUser = new Users(line);
-                    getTutorList().add(tempUser);
+                    if (tempUser.getIsTutor().equals("1")){
+                        getTutorList().add(tempUser);
+                    }
                 }
             }
         } catch (IOException e) {
