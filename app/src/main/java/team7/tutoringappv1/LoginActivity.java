@@ -3,6 +3,7 @@ package team7.tutoringappv1;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
@@ -31,6 +32,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -181,7 +184,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mPasswordView.setError(getString(R.string.error_invalid_password));
             focusView = mPasswordView;
             cancel = true;
+        } else if (TextUtils.isEmpty(password)) {
+            mPasswordView.setError(getString(R.string.error_field_required));
+            focusView = mPasswordView;
+            cancel = true;
         }
+
 
         // Check for a valid email address.
         if (TextUtils.isEmpty(email)) {
@@ -379,6 +387,27 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
+
+                // add user flag to logged in
+
+                try{
+                    InputStream fis = getResources().getAssets().open("users.txt");
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
+                    while ((line = reader.readLine()) != null){
+                        Users currentUser = new Users(line);
+                        if (currentUser.getEmail().equals(mEmail)){
+                            System.out.println(currentUser.toString());
+                        }
+                    }
+                }
+                catch(IOException e) {
+                    System.out.println("file error");
+                    finish();
+                }
+
+
+
+
 
                 Intent loginIntent = new Intent(LoginActivity.this, PostLogin.class);
                 startActivityForResult(loginIntent, 2);
