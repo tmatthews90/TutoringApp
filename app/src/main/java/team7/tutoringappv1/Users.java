@@ -29,6 +29,8 @@ public class Users {
 
     private int tutorRate;
     private float reviewRate;
+
+    List<String> tokens;
     //class category
 
     public Users(){
@@ -50,7 +52,7 @@ public class Users {
 
     // tutors constructor
     public Users(String line){
-        List<String> tokens = Arrays.asList(line.split(":"));
+        tokens = Arrays.asList(line.split(":"));
         this.setFirstName(tokens.get(0));
         this.setLastName(tokens.get(1));
         this.setZipCode(tokens.get(2));
@@ -73,6 +75,20 @@ public class Users {
         this.setT_musicTheory(Boolean.parseBoolean(tokens.get(19)));
         this.setTutorRate(Integer.parseInt(tokens.get(20)));
         this.setReviewRate(Float.parseFloat(tokens.get(21)));
+    }
+
+    @Override
+    public String toString(){
+        String returnString = "";
+        for (int i = 0; i < tokens.size(); i++){
+            if (i < tokens.size()){
+                returnString = returnString + tokens.get(i).toString() + ":";
+            }
+            else{
+                returnString = returnString + tokens.get(i).toString();
+            }
+        }
+        return returnString;
     }
 
 
