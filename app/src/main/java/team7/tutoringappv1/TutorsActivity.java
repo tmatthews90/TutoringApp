@@ -22,6 +22,7 @@ public class TutorsActivity extends Activity {
     int rate;
     String rateMoneySign;
     String entry;
+    Tutors tutors;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class TutorsActivity extends Activity {
         setContentView(R.layout.activity_tutors);
 
         // builds tutors array of all users in txt file
-        Tutors tutors = new Tutors(this);
+        tutors = new Tutors(this);
 
 
         for (int i = 0; i < tutors.getTutorList().size(); i++){
@@ -70,9 +71,15 @@ public class TutorsActivity extends Activity {
         ListView listView = (ListView) findViewById(R.id.tutorsView);
         listView.setAdapter(adapter);
 
-        AdapterView.OnItemClickListener listener =  listView.getOnItemClickListener();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                System.out.println("Item Clicked: " + position);
+                System.out.println("Selected user: " + tutors.getTutorList().get(position).getFirstName() + " " + tutors.getTutorList().get(position).getLastName());
 
+            }
+        });
 
     }
 
