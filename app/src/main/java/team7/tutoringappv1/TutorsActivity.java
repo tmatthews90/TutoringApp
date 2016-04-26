@@ -11,7 +11,6 @@ import java.util.List;
 
 public class TutorsActivity extends Activity {
 
-    String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry","WebOS","Ubuntu","Windows7","Max OS X"};
     List<String> tutorNames = new ArrayList<>();
     String fName;
     String lName;
@@ -25,17 +24,19 @@ public class TutorsActivity extends Activity {
         // builds tutors array of all users in txt file
         Tutors tutors = new Tutors(this);
 
-        tutors.getTutorList().get(0).getFirstName();
-
         for (int i = 0; i < tutors.getTutorList().size(); i++){
-            fName = tutors.getTutorList().get(i).getFirstName();
-            lName = tutors.getTutorList().get(i).getLastName();
-            name = fName + " " + lName;
+            if (tutors.getTutorList().get(i).getIsTutor().equals("1")){
+                fName = tutors.getTutorList().get(i).getFirstName();
+                lName = tutors.getTutorList().get(i).getLastName();
+                name = fName + " " + lName;
 
-            if (!name.equals("Test User")){
-                tutorNames.add(name);
+                if (!name.equals("Test User")){
+                    tutorNames.add(name);
+                }
             }
         }
+
+        System.out.printf("%d/%d are tutors in system.\n", tutorNames.size(), tutors.getTutorList().size());
 
         ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.actvity_listview, tutorNames);
 

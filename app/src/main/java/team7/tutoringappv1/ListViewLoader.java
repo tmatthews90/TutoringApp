@@ -25,25 +25,10 @@ public class ListViewLoader extends ListActivity implements LoaderManager.Loader
     // This is the Adapter being used to display the list's data
     SimpleCursorAdapter mAdapter;
 
-    // These are the Contacts rows that we will retrieve
-    List<String> tutorList;
-
-
-    // This is the select criteria
-
-
-
     @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Tutors tutors = new Tutors(this);
-
-        for (int i = 0; i < tutors.getTutorList().size(); i++){
-            tutorList.add(tutors.getTutorList().get(i).getFirstName() + " " + tutors.getTutorList().get(i).getLastName());
-        }
-
 
         // Create a progress bar to display while the list loads
         ProgressBar progressBar = new ProgressBar(this);
@@ -74,7 +59,7 @@ public class ListViewLoader extends ListActivity implements LoaderManager.Loader
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         // Now create and return a CursorLoader that will take care of
         // creating a Cursor for the data being displayed.
-        return new CursorLoader(this, ContactsContract.Data.CONTENT_URI, tutorList.toArray(new String[tutorList.size()]), "Hello World", null, null);
+        return null;
     }
 
     // Called when a previously created loader has finished loading
