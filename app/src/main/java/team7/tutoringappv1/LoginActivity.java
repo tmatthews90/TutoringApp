@@ -21,6 +21,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -32,11 +33,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -62,9 +66,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mLoginFormView;
     private static String line;
     ArrayList<Users> loginList = new ArrayList<>();
+    Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        context = getApplicationContext();
+
+        writeToFile("Hello World");
+
         try{
             //FileOutputStream fos = openFileOutput("users.txt", Context.MODE_PRIVATE);
             InputStream fis = getResources().getAssets().open("users.txt");
@@ -388,22 +399,23 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             if (success) {
 
+
                 // add user flag to logged in
 
-                try{
-                    InputStream fis = getResources().getAssets().open("users.txt");
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
-                    while ((line = reader.readLine()) != null){
-                        Users currentUser = new Users(line);
-                        if (currentUser.getEmail().equals(mEmail)){
-                            System.out.println(currentUser.toString());
-                        }
-                    }
-                }
-                catch(IOException e) {
-                    System.out.println("file error");
-                    finish();
-                }
+//                try{
+//                    InputStream fis = getResources().getAssets().open("users.txt");
+//                    BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
+//                    while ((line = reader.readLine()) != null){
+//                        Users currentUser = new Users(line);
+//                        if (currentUser.getEmail().equals(mEmail)){
+////                            System.out.println(currentUser.toString());
+//                        }
+//                    }
+//                }
+//                catch(IOException e) {
+//                    System.out.println("file error");
+//                    finish();
+//                }
 
 
 
@@ -422,6 +434,22 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         protected void onCancelled() {
             mAuthTask = null;
             showProgress(false);
+        }
+
+    }
+
+    private void writeToFile(String data) {
+        try {
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("thisIsANewFile.txt", Context.MODE_PRIVATE));
+            outputStreamWriter.write(data);
+            outputStreamWriter.close();
+            System.out.println("Wrote to file");
+            File thisFile = getFilesDir();
+            System.out.println("Files lives in : " + thisFile);
+        }
+        catch (IOException e) {
+            Log.e("Exception", "File write failed: " + e.toString());
+            System.out.println("Did not write to file");
         }
     }
 }
