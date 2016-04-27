@@ -44,7 +44,9 @@ public class landingPage extends AppCompatActivity {
 
         Cursor result = mydatabase.rawQuery("Select email from userst where loggedIn = '1'",null);
         if (result.getCount() == 1){
-            //login logic for logged in user here
+            Intent loggedIn = new Intent(this,PostLogin.class);
+            startActivityForResult(loggedIn, 0);
+            finish();
         }
         System.out.println(result.getCount());
         setContentView(R.layout.activity_landing_page);

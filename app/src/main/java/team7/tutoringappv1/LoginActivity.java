@@ -72,11 +72,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private static String line;
     ArrayList<String> loginListEmail = new ArrayList<>();
     ArrayList<String> loginListPassword = new ArrayList<>();
+    SQLiteDatabase mydatabase;
     Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SQLiteDatabase mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
+        mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
         try{
             Cursor resultEmail = mydatabase.rawQuery("Select email from userst",null);
             Cursor resultPassword = mydatabase.rawQuery("Select password from userst",null);
@@ -424,6 +425,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
+                String q = "UPDATE userst SET loggedIn = '1' where email = '";
+                mydatabase.execSQL(q + mEmail + "';");
                 Intent loginIntent = new Intent(LoginActivity.this, PostLogin.class);
                 startActivityForResult(loginIntent, 2);
                 finish();
