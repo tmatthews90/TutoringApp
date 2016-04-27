@@ -38,10 +38,10 @@ public class landingPage extends AppCompatActivity {
                 mydatabase.execSQL(query);
             }
         } catch (IOException|SQLiteConstraintException e) {
-            System.out.println("table error");
+            System.out.println("table populated");
         }
 
-        Cursor result = mydatabase.rawQuery("Select * from userst",null);
+        Cursor result = mydatabase.rawQuery("Select * from userst where email = 'bruce.gandolf@sbcglobal.net'",null);
         System.out.println(result.getCount());
         setContentView(R.layout.activity_landing_page);
         //ImageView icon = (ImageView) findViewById(R.id.imageView);
