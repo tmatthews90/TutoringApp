@@ -1,6 +1,6 @@
 <resources>
 
-    <color name="blue">#0854A0</color>
+    <color name="blue">#0854a0</color>
     <string name="app_name">tutoringAppV.1</string>
     <string name="title_activity_login">Sign in</string>
 

@@ -28,6 +28,7 @@
         <activity android:name=".AccountActivity" />
         <activity android:name=".FilterActivity" />
         <activity android:name=".TutorsActivity" />
+        <activity android:name=".tutorProfile"></activity>
     </application>
 
 </manifest>

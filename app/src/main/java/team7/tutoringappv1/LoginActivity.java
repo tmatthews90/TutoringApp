@@ -401,29 +401,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
-
-
-                // add user flag to logged in
-
-//                try{
-//                    InputStream fis = getResources().getAssets().open("users.txt");
-//                    BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
-//                    while ((line = reader.readLine()) != null){
-//                        Users currentUser = new Users(line);
-//                        if (currentUser.getEmail().equals(mEmail)){
-////                            System.out.println(currentUser.toString());
-//                        }
-//                    }
-//                }
-//                catch(IOException e) {
-//                    System.out.println("file error");
-//                    finish();
-//                }
-
-
-
-
-
                 Intent loginIntent = new Intent(LoginActivity.this, PostLogin.class);
                 startActivityForResult(loginIntent, 2);
                 finish();
