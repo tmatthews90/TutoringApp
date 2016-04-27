@@ -24,6 +24,7 @@ public class PostLogin extends AppCompatActivity {
                 mydatabase.execSQL("UPDATE userst SET loggedIn = '0' where loggedIn = '1';");
                 Intent logoutIntent = new Intent(view.getContext(), LoginActivity.class);
                 startActivityForResult(logoutIntent, 0);
+                finish();
             }
         });
 
