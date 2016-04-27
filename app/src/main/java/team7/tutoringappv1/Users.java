@@ -33,7 +33,7 @@ public class Users {
     List<String> tokens;
     //class category
 
-    public Users(){
+    public Users() {
         this.setFirstName("N/A");
         this.setLastName("N/A");
         this.setEmail("N/A");
@@ -45,13 +45,13 @@ public class Users {
     }
 
     //login constructor
-    public Users(String userName, String password){
+    public Users(String userName, String password) {
         this.setPassword(password);
         this.setEmail(userName);
     }
 
     // tutors constructor
-    public Users(String line){
+    public Users(String line) {
         tokens = Arrays.asList(line.split(":"));
         this.setFirstName(tokens.get(0));
         this.setLastName(tokens.get(1));
@@ -78,13 +78,12 @@ public class Users {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String returnString = "";
-        for (int i = 0; i < tokens.size(); i++){
-            if (i < tokens.size()){
+        for (int i = 0; i < tokens.size(); i++) {
+            if (i < tokens.size()) {
                 returnString = returnString + tokens.get(i).toString() + ":";
-            }
-            else{
+            } else {
                 returnString = returnString + tokens.get(i).toString();
             }
         }
