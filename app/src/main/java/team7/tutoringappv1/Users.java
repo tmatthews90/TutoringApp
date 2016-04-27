@@ -77,18 +77,18 @@ public class Users {
         this.setReviewRate(Float.parseFloat(tokens.get(21)));
     }
 
-    @Override
-    public String toString() {
-        String returnString = "";
-        for (int i = 0; i < tokens.size(); i++) {
-            if (i < tokens.size()) {
-                returnString = returnString + tokens.get(i).toString() + ":";
-            } else {
-                returnString = returnString + tokens.get(i).toString();
-            }
-        }
-        return returnString;
-    }
+
+//    public String toString() {
+//        String returnString = "";
+//        for (int i = 0; i < tokens.size(); i++) {
+//            if (i < tokens.size()) {
+//                returnString = returnString + tokens.get(i).toString() + ":";
+//            } else {
+//                returnString = returnString + tokens.get(i).toString();
+//            }
+//        }
+//        return returnString;
+//    }
 
 
     public String getFirstName() {
