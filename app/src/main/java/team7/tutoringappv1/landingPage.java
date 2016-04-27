@@ -23,7 +23,8 @@ public class landingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SQLiteDatabase mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
-        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS userst(firstName VARCHAR,lastName VARCHAR,zipcode INT,phonenumber VARCHAR,isTutor BOOL, email VARCHAR PRIMARY KEY, password VARCHAR);");
+        //mydatabase.execSQL("drop table userst");
+        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS userst(firstName VARCHAR,lastName VARCHAR,zipcode INT,phonenumber VARCHAR,isTutor BOOL, email VARCHAR PRIMARY KEY, password VARCHAR, loggedIn BOOL);");
         try {
             InputStream fis = getResources().getAssets().open("users.txt");
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
@@ -34,14 +35,15 @@ public class landingPage extends AppCompatActivity {
             while ((line = reader.readLine()) != null){
                 Users c = new Users(line);
                 System.out.println(c.getEmail());
-                query = a + c.getFirstName() + b + c.getLastName() + b + c.getZipCode() + b + c.getPhoneNumber() + b + c.getIsTutor() + b + c.getEmail() + b + c.getPassword() + "');";
+                query = a + c.getFirstName() + b + c.getLastName() + b + c.getZipCode() + b + c.getPhoneNumber() + b + c.getIsTutor() + b + c.getEmail() + b + c.getPassword() + b + c.getLoggedIn() + "');";
                 mydatabase.execSQL(query);
             }
         } catch (IOException|SQLiteConstraintException e) {
             System.out.println("table populated");
         }
 
-        Cursor result = mydatabase.rawQuery("Select * from userst where email = 'bruce.gandolf@sbcglobal.net'",null);
+        Cursor result = mydatabase.rawQuery("Select email from userst where loggedIn = '1'",null);
+        if (result.getCount())
         System.out.println(result.getCount());
         setContentView(R.layout.activity_landing_page);
         //ImageView icon = (ImageView) findViewById(R.id.imageView);
