@@ -1,17 +1,19 @@
 package team7.tutoringappv1;
 
 import android.app.Activity;
+import android.app.ListActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TutorsActivity extends Activity {
+public class TutorsActivity extends ListActivity {
 
     List<String> tutorNames = new ArrayList<>();
     String fName;
@@ -57,7 +59,7 @@ public class TutorsActivity extends Activity {
                         break;
                 }
 
-                entry = name + "\n   Subject:  " + subject + "\n   Rating:    "+ rating + "\n   Rate:       " + rateMoneySign;
+                entry = name + "\nSubject:  " + subject + "\nRating:    "+ rating + "\nRate:       " + rateMoneySign;
 
 
                 if (!(fName + " " + lName).equals("Test User")){
@@ -66,20 +68,17 @@ public class TutorsActivity extends Activity {
             }
         }
 
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.actvity_listview, tutorNames);
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.actvity_listview, R.id.itemName,tutorNames));
 
-        ListView listView = (ListView) findViewById(R.id.tutorsView);
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                System.out.println("Item Clicked: " + position);
-                System.out.println("Selected user: " + tutors.getTutorList().get(position).getFirstName() + " " + tutors.getTutorList().get(position).getLastName());
-
-            }
-        });
+//        ListAdapter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//                System.out.println("Item Clicked: " + position);
+//                System.out.println("Selected user: " + tutors.getTutorList().get(position).getFirstName() + " " + tutors.getTutorList().get(position).getLastName());
+//
+//            }
+//        });
 
     }
 
