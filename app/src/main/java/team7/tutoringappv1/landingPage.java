@@ -43,7 +43,9 @@ public class landingPage extends AppCompatActivity {
         }
 
         Cursor result = mydatabase.rawQuery("Select email from userst where loggedIn = '1'",null);
-        if (result.getCount())
+        if (result.getCount() == 1){
+            //login logic for logged in user here
+        }
         System.out.println(result.getCount());
         setContentView(R.layout.activity_landing_page);
         //ImageView icon = (ImageView) findViewById(R.id.imageView);

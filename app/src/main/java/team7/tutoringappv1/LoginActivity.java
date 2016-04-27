@@ -6,6 +6,8 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.sqlite.SQLiteConstraintException;
+import android.database.sqlite.SQLiteDatabase;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -68,31 +70,53 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
     private static String line;
-    ArrayList<Users> loginList = new ArrayList<>();
+    ArrayList<String> loginListEmail = new ArrayList<>();
+    ArrayList<String> loginListPassword = new ArrayList<>();
     Context context;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        context = getApplicationContext();
-
-        writeToFile("Hello World");
-
+        SQLiteDatabase mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
         try{
-            //FileOutputStream fos = openFileOutput("users.txt", Context.MODE_PRIVATE);
-            InputStream fis = getResources().getAssets().open("users.txt");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
-            while ((line = reader.readLine()) != null){
-                List<String> tokens = Arrays.asList(line.split(":"));
-                Users newUser = new Users(tokens.get(5),tokens.get(6));
-                loginList.add(newUser);
+            Cursor resultEmail = mydatabase.rawQuery("Select email from userst",null);
+            Cursor resultPassword = mydatabase.rawQuery("Select password from userst",null);
+            resultEmail.moveToFirst();
+            resultPassword.moveToFirst();
+            for(int i=0 ; i < resultEmail.getCount(); i++){
+
+                //System.out.println(i + resultEmail.getString(0) + ":" + resultPassword.getString(0));
+                loginListEmail.add(resultEmail.getString(0));
+                loginListPassword.add(resultPassword.getString(0));
+
+                resultEmail.move(1);
+                resultPassword.move(1);
             }
         }
-        catch(IOException e) {
-            System.out.println("file error");
-            finish();
+        catch (SQLiteConstraintException e){
+            System.out.println("database ERROR");
         }
+
+
+
+
+
+
+        context = getApplicationContext();
+        
+//        try{
+            //FileOutputStream fos = openFileOutput("users.txt", Context.MODE_PRIVATE);
+//            InputStream fis = getResources().getAssets().open("users.txt");
+//            BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
+//            while ((line = reader.readLine()) != null){
+//                List<String> tokens = Arrays.asList(line.split(":"));
+//                Users newUser = new Users(tokens.get(5),tokens.get(6));
+//                loginList.add(newUser);
+//            }
+//        }
+//        catch(IOException e) {
+//            System.out.println("file error");
+//            finish();
+//        }
         setContentView(R.layout.activity_login);
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -378,20 +402,19 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             try {
                 // Simulate network access.
-                Thread.sleep(1000);
+                Thread.sleep(250);
             } catch (InterruptedException e) {
                 return false;
             }
 
-            for (int i=0;i < loginList.size();i++) {
-
-                if (loginList.get(i).getEmail().equals(mEmail)) {
+            for (int i=0;i < loginListEmail.size();i++) {
+                    // TODO:
+                if (loginListEmail.get(i).equals(mEmail)) {
                     // Account exists, return true if the password matches.
-                    return loginList.get(i).getPassword().equals(mPassword);
+                    return loginListPassword.get(i).equals(mPassword);
                 }
             }
 
-            // TODO: register the new account here.
             return false;
         }
 
