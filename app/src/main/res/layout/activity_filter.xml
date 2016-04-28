@@ -63,7 +63,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="75dp"
         android:layout_height="wrap_content"
-        android:text="&lt;5 Miles"
+        android:text="≤ 5 Miles"
         android:id="@+id/btn5Miles"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/btn$"
@@ -75,7 +75,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="75dp"
         android:layout_height="wrap_content"
-        android:text="&lt;15 MILES"
+        android:text="≤ 15 MILES"
         android:id="@+id/btn15Miles"
         android:layout_alignTop="@+id/btn5Miles"
         android:layout_toRightOf="@+id/btn5Miles"
@@ -85,7 +85,7 @@
     <Button
         android:layout_width="75dp"
         android:layout_height="wrap_content"
-        android:text="&lt;25 MILES"
+        android:text="≤ 25 MILES"
         android:id="@+id/btn25Miles"
         android:layout_below="@+id/textView6"
         android:layout_toRightOf="@+id/btn15Miles"
@@ -118,7 +118,7 @@
         android:id="@+id/ratingBar"
         android:layout_below="@+id/textView7"
         android:layout_centerHorizontal="true"
-        android:stepSize=".5" />
+        android:stepSize="1" />
 
     <Button
         android:layout_width="wrap_content"
@@ -128,5 +128,32 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/txtRatingValue"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/txtDistanceValue"
+        android:layout_below="@+id/btn5Miles"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/txtPriceValue"
+        android:layout_below="@+id/btn$"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
