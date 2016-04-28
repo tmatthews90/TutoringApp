@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 public class PostLogin extends AppCompatActivity {
 
-    SQLiteDatabase mydatabase;
     TextView txtTitle;
     String usrName;
 
@@ -20,10 +19,9 @@ public class PostLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_login);
+        txtTitle = (TextView) findViewById(R.id.title);
 
         final SQLiteDatabase mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
-
-        txtTitle = (TextView) findViewById(R.id.title);
 
         Cursor fName = mydatabase.rawQuery("Select firstName from userst where loggedIn = '1'",null);
         Cursor lName = mydatabase.rawQuery("Select lastName from userst where loggedIn = '1'",null);
