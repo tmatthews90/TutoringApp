@@ -98,27 +98,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
 
 
-
-
-
-
         context = getApplicationContext();
-        
-//        try{
-            //FileOutputStream fos = openFileOutput("users.txt", Context.MODE_PRIVATE);
-//            InputStream fis = getResources().getAssets().open("users.txt");
-//            BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
-//            while ((line = reader.readLine()) != null){
-//                List<String> tokens = Arrays.asList(line.split(":"));
-//                Users newUser = new Users(tokens.get(5),tokens.get(6));
-//                loginList.add(newUser);
-//            }
-//        }
-//        catch(IOException e) {
-//            System.out.println("file error");
-//            finish();
-//        }
+
         setContentView(R.layout.activity_login);
+
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();

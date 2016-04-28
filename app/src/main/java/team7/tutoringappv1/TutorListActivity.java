@@ -1,23 +1,19 @@
 package team7.tutoringappv1;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TutorsActivity extends ListActivity {
+public class TutorListActivity extends ListActivity {
 
     List<String> tutorNames = new ArrayList<>();
     private ArrayList<Users> tutorList = new ArrayList<>();
@@ -52,14 +48,12 @@ public class TutorsActivity extends ListActivity {
             tempUser.setReviewRate(Float.parseFloat(dbEntry.getString(2)));
             tempUser.setTutorRate(Integer.parseInt(dbEntry.getString(3)));
             tempUser.setIsTutor(dbEntry.getString(4));
-            tempUser.setT_math(Boolean.getBoolean(dbEntry.getString(5)));
-            tempUser.setT_science(Boolean.getBoolean(dbEntry.getString(6)));
-            tempUser.setT_literature(Boolean.getBoolean(dbEntry.getString(7)));
-            tempUser.setT_history(Boolean.getBoolean(dbEntry.getString(8)));
-            tempUser.setT_musicInstrument(Boolean.getBoolean(dbEntry.getString(9)));
-            tempUser.setT_musicTheory(Boolean.getBoolean(dbEntry.getString(10)));
-
-            System.out.println(tempUser.getFirstName() + " " + tempUser.getLastName() + " | " + tempUser.isT_math());
+            tempUser.setT_math(Boolean.parseBoolean(dbEntry.getString(5)));
+            tempUser.setT_science(Boolean.parseBoolean(dbEntry.getString(6)));
+            tempUser.setT_literature(Boolean.parseBoolean(dbEntry.getString(7)));
+            tempUser.setT_history(Boolean.parseBoolean(dbEntry.getString(8)));
+            tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(9)));
+            tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(10)));
 
             tutorList.add(tempUser);
 
@@ -110,7 +104,7 @@ public class TutorsActivity extends ListActivity {
                     rateMoneySign = "$$$";
                     break;
                 default:
-                    rateMoneySign = "$$$";
+                    rateMoneySign = "-";
                     break;
             }
 
@@ -130,14 +124,14 @@ public class TutorsActivity extends ListActivity {
             }
         });
 
-        ListView lv = getListView();
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 System.out.println("Item Clicked: " + position);
                 System.out.println("Selected user: " + tutorList.get(position).getFirstName() + " " + tutorList.get(position).getLastName());
+                Intent tutorDisplayIntent = new Intent(view.getContext(), TutorProfileActivity.class);
+                startActivityForResult(tutorDisplayIntent, 0);
 
             }
         });

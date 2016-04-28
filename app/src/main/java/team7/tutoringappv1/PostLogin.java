@@ -14,28 +14,25 @@ public class PostLogin extends AppCompatActivity {
 
     TextView txtTitle;
     String usrName;
+    SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_login);
+
+        db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
+
         txtTitle = (TextView) findViewById(R.id.title);
 
-        final SQLiteDatabase mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
+        txtTitle.setText("Welcome, " + getUserName() + "!");
 
-        Cursor fName = mydatabase.rawQuery("Select firstName from userst where loggedIn = '1'",null);
-        Cursor lName = mydatabase.rawQuery("Select lastName from userst where loggedIn = '1'",null);
-        fName.moveToFirst();
-        lName.moveToFirst();
-        usrName = fName.getString(0) + " " + lName.getString(0);
-
-        txtTitle.setText("Welcome, " + usrName + "!");
-
-        Button logout = (Button) findViewById(R.id.btnLogout);
-        logout.setOnClickListener(new View.OnClickListener() {
+        Button btnLogout = (Button) findViewById(R.id.btnLogout);
+        assert btnLogout != null;
+        btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mydatabase.execSQL("UPDATE userst SET loggedIn = '0' where loggedIn = '1';");
+                db.execSQL("UPDATE userst SET loggedIn = '0' where loggedIn = '1';");
                 Intent logoutIntent = new Intent(view.getContext(), LoginActivity.class);
                 startActivityForResult(logoutIntent, 0);
                 finish();
@@ -43,15 +40,17 @@ public class PostLogin extends AppCompatActivity {
         });
 
         Button btnTutors = (Button) findViewById(R.id.btnBrowseTutors);
+        assert btnTutors != null;
         btnTutors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerIntent = new Intent(view.getContext(), TutorsActivity.class);
+                Intent registerIntent = new Intent(view.getContext(), TutorListActivity.class);
                 startActivityForResult(registerIntent, 0);
             }
         });
 
         Button btnMyAccount = (Button) findViewById(R.id.btnMyAccount);
+        assert btnMyAccount != null;
         btnMyAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +58,15 @@ public class PostLogin extends AppCompatActivity {
                 startActivityForResult(loginIntent, 0);
             }
         });
+    }
+
+    public String getUserName(){
+        Cursor fName = db.rawQuery("Select firstName from userst where loggedIn = '1'",null);
+        Cursor lName = db.rawQuery("Select lastName from userst where loggedIn = '1'",null);
+        fName.moveToFirst();
+        lName.moveToFirst();
+        usrName = fName.getString(0) + " " + lName.getString(0);
+        return usrName;
     }
 
 

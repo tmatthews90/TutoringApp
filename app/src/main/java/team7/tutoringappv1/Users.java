@@ -44,12 +44,6 @@ public class Users {
         this.setLoggedIn("false");
     }
 
-    //login constructor
-    public Users(String userName, String password) {
-        this.setPassword(password);
-        this.setEmail(userName);
-    }
-
     // tutors constructor
     public Users(String line) {
         tokens = Arrays.asList(line.split(":"));
@@ -77,18 +71,6 @@ public class Users {
         this.setReviewRate(Float.parseFloat(tokens.get(21)));
     }
 
-
-//    public String toString() {
-//        String returnString = "";
-//        for (int i = 0; i < tokens.size(); i++) {
-//            if (i < tokens.size()) {
-//                returnString = returnString + tokens.get(i).toString() + ":";
-//            } else {
-//                returnString = returnString + tokens.get(i).toString();
-//            }
-//        }
-//        return returnString;
-//    }
 
 
     public String getFirstName() {
@@ -191,9 +173,7 @@ public class Users {
         return musicInstrument;
     }
 
-    public void setMusicInstrument(boolean musicInstrument) {
-        this.musicInstrument = musicInstrument;
-    }
+    public void setMusicInstrument(boolean musicInstrument) { this.musicInstrument = musicInstrument; }
 
     public boolean isMusicTheory() {
         return musicTheory;
@@ -239,9 +219,7 @@ public class Users {
         return t_musicInstrument;
     }
 
-    public void setT_musicInstrument(boolean t_musicInstrument) {
-        this.t_musicInstrument = t_musicInstrument;
-    }
+    public void setT_musicInstrument(boolean t_musicInstrument) { this.t_musicInstrument = t_musicInstrument; }
 
     public boolean isT_musicTheory() {
         return t_musicTheory;
