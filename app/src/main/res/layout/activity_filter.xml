@@ -16,7 +16,6 @@
         android:text="$"
         android:id="@+id/btn$"
         android:layout_marginTop="69dp"
-        android:layout_below="@+id/textView5"
         android:layout_toLeftOf="@+id/btn$$"
         android:layout_toStartOf="@+id/btn$$"
         android:layout_centerHorizontal="true" />
@@ -49,27 +48,15 @@
         android:layout_above="@+id/btn$$"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="FILTER"
-        android:id="@+id/textView5"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold" />
-
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:text="≤ 5 Miles"
         android:id="@+id/btn5Miles"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/btn$"
+        android:layout_below="@+id/textView6"
         android:layout_alignLeft="@+id/btn$"
-        android:layout_alignStart="@+id/btn$"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/btn$" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -77,10 +64,9 @@
         android:layout_height="wrap_content"
         android:text="≤ 15 MILES"
         android:id="@+id/btn15Miles"
-        android:layout_alignTop="@+id/btn5Miles"
+        android:layout_above="@+id/txtDistanceValue"
         android:layout_toRightOf="@+id/btn5Miles"
-        android:layout_toEndOf="@+id/btn5Miles"
-        android:layout_centerHorizontal="true" />
+        android:layout_toEndOf="@+id/btn5Miles" />
 
     <Button
         android:layout_width="75dp"
@@ -107,8 +93,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="RATING"
         android:id="@+id/textView7"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/btn5Miles"
+        android:layout_above="@+id/ratingBar"
         android:layout_toRightOf="@+id/btn5Miles"
         android:layout_toEndOf="@+id/btn5Miles" />
 
@@ -116,18 +101,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ratingBar"
-        android:layout_below="@+id/textView7"
-        android:layout_centerHorizontal="true"
-        android:stepSize="1" />
+        android:stepSize="1"
+        android:layout_above="@+id/txtRatingValue"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="APPLY"
         android:id="@+id/btnApply"
+        android:layout_marginBottom="42dp"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light"
+        android:background="@color/blue"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -135,8 +123,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="-"
         android:id="@+id/txtRatingValue"
-        android:layout_below="@+id/ratingBar"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/btnApply"
+        android:layout_alignLeft="@+id/txtDistanceValue"
+        android:layout_alignStart="@+id/txtDistanceValue"
+        android:layout_marginBottom="25dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -144,8 +134,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="-"
         android:id="@+id/txtDistanceValue"
-        android:layout_below="@+id/btn5Miles"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/txtPriceValue"
+        android:layout_alignStart="@+id/txtPriceValue" />
 
     <TextView
         android:layout_width="wrap_content"
