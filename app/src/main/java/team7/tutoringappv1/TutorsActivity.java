@@ -3,6 +3,8 @@ package team7.tutoringappv1;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +20,7 @@ import java.util.List;
 public class TutorsActivity extends ListActivity {
 
     List<String> tutorNames = new ArrayList<>();
+    private ArrayList<Users> tutorList = new ArrayList<>();
     String fName;
     String lName;
     String name;
@@ -26,48 +29,94 @@ public class TutorsActivity extends ListActivity {
     int rate;
     String rateMoneySign;
     String entry;
-    Tutors tutors;
+    SQLiteDatabase mydatabase;
+    Users tutor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutors);
 
-        // builds tutors array of all users in txt file
-        tutors = new Tutors(this);
+        mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
+
+        Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory FROM userst WHERE isTutor = '1' ORDER BY lastName",null);
+        dbEntry.moveToFirst();
+
+        for(int i=0 ; i < dbEntry.getCount(); i++){
+
+            Users tempUser = new Users();
+
+            tempUser.setFirstName(dbEntry.getString(0));
+            tempUser.setLastName(dbEntry.getString(1));
+            tempUser.setReviewRate(Float.parseFloat(dbEntry.getString(2)));
+            tempUser.setTutorRate(Integer.parseInt(dbEntry.getString(3)));
+            tempUser.setIsTutor(dbEntry.getString(4));
+            tempUser.setT_math(Boolean.getBoolean(dbEntry.getString(5)));
+            tempUser.setT_science(Boolean.getBoolean(dbEntry.getString(6)));
+            tempUser.setT_literature(Boolean.getBoolean(dbEntry.getString(7)));
+            tempUser.setT_history(Boolean.getBoolean(dbEntry.getString(8)));
+            tempUser.setT_musicInstrument(Boolean.getBoolean(dbEntry.getString(9)));
+            tempUser.setT_musicTheory(Boolean.getBoolean(dbEntry.getString(10)));
+
+            System.out.println(tempUser.getFirstName() + " " + tempUser.getLastName() + " | " + tempUser.isT_math());
+
+            tutorList.add(tempUser);
+
+            dbEntry.move(1);
+        }
 
 
-        for (int i = 0; i < tutors.getTutorList().size(); i++){
-            if (tutors.getTutorList().get(i).getIsTutor().equals("1")){
-                fName = tutors.getTutorList().get(i).getFirstName();
-                lName = tutors.getTutorList().get(i).getLastName();
-                name = fName + " " + lName;
-                subject = "Test";
-                rating = tutors.getTutorList().get(i).getReviewRate();
-                rate = tutors.getTutorList().get(i).getTutorRate();
 
-                switch(rate) {
-                    case 1:
-                        rateMoneySign = "$";
-                        break;
-                    case 2:
-                        rateMoneySign = "$$";
-                        break;
-                    case 3:
-                        rateMoneySign = "$$$";
-                        break;
-                    default:
-                        rateMoneySign = "$$$";
-                        break;
-                }
+        for (int i = 0; i < tutorList.size(); i++){
 
-                entry = name + "\nSubject:  " + subject + "\nRating:    "+ rating + "\nRate:       " + rateMoneySign;
+            tutor = tutorList.get(i);
 
+            fName = tutor.getFirstName();
+            lName = tutor.getLastName();
+            name = fName + " " + lName;
+            rating = tutor.getReviewRate();
+            rate = tutor.getTutorRate();
 
-                if (!(fName + " " + lName).equals("Test User")){
-                    tutorNames.add(entry);
-                }
+            if (tutor.isT_math()){
+                subject = "Math";
             }
+            else if (tutor.isT_science()){
+                subject = "Science";
+            }
+            else if (tutor.isT_literature()){
+                subject = "Literature";
+            }
+            else if (tutor.isT_history()){
+                subject = "History";
+            }
+            else if (tutor.isT_musicInstrument()){
+                subject = "Musical Instruments";
+            }else if (tutor.isT_musicTheory()) {
+                subject = "Music Theory";
+            }
+            else {
+                subject = "N/A";
+            }
+
+            switch(rate) {
+                case 1:
+                    rateMoneySign = "$";
+                    break;
+                case 2:
+                    rateMoneySign = "$$";
+                    break;
+                case 3:
+                    rateMoneySign = "$$$";
+                    break;
+                default:
+                    rateMoneySign = "$$$";
+                    break;
+            }
+
+            entry = name + "\nSubject:  " + subject + "\nRating:    "+ rating + "\nRate:       " + rateMoneySign;
+
+            tutorNames.add(entry);
         }
 
         this.setListAdapter(new ArrayAdapter<String>(this, R.layout.actvity_listview, R.id.itemName,tutorNames));
@@ -88,7 +137,7 @@ public class TutorsActivity extends ListActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 System.out.println("Item Clicked: " + position);
-                System.out.println("Selected user: " + tutors.getTutorList().get(position).getFirstName() + " " + tutors.getTutorList().get(position).getLastName());
+                System.out.println("Selected user: " + tutorList.get(position).getFirstName() + " " + tutorList.get(position).getLastName());
 
             }
         });
