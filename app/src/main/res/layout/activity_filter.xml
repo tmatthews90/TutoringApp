@@ -114,8 +114,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textStyle="bold"
-        android:visibility="visible" />
+        android:textAlignment="center"
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -126,7 +126,8 @@
         android:layout_above="@+id/btnApply"
         android:layout_alignLeft="@+id/txtDistanceValue"
         android:layout_alignStart="@+id/txtDistanceValue"
-        android:layout_marginBottom="25dp" />
+        android:layout_marginBottom="25dp"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -136,7 +137,8 @@
         android:id="@+id/txtDistanceValue"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/txtPriceValue"
-        android:layout_alignStart="@+id/txtPriceValue" />
+        android:layout_alignStart="@+id/txtPriceValue"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -145,6 +147,7 @@
         android:text="-"
         android:id="@+id/txtPriceValue"
         android:layout_below="@+id/btn$"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
 </RelativeLayout>
