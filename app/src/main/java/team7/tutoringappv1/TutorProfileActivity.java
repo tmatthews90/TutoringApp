@@ -1,9 +1,13 @@
 package team7.tutoringappv1;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
@@ -23,11 +27,54 @@ public class TutorProfileActivity extends AppCompatActivity {
     TextView fieldRate;
     TextView fieldOverallRating;
 
+    Users tempUser;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor_profile);
 
+        setTextFields();
+
+        Button btnCall = (Button) findViewById(R.id.btnCall);
+        assert btnCall != null;
+        btnCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:" + tempUser.getPhoneNumber()));
+                startActivity(callIntent);
+            }
+        });
+
+        Button btnText = (Button) findViewById(R.id.btnText);
+        assert btnText != null;
+        btnText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+                sendIntent.setData(Uri.parse("sms:" + tempUser.getPhoneNumber()));
+                startActivity(sendIntent);
+            }
+        });
+
+        Button btnEmail = (Button) findViewById(R.id.btnEmail);
+        assert btnEmail != null;
+        btnEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("plain/text");
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[] { tempUser.getEmail() });
+                intent.putExtra(Intent.EXTRA_SUBJECT, "TUTORING NEEDED");
+                intent.putExtra(Intent.EXTRA_TEXT, "Hi, I Found you on the tutoring app and would like to meet up for some tutoring.\n\n");
+                startActivity(Intent.createChooser(intent, ""));
+            }
+        });
+
+    }
+
+    public void setTextFields(){
         fieldName = (TextView) findViewById(R.id.fieldName);
         fieldEmail = (TextView) findViewById(R.id.fieldEmail);
         fieldPhone = (TextView) findViewById(R.id.fieldPhone);
@@ -49,7 +96,7 @@ public class TutorProfileActivity extends AppCompatActivity {
 
             System.out.println("Found user: " + selectedTutor);
 
-            Users tempUser = new Users();
+            tempUser = new Users();
 
             tempUser.setFirstName(dbEntry.getString(0));
             tempUser.setLastName(dbEntry.getString(1));
@@ -89,7 +136,7 @@ public class TutorProfileActivity extends AppCompatActivity {
             fieldRate.setText(Integer.toString(tempUser.getTutorRate()));
             fieldOverallRating.setText(Float.toString(tempUser.getReviewRate()));
         }
-
     }
+
 
 }
