@@ -15,7 +15,6 @@ public class AccountActivity extends AppCompatActivity {
     String selectedTutor;
 
     String name;
-    String subject;
 
     TextView fieldName;
     TextView fieldEmail;

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,14 +14,19 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
         Button registerButton = (Button) findViewById(R.id.doneButton);
+        assert registerButton != null;
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent doneIntent = new Intent(view.getContext(), LoginActivity.class);
                 startActivityForResult(doneIntent, 0);
+                landingPage.landingActivity.finish();
                 finish(); //to stop back button from going back to main menu
             }
         });
     }
+
+
 }

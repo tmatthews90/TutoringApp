@@ -412,6 +412,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 mydatabase.execSQL(q + mEmail + "';");
                 Intent loginIntent = new Intent(LoginActivity.this, PostLogin.class);
                 startActivityForResult(loginIntent, 2);
+                landingPage.landingActivity.finish();
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));

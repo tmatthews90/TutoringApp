@@ -1,5 +1,6 @@
 package team7.tutoringappv1;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteConstraintException;
@@ -19,9 +20,14 @@ public class landingPage extends AppCompatActivity {
     public static String line = null;
     SQLiteDatabase db;
 
+    public static Activity landingActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // used to end landingActivity from login page or register page
+        landingActivity = this;
 
         buildDatabase();
 
@@ -34,7 +40,6 @@ public class landingPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent registerIntent = new Intent(view.getContext(), RegisterActivity.class);
                 startActivityForResult(registerIntent, 0);
-                finish();
             }
         });
 
@@ -45,7 +50,6 @@ public class landingPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent loginIntent = new Intent(view.getContext(), LoginActivity.class);
                 startActivityForResult(loginIntent, 0);
-                finish();
             }
         });
     }
