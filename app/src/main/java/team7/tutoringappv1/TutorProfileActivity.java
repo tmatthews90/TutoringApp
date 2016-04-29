@@ -15,10 +15,8 @@ public class TutorProfileActivity extends AppCompatActivity {
 
     String name;
     String subject;
-    String phoneNum[];
 
     TextView fieldName;
-    TextView fieldSpecialty;
     TextView fieldEmail;
     TextView fieldPhone;
     TextView fieldSubject;
@@ -31,7 +29,6 @@ public class TutorProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tutor_profile);
 
         fieldName = (TextView) findViewById(R.id.fieldName);
-        fieldSpecialty = (TextView) findViewById(R.id.fieldSpecialty);
         fieldEmail = (TextView) findViewById(R.id.fieldEmail);
         fieldPhone = (TextView) findViewById(R.id.fieldPhone);
         fieldSubject = (TextView) findViewById(R.id.fieldSubject);
@@ -86,7 +83,6 @@ public class TutorProfileActivity extends AppCompatActivity {
             }
 
             fieldName.setText(name);
-            fieldSpecialty.setText("N/A");
             fieldEmail.setText(tempUser.getEmail());
             fieldPhone.setText(tempUser.getPhoneNumber());
             fieldSubject.setText(subject);

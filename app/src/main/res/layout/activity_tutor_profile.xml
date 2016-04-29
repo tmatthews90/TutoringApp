@@ -9,15 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".TutorProfileActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="TUTOR DETAILS"
-        android:id="@+id/textView4"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,8 +42,7 @@
         android:layout_alignRight="@+id/btnEmail"
         android:layout_alignEnd="@+id/btnEmail"
         android:layout_above="@+id/btnText"
-        android:id="@+id/tableLayout"
-        android:layout_below="@+id/textView4">
+        android:id="@+id/tableLayout">
 
         <ImageView
             android:layout_width="363dp"
@@ -70,7 +60,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Tutor Name: " />
+                android:text="Tutor Name: "
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -88,7 +79,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Email:" />
+                android:text="Email:"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -105,7 +97,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Phone:" />
+                android:text="Phone:"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -122,7 +115,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Subject:" />
+                android:text="Subject:"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -140,7 +134,8 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Price:"
-                android:paddingRight="10dp" />
+                android:paddingRight="10dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -158,7 +153,8 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Overall Rating:"
-                android:paddingRight="15dp" />
+                android:paddingRight="15dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
