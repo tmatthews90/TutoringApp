@@ -36,7 +36,7 @@ public class TutorListActivity extends ListActivity {
         mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
 
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
-                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory FROM userst WHERE isTutor = '1' ORDER BY lastName",null);
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email FROM userst WHERE isTutor = '1' ORDER BY lastName",null);
         dbEntry.moveToFirst();
 
         for(int i=0 ; i < dbEntry.getCount(); i++){
@@ -54,6 +54,7 @@ public class TutorListActivity extends ListActivity {
             tempUser.setT_history(Boolean.parseBoolean(dbEntry.getString(8)));
             tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(9)));
             tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(10)));
+            tempUser.setEmail(dbEntry.getString(11));
 
             tutorList.add(tempUser);
 
@@ -131,6 +132,7 @@ public class TutorListActivity extends ListActivity {
                 System.out.println("Item Clicked: " + position);
                 System.out.println("Selected user: " + tutorList.get(position).getFirstName() + " " + tutorList.get(position).getLastName());
                 Intent tutorDisplayIntent = new Intent(view.getContext(), TutorProfileActivity.class);
+                tutorDisplayIntent.putExtra("selectedTutor", tutorList.get(position).getEmail());
                 startActivityForResult(tutorDisplayIntent, 0);
 
             }

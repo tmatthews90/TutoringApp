@@ -57,7 +57,7 @@ public class landingPage extends AppCompatActivity {
 //        mydatabase.execSQL("drop table userst");
 
         db.execSQL("CREATE TABLE IF NOT EXISTS userst(" +
-                "firstName VARCHAR,lastName VARCHAR,zipcode INT,phonenumber VARCHAR,isTutor BOOL, " +
+                "firstName VARCHAR,lastName VARCHAR, zipcode INT, phonenumber VARCHAR,isTutor BOOL, " +
                 "email VARCHAR PRIMARY KEY, password VARCHAR, loggedIn BOOL, math BOOL, science BOOL, literature BOOL, history BOOL, musicInstrument BOOL, " +
                 "musicTheory BOOL, t_math BOOL, t_science BOOL, t_literature BOOL, t_history BOOL, t_musicInstrument BOOL, t_musicTheory BOOL, tutorRate INT, rating FLOAT);");
 
