@@ -1,5 +1,6 @@
 package team7.tutoringappv1;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -16,28 +17,21 @@ public class PostLogin extends AppCompatActivity {
     String usrName;
     SQLiteDatabase db;
 
+    public static Activity postLoginInstance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_login);
+
+        // used to finish instance when in account page.
+        postLoginInstance = this;
 
         db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
 
         txtTitle = (TextView) findViewById(R.id.title);
 
         txtTitle.setText("Welcome, " + getUserName() + "!");
-
-        Button btnLogout = (Button) findViewById(R.id.btnLogout);
-        assert btnLogout != null;
-        btnLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                db.execSQL("UPDATE userst SET loggedIn = '0' where loggedIn = '1';");
-                Intent logoutIntent = new Intent(view.getContext(), LoginActivity.class);
-                startActivityForResult(logoutIntent, 0);
-                finish();
-            }
-        });
 
         Button btnTutors = (Button) findViewById(R.id.btnBrowseTutors);
         assert btnTutors != null;

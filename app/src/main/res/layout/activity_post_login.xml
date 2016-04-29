@@ -39,15 +39,4 @@
             android:layout_alignLeft="@+id/btnBrowseTutors"
             android:layout_alignStart="@+id/btnBrowseTutors" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Logout"
-            android:id="@+id/btnLogout"
-            android:layout_marginBottom="57dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignLeft="@+id/btnMyAccount"
-            android:layout_alignStart="@+id/btnMyAccount"
-            android:layout_alignRight="@+id/btnMyAccount"
-            android:layout_alignEnd="@+id/btnMyAccount" />
 </RelativeLayout>

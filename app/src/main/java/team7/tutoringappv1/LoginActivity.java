@@ -426,28 +426,5 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
 
     }
-
-    private void writeToFile(String data) {
-        try {
-            //OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("thisIsANewFile.txt", Context.MODE_PRIVATE));
-            //outputStreamWriter.write(data);
-            //outputStreamWriter.close();
-            //System.out.println("Wrote to file");
-            File thisFile = getFilesDir();
-            //System.out.println("Files lives in : " + thisFile);
-            String users = "users.txt";
-            FileWriter fw = new FileWriter( new File(thisFile,users));
-            fw.write("this shit sucks");
-
-            InputStream fis = getResources().getAssets().open("users.txt");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
-            line = reader.readLine();
-            System.out.println(line);
-        }
-        catch (IOException e) {
-            Log.e("Exception", "File write failed: " + e.toString());
-            System.out.println("Did not write to file");
-        }
-    }
 }
 
