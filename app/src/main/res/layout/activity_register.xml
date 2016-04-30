@@ -113,16 +113,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Address:"
                 android:id="@+id/textView9"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:text="Zip Code:" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPostalAddress"
+                android:inputType="number"
                 android:ems="10"
-                android:id="@+id/fieldAddress" />
+                android:id="@+id/fieldZipCode"
+                android:layout_column="1" />
+
         </TableRow>
 
         <TableRow
