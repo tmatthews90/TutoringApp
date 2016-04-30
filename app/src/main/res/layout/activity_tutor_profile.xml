@@ -14,10 +14,8 @@
         android:layout_height="wrap_content"
         android:text="TEXT"
         android:id="@+id/btnText"
-        android:layout_marginBottom="44dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/btnCall"
-        android:layout_toEndOf="@+id/btnCall" />
+        android:layout_above="@+id/btnMap"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -34,25 +32,27 @@
         android:text="EMAIL"
         android:id="@+id/btnEmail"
         android:layout_below="@+id/tableLayout"
-        android:layout_toLeftOf="@+id/btnMap"
-        android:layout_toStartOf="@+id/btnMap" />
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignEnd="@+id/tableLayout" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MAP"
         android:id="@+id/btnMap"
-        android:layout_below="@+id/tableLayout"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnEmail"
+        android:layout_alignEnd="@+id/btnEmail" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/btnText"
         android:id="@+id/tableLayout"
-        android:layout_alignRight="@+id/btnMap"
-        android:layout_alignEnd="@+id/btnMap">
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
         <ImageView
             android:layout_width="363dp"
