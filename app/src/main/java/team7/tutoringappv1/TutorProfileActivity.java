@@ -26,6 +26,7 @@ public class TutorProfileActivity extends AppCompatActivity {
     TextView fieldSubject;
     TextView fieldRate;
     TextView fieldOverallRating;
+    TextView fieldZipCode;
 
     Users tempUser;
 
@@ -72,6 +73,15 @@ public class TutorProfileActivity extends AppCompatActivity {
             }
         });
 
+        Button btnMap = (Button) findViewById(R.id.btnMap);
+        assert btnMap != null;
+        btnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Mapping logic here
+            }
+        });
+
     }
 
     public void setTextFields(){
@@ -81,6 +91,7 @@ public class TutorProfileActivity extends AppCompatActivity {
         fieldSubject = (TextView) findViewById(R.id.fieldSubject);
         fieldRate = (TextView) findViewById(R.id.fieldRate);
         fieldOverallRating = (TextView) findViewById(R.id.fieldOverallRating);
+        fieldZipCode = (TextView) findViewById(R.id.fieldZipCode);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -89,7 +100,7 @@ public class TutorProfileActivity extends AppCompatActivity {
 
         db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
 
-        Cursor dbEntry = db.rawQuery("SELECT firstName, lastName, rating, tutorRate, phonenumber, email, t_math, t_science, t_literature, t_history, t_musicInstrument, t_musicTheory FROM userst WHERE email = '" + selectedTutor + "';", null);
+        Cursor dbEntry = db.rawQuery("SELECT firstName, lastName, rating, tutorRate, phonenumber, email, t_math, t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, zipcode FROM userst WHERE email = '" + selectedTutor + "';", null);
         dbEntry.moveToFirst();
 
         if (dbEntry.getCount() == 1) {
@@ -110,6 +121,7 @@ public class TutorProfileActivity extends AppCompatActivity {
             tempUser.setT_history(Boolean.parseBoolean(dbEntry.getString(9)));
             tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(10)));
             tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(11)));
+            tempUser.setZipCode(dbEntry.getString(12));
 
             name = tempUser.getFirstName() + " " + tempUser.getLastName();
 
@@ -135,6 +147,7 @@ public class TutorProfileActivity extends AppCompatActivity {
             fieldSubject.setText(subject);
             fieldRate.setText(Integer.toString(tempUser.getTutorRate()));
             fieldOverallRating.setText(Float.toString(tempUser.getReviewRate()));
+            fieldZipCode.setText(tempUser.getZipCode());
         }
     }
 

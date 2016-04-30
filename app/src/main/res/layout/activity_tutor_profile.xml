@@ -14,16 +14,17 @@
         android:layout_height="wrap_content"
         android:text="TEXT"
         android:id="@+id/btnText"
+        android:layout_marginBottom="44dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="45dp" />
+        android:layout_toRightOf="@+id/btnCall"
+        android:layout_toEndOf="@+id/btnCall" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CALL"
         android:id="@+id/btnCall"
-        android:layout_alignTop="@+id/btnText"
+        android:layout_below="@+id/tableLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -32,17 +33,26 @@
         android:layout_height="wrap_content"
         android:text="EMAIL"
         android:id="@+id/btnEmail"
-        android:layout_alignTop="@+id/btnText"
+        android:layout_below="@+id/tableLayout"
+        android:layout_toLeftOf="@+id/btnMap"
+        android:layout_toStartOf="@+id/btnMap" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAP"
+        android:id="@+id/btnMap"
+        android:layout_below="@+id/tableLayout"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignRight="@+id/btnEmail"
-        android:layout_alignEnd="@+id/btnEmail"
         android:layout_above="@+id/btnText"
-        android:id="@+id/tableLayout">
+        android:id="@+id/tableLayout"
+        android:layout_alignRight="@+id/btnMap"
+        android:layout_alignEnd="@+id/btnMap">
 
         <ImageView
             android:layout_width="363dp"
@@ -123,6 +133,24 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/fieldSubject" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Zip Code:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/fieldZipCode" />
         </TableRow>
 
         <TableRow
