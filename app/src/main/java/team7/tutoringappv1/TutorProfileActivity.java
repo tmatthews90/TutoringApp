@@ -80,6 +80,10 @@ public class TutorProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Mapping logic here
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + tempUser.getZipCode());
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
             }
         });
 
