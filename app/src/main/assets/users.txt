@@ -1,497 +1,496 @@
-Hilary:Pinkerton:76012:9724908648:0:hilary.pinkerton@ymail.com:password:0:1:0:1:1:1:1:true:false:false:false:false:false:1:1.06
-David:Clifford:76018:4696671676:1:david.clifford@yahoo.com:password:0:1:1:1:0:0:0:false:false:false:false:true:false:1:4.14
-Hilary:Stephan:76004:4694281418:1:hilary.stephan@me.net:password:0:0:1:1:0:0:0:false:false:false:false:false:true:2:2.21
-Beth:Cooke:76009:9726573316:1:beth.cooke@sbcglobal.net:password:0:1:1:0:0:0:1:false:true:false:false:false:false:1:1.73
-Dirk:Coleman:76008:2146067798:1:dirk.coleman@sbcglobal.net:password:0:0:0:1:1:0:0:true:false:false:false:false:false:2:2.43
-Gabino:Stephan:76009:6821070806:1:gabino.stephan@ymail.com:password:0:0:0:0:0:0:1:false:true:false:false:false:false:2:4.23
-Wendy:Zeta:76014:6826423654:0:wendy.zeta@hotmail.com:password:0:0:1:0:1:1:1:false:false:true:false:false:false:2:4.01
-Travis:Apple:76014:4698773659:0:travis.apple@ymail.com:password:0:1:0:1:1:0:0:false:false:false:true:false:false:1:2.88
-Natalie:Baracsh:76006:9721243550:0:natalie.baracsh@hotmail.com:password:0:1:0:0:0:1:0:true:false:false:false:false:false:2:3.05
-Alex:White:76016:6824816792:1:alex.white@uta.mavs.edu:password:0:0:0:0:0:0:0:false:false:false:false:true:false:1:3.41
-Gayle:Becker:76006:2145620760:1:gayle.becker@ymail.com:password:0:1:1:1:0:0:0:false:false:false:false:true:false:1:4.30
-Rodger:Red:76018:4694514067:1:rodger.red@yahoo.com:password:0:1:1:0:0:1:1:false:false:true:false:false:false:2:1.10
-Devin:Xilophone:76003:2142443733:0:devin.xilophone@ymail.com:password:0:0:0:0:1:1:0:false:true:false:false:false:false:3:2.76
-Gabino:Atwell:76019:4697521690:0:gabino.atwell@me.net:password:0:0:1:1:1:1:0:false:false:false:false:false:true:1:4.91
-Frank:Weems:76011:2146517915:1:frank.weems@hotmail.com:password:0:0:0:1:0:1:1:false:false:false:true:false:false:3:1.41
-Charles:Weems:76015:9729931214:1:charles.weems@sbcglobal.net:password:0:0:0:0:1:1:0:false:false:false:true:false:false:1:2.07
-Jason:Beach:76012:2142901348:1:jason.beach@yahoo.com:password:0:1:1:1:1:1:0:false:false:false:true:false:false:2:3.12
-Valerie:Owens:76008:6826815753:0:valerie.owens@live.com:password:0:1:1:1:0:1:0:false:true:false:false:false:false:2:3.29
-Rose:Khalili:76014:4694780891:1:rose.khalili@uta.edu:password:0:0:0:1:1:1:1:false:false:false:false:false:true:1:1.04
-Goku:White:76006:6827011132:0:goku.white@charter.net:password:0:1:0:0:0:0:1:false:false:false:true:false:false:2:4.83
-Dirk:Red:76016:9729482148:0:dirk.red@gmail.com:password:0:1:0:1:0:1:0:false:false:true:false:false:false:2:4.59
-Clark:Becker:76019:9722619768:1:clark.becker@me.net:password:0:0:1:0:1:1:1:false:false:false:false:true:false:1:4.29
-Natalie:Krypton:76012:8178832320:0:natalie.krypton@uta.mavs.edu:password:0:0:0:1:1:1:1:false:false:true:false:false:false:1:3.54
-Amber:Stephan:76002:9725935455:0:amber.stephan@yahoo.com:password:0:1:0:1:1:0:1:true:false:false:false:false:false:1:4.18
-Dallas:Clifford:76001:6829648636:0:dallas.clifford@uta.edu:password:0:0:0:0:0:1:0:false:false:false:false:true:false:2:1.39
-Sarah:Nabisco:76017:9721498620:0:sarah.nabisco@ymail.com:password:0:1:0:0:1:1:0:false:false:false:true:false:false:2:2.97
-Amanda:Universe:76008:6829489336:0:amanda.universe@uta.mavs.edu:password:0:1:0:0:0:0:1:false:false:false:false:false:true:1:2.83
-Chelsea:Nguyen:76007:2143562137:0:chelsea.nguyen@uta.mavs.edu:password:0:1:1:0:1:1:1:false:true:false:false:false:false:3:4.38
-Emmanuel:Nabisco:76006:9722606771:0:emmanuel.nabisco@gmail.com:password:0:1:0:1:1:0:0:false:false:false:false:false:true:1:3.34
-Walter:White:76002:6821667560:0:walter.white@gmail.com:password:0:0:0:1:0:1:0:false:false:true:false:false:false:1:1.67
-Oscar:Luna:76009:6827783444:1:oscar.luna@charter.net:password:0:1:0:0:0:0:1:false:false:false:false:false:true:1:1.69
-Cinnimon:Luna:76007:9722456306:1:cinnimon.luna@hotmail.com:password:0:0:1:0:1:1:1:false:false:false:true:false:false:2:4.41
-Gabino:Quill:76006:2142270414:1:gabino.quill@me.net:password:0:0:1:0:1:0:1:false:false:false:false:true:false:2:4.28
-Vegeta:Universe:76003:4699314538:0:vegeta.universe@me.net:password:0:1:1:0:1:0:1:true:false:false:false:false:false:2:2.80
-Ron:Krypton:76012:8172429884:0:ron.krypton@hotmail.com:password:0:1:0:1:0:1:0:false:false:false:true:false:false:3:3.76
-Ivan:White:76019:2142377388:0:ivan.white@live.com:password:0:1:1:1:0:1:1:false:false:false:false:true:false:1:4.83
-Walter:Khalili:76009:9728589554:0:walter.khalili@yahoo.com:password:0:1:0:0:1:0:1:false:false:true:false:false:false:3:4.06
-Xavier:Zeta:76016:2142926963:1:xavier.zeta@charter.net:password:0:1:0:1:0:0:0:false:false:false:false:false:true:3:2.89
-Dallas:Gandolf:76015:8174897764:1:dallas.gandolf@uta.mavs.edu:password:0:0:1:1:1:0:1:false:false:false:false:true:false:3:4.86
-Jake:White:76002:2149604516:0:jake.white@aol.com:password:0:1:1:0:0:0:0:false:false:false:true:false:false:2:1.86
-Connie:Krypton:76016:8174828594:0:connie.krypton@yahoo.com:password:0:0:1:1:1:0:0:false:false:false:false:false:true:2:4.72
-Walter:Xilophone:76013:8174096731:1:walter.xilophone@hotmail.com:password:0:1:1:0:1:1:0:false:false:false:true:false:false:3:3.36
-Goku:Cooke:76011:6822828957:0:goku.cooke@uta.edu:password:0:1:1:1:1:0:0:true:false:false:false:false:false:2:2.98
-Jason:Baracsh:76001:6821853904:0:jason.baracsh@sbcglobal.net:password:0:0:1:0:1:1:0:false:false:false:true:false:false:2:1.54
-Brenda:Cooke:76009:8173447242:1:brenda.cooke@live.com:password:0:1:0:1:1:1:0:false:false:true:false:false:false:3:3.44
-Dallas:Hernandez:76001:6826875022:0:dallas.hernandez@uta.mavs.edu:password:0:1:1:1:1:1:1:false:false:true:false:false:false:1:3.23
-Alec:Owens:76010:6826275908:1:alec.owens@gmail.com:password:0:0:0:0:0:1:1:false:false:false:false:true:false:3:4.51
-Ron:Ramirez:76015:4696290908:0:ron.ramirez@aol.com:password:0:1:1:0:1:0:1:false:false:false:true:false:false:3:3.21
-Michael:Trout:76004:4692549665:1:michael.trout@yahoo.com:password:0:0:0:0:1:0:0:true:false:false:false:false:false:1:1.87
-Ivan:Smith:76017:9726800731:0:ivan.smith@ymail.com:password:0:1:0:0:1:1:0:false:false:true:false:false:false:1:2.47
-Sommer:White:76009:2143146809:1:sommer.white@sbcglobal.net:password:0:0:0:1:0:0:1:false:false:false:true:false:false:1:1.39
-Aaron:Ramirez:76016:4698124246:0:aaron.ramirez@gmail.com:password:0:0:1:1:1:0:0:false:false:true:false:false:false:3:2.07
-Gabino:White:76001:2148321876:0:gabino.white@uta.edu:password:0:0:1:1:0:0:0:false:false:true:false:false:false:2:2.50
-Rose:Khalili:76009:6824753110:0:rose.khalili@aol.com:password:0:0:1:1:1:0:0:false:true:false:false:false:false:3:1.67
-Gabina:Coleman:76008:8174065944:0:gabina.coleman@ymail.com:password:0:1:0:0:0:0:1:false:true:false:false:false:false:1:4.96
-Alex:Xilophone:76011:8176240764:1:alex.xilophone@me.net:password:0:0:1:0:1:1:1:false:false:false:false:true:false:2:3.27
-Sommer:Love:76002:8175430814:1:sommer.love@uta.mavs.edu:password:0:1:0:0:0:0:0:false:false:true:false:false:false:2:2.01
-Karla:Pinkerton:76014:2148592592:1:karla.pinkerton@gmail.com:password:0:1:0:1:1:1:1:false:false:false:false:false:true:3:3.05
-Brenda:Wilson:76009:2148585613:0:brenda.wilson@hotmail.com:password:0:0:1:1:0:0:0:false:false:true:false:false:false:3:2.80
-Gabina:Becker:76017:9729135914:0:gabina.becker@live.com:password:0:0:1:0:1:0:1:false:false:false:false:true:false:3:4.85
-Alex:Black:76007:4691353958:1:alex.black@charter.net:password:0:1:1:0:0:1:1:false:false:true:false:false:false:2:4.81
-Joe:Jameson:76004:6822236057:1:joe.jameson@aol.com:password:0:1:0:1:0:0:0:false:true:false:false:false:false:2:2.35
-Bruce:Green:76011:9727509229:1:bruce.green@gmail.com:password:0:0:0:1:1:0:0:false:false:false:false:false:true:2:1.87
-Vegeta:Nguyen:76014:9723876065:0:vegeta.nguyen@ymail.com:password:0:1:1:1:0:1:0:false:false:false:true:false:false:1:2.49
-Ryan:Cooke:76001:4696514427:1:ryan.cooke@ymail.com:password:0:0:0:0:0:1:1:false:true:false:false:false:false:1:1.73
-Yugi:Black:76008:2149381198:0:yugi.black@sbcglobal.net:password:0:1:0:0:1:1:0:false:false:false:false:true:false:2:2.04
-Xavier:Cooke:76006:9722232348:0:xavier.cooke@hotmail.com:password:0:1:0:0:1:1:1:false:false:false:false:true:false:2:1.62
-Tin:Overton:76013:8175620320:1:tin.overton@yahoo.com:password:0:1:0:1:1:0:0:false:false:false:true:false:false:1:4.10
-Jane:Apple:76012:6823059504:1:jane.apple@ymail.com:password:0:0:1:0:0:1:0:false:true:false:false:false:false:3:4.84
-Sue:Jones:76005:6825288387:1:sue.jones@uta.mavs.edu:password:0:1:1:0:1:0:0:false:false:true:false:false:false:2:2.97
-Ivan:Focal:76008:9722242733:1:ivan.focal@ymail.com:password:0:1:0:0:0:0:0:false:false:false:false:false:true:3:3.54
-Jake:Luna:76019:4697847400:0:jake.luna@yahoo.com:password:0:1:0:1:0:0:0:true:false:false:false:false:false:1:3.02
-Hank:Ramirez:76016:6827443882:0:hank.ramirez@charter.net:password:0:0:1:0:1:1:1:false:false:false:false:false:true:2:2.34
-Elvis:Nabisco:76002:8176974773:1:elvis.nabisco@uta.edu:password:0:0:1:1:1:1:1:true:false:false:false:false:false:2:2.75
-Brittany:Baracsh:76011:6826626579:0:brittany.baracsh@uta.mavs.edu:password:0:1:0:1:1:0:0:false:false:true:false:false:false:2:3.29
-Yugi:White:76013:2145450100:0:yugi.white@hotmail.com:password:0:1:1:0:1:0:1:false:false:false:false:true:false:1:2.09
-Karla:Indigo:76002:4699642391:0:karla.indigo@ymail.com:password:0:1:0:0:0:1:1:false:false:true:false:false:false:3:1.81
-Emily:Brazeal:76002:6822688371:0:emily.brazeal@me.net:password:0:0:1:1:1:1:0:false:true:false:false:false:false:3:1.03
-Valerie:Indigo:76011:2143753804:0:valerie.indigo@gmail.com:password:0:1:0:1:0:1:0:false:false:false:true:false:false:2:1.94
-Karla:Khalili:76018:4697128610:0:karla.khalili@live.com:password:0:1:0:1:0:0:1:false:false:false:false:true:false:3:4.15
-Connie:Pinkerton:76004:6828347483:0:connie.pinkerton@uta.mavs.edu:password:0:0:0:0:1:1:1:false:true:false:false:false:false:3:3.02
-Ursala:Morgan:76011:2148976583:0:ursala.morgan@gmail.com:password:0:1:0:0:0:0:1:false:false:true:false:false:false:3:2.61
-Dirk:Trout:76008:8179770533:0:dirk.trout@aol.com:password:0:0:1:1:0:0:1:false:false:false:true:false:false:2:3.93
-Elvis:Young:76005:8176552884:1:elvis.young@uta.edu:password:0:1:1:1:0:1:0:false:true:false:false:false:false:2:4.11
-Emily:Xilophone:76011:4695846442:0:emily.xilophone@charter.net:password:0:0:0:1:0:1:0:false:true:false:false:false:false:2:1.89
-Emily:Viole:76006:9724352087:0:emily.viole@hotmail.com:password:0:1:1:1:0:1:1:false:false:false:false:true:false:3:3.52
-Bill:Apple:76005:4694608122:1:bill.apple@uta.edu:password:0:0:0:0:0:1:1:false:false:false:true:false:false:2:1.08
-Michael:Coleman:76006:4699083554:0:michael.coleman@yahoo.com:password:0:0:0:1:0:1:1:false:true:false:false:false:false:3:4.89
-Garth:Gandolf:76001:4696687227:0:garth.gandolf@gmail.com:password:0:0:1:0:0:0:1:false:true:false:false:false:false:3:2.20
-Clark:Krypton:76001:2147128797:1:clark.krypton@uta.mavs.edu:password:0:0:0:1:0:1:0:false:false:false:true:false:false:1:4.88
-Gayle:Pinkerton:76015:4691820845:1:gayle.pinkerton@aol.com:password:0:0:0:0:0:0:1:false:true:false:false:false:false:3:3.13
-Jason:Green:76006:2142520390:1:jason.green@me.net:password:0:0:0:1:1:1:1:false:false:false:false:true:false:3:3.10
-Charles:Young:76001:2146507661:0:charles.young@aol.com:password:0:1:1:1:0:0:0:true:false:false:false:false:false:1:2.35
-Rodger:Cooke:76010:2142737347:0:rodger.cooke@me.net:password:0:0:0:0:0:0:1:false:true:false:false:false:false:1:1.46
-Travis:Jameson:76016:2143953886:1:travis.jameson@me.net:password:0:1:1:1:1:0:0:false:true:false:false:false:false:3:3.84
-Lewis:Nguyen:76008:9721328276:0:lewis.nguyen@sbcglobal.net:password:0:1:1:1:1:1:1:false:false:false:true:false:false:1:2.76
-Peter:Cooke:76017:6826554264:0:peter.cooke@uta.mavs.edu:password:0:1:0:0:1:0:0:false:true:false:false:false:false:1:3.69
-Xavier:Quill:76014:4695934152:0:xavier.quill@yahoo.com:password:0:1:0:1:0:1:1:false:false:true:false:false:false:3:4.49
-Karla:Focal:76001:6827017402:1:karla.focal@uta.edu:password:0:1:1:0:1:0:0:true:false:false:false:false:false:2:2.30
-Walter:Brazeal:76011:4697422192:1:walter.brazeal@uta.edu:password:0:0:1:1:0:1:1:false:false:true:false:false:false:2:3.95
-Valerie:Love:76007:2145326250:1:valerie.love@sbcglobal.net:password:0:1:0:1:0:0:0:false:false:false:false:false:true:3:1.29
-Rose:Krypton:76003:9727992884:0:rose.krypton@yahoo.com:password:0:0:0:0:1:0:0:false:false:false:false:false:true:3:2.79
-Beth:Jones:76001:9724714933:0:beth.jones@sbcglobal.net:password:0:1:0:1:1:0:1:false:false:false:false:true:false:2:2.03
-Jessica:Trout:76002:2144442076:1:jessica.trout@live.com:password:0:1:0:1:1:0:1:false:false:false:false:false:true:3:2.38
-Nick:Atwell:76005:9727701119:1:nick.atwell@sbcglobal.net:password:0:0:1:1:0:0:1:false:false:false:false:true:false:3:2.72
-Karla:Williams:76015:4691841553:1:karla.williams@uta.mavs.edu:password:0:1:1:1:0:0:0:false:false:true:false:false:false:1:3.02
-Sarah:Nguyen:76011:4694102654:0:sarah.nguyen@sbcglobal.net:password:0:0:0:1:1:0:1:false:true:false:false:false:false:2:3.09
-Tin:Mayweather:76004:9722135349:0:tin.mayweather@live.com:password:0:1:0:0:0:0:1:false:false:true:false:false:false:1:4.80
-Ivan:Brazeal:76002:9723022899:0:ivan.brazeal@gmail.com:password:0:0:1:1:0:1:1:false:true:false:false:false:false:3:4.24
-Emmanuel:Khalili:76018:6822883416:1:emmanuel.khalili@uta.mavs.edu:password:0:0:0:1:0:0:1:false:false:false:false:false:true:2:3.62
-Alec:Everest:76014:9723469366:1:alec.everest@sbcglobal.net:password:0:1:1:1:1:0:0:false:false:false:true:false:false:2:2.80
-Amanda:Apple:76004:6821566602:1:amanda.apple@charter.net:password:0:1:0:0:0:1:0:false:true:false:false:false:false:1:4.52
-Devin:Patricks:76015:6827437170:0:devin.patricks@uta.mavs.edu:password:0:0:1:0:1:0:1:false:false:false:false:true:false:3:1.49
-Ivan:Jameson:76018:2143846471:0:ivan.jameson@uta.edu:password:0:1:1:0:0:0:0:false:false:false:false:true:false:2:3.84
-Sue:Viole:76014:4697082798:0:sue.viole@charter.net:password:0:1:0:0:1:1:0:false:true:false:false:false:false:2:2.66
-Brenda:Owens:76001:4691766479:0:brenda.owens@hotmail.com:password:0:0:1:1:1:0:0:false:true:false:false:false:false:3:2.96
-Rose:Weems:76007:9729523323:1:rose.weems@charter.net:password:0:0:1:0:1:1:1:true:false:false:false:false:false:3:4.02
-Chelsea:Hernandez:76012:4698220877:1:chelsea.hernandez@hotmail.com:password:0:0:0:0:1:0:1:false:false:false:true:false:false:1:3.27
-Walter:Viole:76016:6827686283:1:walter.viole@uta.mavs.edu:password:0:1:0:0:0:1:1:false:false:false:true:false:false:1:1.14
-Sue:Stevens:76003:4697058753:1:sue.stevens@me.net:password:0:1:0:0:0:1:0:false:false:false:false:false:true:3:3.32
-Amber:Xilophone:76011:4695862756:1:amber.xilophone@hotmail.com:password:0:0:0:1:0:1:0:false:false:false:true:false:false:3:3.74
-Wendy:Love:76016:6823482176:0:wendy.love@charter.net:password:0:0:0:0:0:1:1:true:false:false:false:false:false:3:2.32
-Quinn:Stevens:76011:6824291704:0:quinn.stevens@uta.edu:password:0:1:0:1:1:1:0:false:false:false:false:true:false:3:1.33
-Amber:Everest:76006:9729439734:1:amber.everest@gmail.com:password:0:1:0:0:0:1:0:false:true:false:false:false:false:3:4.07
-Zach:Stephan:76007:4691678234:0:zach.stephan@hotmail.com:password:0:1:1:0:1:1:1:false:false:false:false:true:false:1:1.30
-Jake:Ramirez:76014:6828599709:0:jake.ramirez@ymail.com:password:0:0:1:0:1:1:0:false:false:false:false:true:false:2:1.99
-Travis:Nabisco:76004:6828504731:0:travis.nabisco@gmail.com:password:0:1:1:1:1:1:0:false:false:false:false:true:false:3:4.85
-Xavier:Owens:76010:8177920559:0:xavier.owens@yahoo.com:password:0:0:0:1:0:1:1:false:false:false:false:true:false:2:3.67
-Dirk:Universe:76003:2142616569:1:dirk.universe@live.com:password:0:1:0:1:0:0:0:false:false:false:true:false:false:3:3.12
-Yugi:Quill:76002:8173606044:1:yugi.quill@gmail.com:password:0:0:1:1:1:0:0:false:false:false:false:true:false:3:1.17
-Peter:Red:76013:8173630797:0:peter.red@live.com:password:0:1:0:1:1:0:0:false:true:false:false:false:false:2:1.95
-Sarah:Jameson:76006:2144111080:0:sarah.jameson@me.net:password:0:0:1:0:0:1:0:true:false:false:false:false:false:3:1.25
-Gayle:Sanchez:76003:6821852121:1:gayle.sanchez@live.com:password:0:1:0:0:0:0:0:true:false:false:false:false:false:1:1.41
-Bruce:Cooke:76009:2149280178:1:bruce.cooke@hotmail.com:password:0:1:1:1:1:0:1:false:false:true:false:false:false:3:4.89
-Ron:Love:76009:9729809361:1:ron.love@uta.mavs.edu:password:0:1:0:1:1:0:1:true:false:false:false:false:false:1:4.67
-Brenda:Green:76014:2149718640:1:brenda.green@aol.com:password:0:1:1:1:1:1:0:false:true:false:false:false:false:1:1.05
-Lewis:Jones:76016:6822619439:1:lewis.jones@gmail.com:password:0:0:0:0:0:1:0:false:false:false:false:true:false:2:1.38
-Ryan:Stephan:76009:4698598962:1:ryan.stephan@uta.edu:password:0:1:1:0:1:0:1:false:false:false:false:true:false:1:2.56
-Tiffany:Patricks:76015:2149153434:0:tiffany.patricks@charter.net:password:0:0:1:1:1:0:1:false:true:false:false:false:false:1:1.68
-Frank:Jameson:76012:6822241176:0:frank.jameson@hotmail.com:password:0:1:0:0:1:1:1:false:false:false:true:false:false:2:4.02
-Cinnimon:Weems:76014:9723052710:1:cinnimon.weems@yahoo.com:password:0:1:0:1:0:0:0:true:false:false:false:false:false:1:3.07
-Peter:Everest:76014:9723929348:1:peter.everest@yahoo.com:password:0:0:0:1:1:0:0:false:false:false:false:false:true:2:1.72
-Vegeta:Beach:76009:9724506826:0:vegeta.beach@charter.net:password:0:0:1:1:0:0:1:false:true:false:false:false:false:2:2.61
-Jason:Luna:76004:8173223617:1:jason.luna@yahoo.com:password:0:0:1:0:1:0:1:false:false:false:false:false:true:1:4.13
-Elvis:Owens:76016:2142634193:0:elvis.owens@me.net:password:0:1:0:0:1:0:0:false:false:true:false:false:false:3:4.00
-Bruce:Nabisco:76002:9722822128:1:bruce.nabisco@me.net:password:0:0:0:0:1:0:0:true:false:false:false:false:false:3:1.59
-Amber:Nguyen:76006:2148807898:0:amber.nguyen@sbcglobal.net:password:0:1:1:1:0:0:0:true:false:false:false:false:false:2:2.67
-Elvis:Jones:76010:8179925532:1:elvis.jones@yahoo.com:password:0:1:1:0:1:0:1:true:false:false:false:false:false:1:3.04
-Rose:Baracsh:76013:8174124088:0:rose.baracsh@uta.edu:password:0:0:0:1:1:0:1:true:false:false:false:false:false:3:2.09
-Oscar:Williams:76005:2143483951:0:oscar.williams@aol.com:password:0:0:0:0:1:1:1:false:false:false:false:false:true:1:2.47
-Hank:Nabisco:76013:6827081699:0:hank.nabisco@sbcglobal.net:password:0:0:0:1:0:1:0:false:false:false:false:true:false:1:3.76
-Quinn:Nguyen:76011:9721819368:0:quinn.nguyen@uta.mavs.edu:password:0:1:0:0:0:1:0:false:false:true:false:false:false:3:3.06
-Tin:Stevens:76007:4694309849:1:tin.stevens@uta.mavs.edu:password:0:1:0:0:0:1:1:false:true:false:false:false:false:2:3.69
-Ursala:Jameson:76011:9725123391:0:ursala.jameson@me.net:password:0:0:0:0:1:0:0:false:false:false:false:false:true:1:2.28
-Nick:Trout:76008:4693957120:0:nick.trout@hotmail.com:password:0:0:1:0:1:0:1:false:false:true:false:false:false:2:1.59
-Jarvis:Quill:76005:2147986822:1:jarvis.quill@ymail.com:password:0:0:0:1:0:0:0:false:false:true:false:false:false:2:2.70
-Brittany:Smith:76012:8179630708:0:brittany.smith@live.com:password:0:0:1:1:0:1:0:false:true:false:false:false:false:3:3.35
-Cinnimon:Owens:76001:6828289157:1:cinnimon.owens@charter.net:password:0:0:0:1:1:0:0:false:false:false:false:true:false:1:1.25
-Chelsea:Focal:76012:8179490600:1:chelsea.focal@yahoo.com:password:0:0:0:1:1:1:1:false:true:false:false:false:false:2:2.10
-Emily:Viole:76002:9726370829:1:emily.viole@gmail.com:password:0:0:1:1:0:1:1:true:false:false:false:false:false:1:1.36
-Sarah:Baracsh:76015:2149513440:1:sarah.baracsh@live.com:password:0:0:1:1:1:0:1:false:false:false:true:false:false:1:1.57
-Lewis:Luna:76017:9724565147:0:lewis.luna@ymail.com:password:0:1:1:1:0:0:0:false:false:false:true:false:false:1:4.41
-Sarah:Wilson:76001:2145124193:0:sarah.wilson@yahoo.com:password:0:1:0:0:0:1:1:true:false:false:false:false:false:3:4.86
-Oscar:Zeta:76009:6829065693:1:oscar.zeta@me.net:password:0:1:0:0:1:0:1:false:false:false:true:false:false:3:3.16
-Ryan:Owens:76009:2142966867:1:ryan.owens@gmail.com:password:0:0:0:0:0:1:1:false:false:false:false:false:true:2:3.76
-Dallas:Mayweather:76017:2143246033:0:dallas.mayweather@aol.com:password:0:0:0:0:0:1:1:false:false:false:true:false:false:1:2.95
-Quinn:Baracsh:76002:2146943282:0:quinn.baracsh@sbcglobal.net:password:0:1:1:0:1:1:1:false:true:false:false:false:false:3:4.47
-Devin:Focal:76005:9722470152:0:devin.focal@sbcglobal.net:password:0:1:0:1:0:1:1:false:false:false:false:false:true:2:4.05
-Frank:Jones:76011:9724915845:0:frank.jones@yahoo.com:password:0:1:1:1:0:0:0:true:false:false:false:false:false:2:1.66
-Beth:Smith:76001:8179130029:0:beth.smith@ymail.com:password:0:1:0:1:1:0:0:true:false:false:false:false:false:2:2.32
-Michael:Morgan:76007:6821724412:1:michael.morgan@sbcglobal.net:password:0:1:1:1:0:1:0:false:false:false:false:true:false:3:2.43
-Sue:Pinkerton:76001:9722548623:1:sue.pinkerton@uta.edu:password:0:0:1:1:0:0:1:true:false:false:false:false:false:3:3.16
-Hank:Stevens:76017:2147097132:1:hank.stevens@gmail.com:password:0:1:1:0:0:0:0:false:true:false:false:false:false:2:4.53
-Gabina:Weems:76002:9725001085:0:gabina.weems@yahoo.com:password:0:0:0:1:0:0:0:false:false:false:true:false:false:3:3.19
-Frank:Black:76004:8171380898:0:frank.black@sbcglobal.net:password:0:1:1:0:1:0:0:false:false:true:false:false:false:1:1.65
-Goku:Orange:76015:4693772650:1:goku.orange@ymail.com:password:0:0:1:1:1:0:0:false:false:false:false:false:true:3:4.53
-Peter:Love:76009:4697570363:0:peter.love@live.com:password:0:0:0:0:1:0:0:false:false:false:true:false:false:2:1.22
-Alex:Weems:76002:6825629624:0:alex.weems@me.net:password:0:0:1:1:1:1:1:false:false:true:false:false:false:2:1.39
-Devin:Patricks:76005:6829045267:0:devin.patricks@hotmail.com:password:0:0:1:1:0:0:0:false:false:false:false:true:false:2:4.17
-Charles:Indigo:76015:4696436675:0:charles.indigo@charter.net:password:0:0:1:1:1:1:1:false:false:false:false:true:false:3:2.88
-Sue:Red:76009:9726070797:0:sue.red@gmail.com:password:0:0:1:0:0:1:1:false:false:true:false:false:false:2:3.47
-Charles:Jones:76018:9722299067:0:charles.jones@sbcglobal.net:password:0:1:0:0:0:1:1:false:true:false:false:false:false:1:3.59
-Natalie:Wilson:76008:6826427689:1:natalie.wilson@hotmail.com:password:0:1:1:1:1:0:0:false:false:false:true:false:false:3:3.09
-Goku:Jameson:76005:6829808897:1:goku.jameson@ymail.com:password:0:1:0:0:0:1:0:false:true:false:false:false:false:3:1.82
-Joe:Coleman:76012:2147344931:0:joe.coleman@charter.net:password:0:1:1:0:1:1:0:false:true:false:false:false:false:3:4.39
-Beth:Khalili:76003:8173295317:1:beth.khalili@hotmail.com:password:0:1:0:0:0:1:0:false:false:false:false:true:false:2:3.61
-Jarvis:White:76018:6827265147:1:jarvis.white@uta.edu:password:0:1:1:0:0:0:0:false:false:false:false:true:false:3:2.13
-Ursala:Xilophone:76006:8171504071:1:ursala.xilophone@charter.net:password:0:0:1:1:0:1:0:true:false:false:false:false:false:2:4.50
-Dallas:Atwell:76002:8175509908:1:dallas.atwell@gmail.com:password:0:1:1:0:0:0:0:false:false:false:false:true:false:2:3.63
-Michael:Owens:76016:2141815110:0:michael.owens@yahoo.com:password:0:1:1:0:0:1:1:true:false:false:false:false:false:2:2.00
-Rose:Red:76008:2149168555:0:rose.red@aol.com:password:0:0:0:1:0:1:1:false:false:false:false:true:false:1:2.15
-Hank:Sanchez:76016:2145668687:0:hank.sanchez@charter.net:password:0:1:0:1:1:0:0:false:false:false:false:true:false:3:2.45
-Michael:Owens:76002:8172930653:1:michael.owens@aol.com:password:0:1:0:1:1:1:0:false:false:false:false:false:true:3:3.17
-Devin:Viole:76001:6822248574:0:devin.viole@ymail.com:password:0:0:0:0:0:1:1:true:false:false:false:false:false:3:3.69
-Beth:Sanchez:76014:2148374762:1:beth.sanchez@live.com:password:0:1:1:1:0:0:1:false:true:false:false:false:false:1:3.49
-Tin:Overton:76003:4699643912:0:tin.overton@gmail.com:password:0:0:1:1:0:0:1:false:false:false:true:false:false:3:4.70
-Karla:Pinkerton:76013:2142742014:0:karla.pinkerton@uta.edu:password:0:0:0:0:1:1:1:false:false:false:false:false:true:2:2.66
-Marvin:Patricks:76001:2146410741:0:marvin.patricks@aol.com:password:0:1:0:1:1:1:1:false:true:false:false:false:false:3:4.62
-Jake:Focal:76006:4695385284:1:jake.focal@charter.net:password:0:0:1:0:1:0:1:false:false:false:false:true:false:1:4.71
-Jarvis:Green:76016:9727490269:1:jarvis.green@ymail.com:password:0:1:1:0:1:0:1:false:false:true:false:false:false:1:1.48
-Jarvis:Universe:76019:6829972792:1:jarvis.universe@yahoo.com:password:0:0:1:0:0:0:1:false:false:true:false:false:false:2:2.41
-Sarah:Trout:76003:2143552572:0:sarah.trout@sbcglobal.net:password:0:1:1:0:0:1:1:false:false:true:false:false:false:2:1.11
-Quinn:Morgan:76010:4696612275:0:quinn.morgan@charter.net:password:0:1:0:0:0:0:1:true:false:false:false:false:false:3:4.57
-Jason:Beach:76017:6821309136:1:jason.beach@gmail.com:password:0:1:1:0:0:1:0:false:false:false:false:false:true:1:2.25
-Brenda:Matthews:76019:2144877641:0:brenda.matthews@hotmail.com:password:0:1:1:0:1:0:0:false:true:false:false:false:false:1:1.56
-Sue:Black:76004:6827784017:0:sue.black@me.net:password:0:1:1:1:0:0:0:false:false:false:false:false:true:2:3.73
-Ron:Love:76016:2145033087:0:ron.love@ymail.com:password:0:0:1:0:0:0:1:false:false:false:true:false:false:3:1.28
-Gabino:Krypton:76015:2146270346:0:gabino.krypton@ymail.com:password:0:0:0:0:1:1:0:false:false:true:false:false:false:2:2.06
-Jane:Beach:76013:2149433366:1:jane.beach@yahoo.com:password:0:0:0:0:1:1:1:false:false:false:true:false:false:2:4.05
-Jessica:Jameson:76013:2145450526:1:jessica.jameson@aol.com:password:0:0:0:0:0:0:0:false:false:false:false:true:false:2:2.66
-Connie:Stevens:76006:4697540088:1:connie.stevens@sbcglobal.net:password:0:0:1:1:0:1:0:false:false:false:true:false:false:3:2.11
-Natalie:Atwell:76013:8178884009:0:natalie.atwell@me.net:password:0:1:1:1:1:1:0:false:true:false:false:false:false:3:3.68
-Gayle:Cooke:76019:4691176876:0:gayle.cooke@hotmail.com:password:0:0:0:0:0:1:0:true:false:false:false:false:false:2:3.52
-Walter:Indigo:76010:2147652298:0:walter.indigo@hotmail.com:password:0:0:1:1:0:0:1:false:false:false:false:false:true:3:3.89
-Emily:Quill:76001:6823463063:1:emily.quill@sbcglobal.net:password:0:1:0:1:1:0:0:false:false:false:false:false:true:2:3.40
-Jane:Owens:76005:4692330212:0:jane.owens@me.net:password:0:0:1:1:0:1:0:false:false:false:false:true:false:3:1.90
-Dallas:Pinkerton:76005:9726078511:1:dallas.pinkerton@gmail.com:password:0:0:0:0:1:1:0:false:true:false:false:false:false:1:2.35
-Frank:Luna:76013:2149731005:0:frank.luna@uta.mavs.edu:password:0:0:0:1:0:1:0:false:false:false:true:false:false:2:3.11
-Jake:Universe:76003:4694791325:1:jake.universe@uta.edu:password:0:1:1:1:0:0:0:true:false:false:false:false:false:1:3.98
-Garth:Mayweather:76007:6828921559:0:garth.mayweather@ymail.com:password:0:0:1:1:0:0:1:false:false:false:false:false:true:3:1.20
-Devin:Smith:76007:6826282943:0:devin.smith@uta.mavs.edu:password:0:0:1:0:1:1:0:true:false:false:false:false:false:3:1.81
-Connie:Smith:76018:9722753597:0:connie.smith@gmail.com:password:0:1:1:1:0:1:0:false:false:false:false:false:true:1:1.83
-Amanda:Everest:76016:2141068851:1:amanda.everest@gmail.com:password:0:1:1:0:0:0:1:false:false:true:false:false:false:2:2.61
-Alex:Jameson:76018:6826173818:1:alex.jameson@ymail.com:password:0:0:1:0:0:1:1:false:false:false:false:true:false:1:3.83
-Jake:Cooke:76016:4698481390:0:jake.cooke@yahoo.com:password:0:0:0:1:1:1:1:false:false:false:false:true:false:3:2.94
-Bill:Khalili:76005:8176800825:0:bill.khalili@charter.net:password:0:1:0:1:1:1:1:false:false:false:false:false:true:3:3.90
-Austin:Smith:76003:2144073347:1:austin.smith@me.net:password:0:1:0:1:0:0:1:false:true:false:false:false:false:2:3.37
-Gabina:Black:76002:2141088853:0:gabina.black@yahoo.com:password:0:0:1:0:0:0:0:false:false:false:false:true:false:1:1.44
-Travis:Orange:76008:8172974312:0:travis.orange@gmail.com:password:0:1:0:0:0:0:1:false:false:false:true:false:false:3:4.11
-Chelsea:Williams:76012:6824108018:1:chelsea.williams@yahoo.com:password:0:1:1:0:1:0:1:false:true:false:false:false:false:3:4.48
-Hank:Atwell:76012:8177721996:1:hank.atwell@ymail.com:password:0:1:0:0:0:1:1:false:true:false:false:false:false:1:4.67
-Alec:Pinkerton:76002:9722525064:0:alec.pinkerton@sbcglobal.net:password:0:0:0:0:0:1:0:false:false:false:false:true:false:3:1.62
-Brenda:Mayweather:76015:9727502708:0:brenda.mayweather@sbcglobal.net:password:0:1:0:0:1:0:1:false:false:false:false:true:false:2:3.34
-Nick:Morgan:76014:6825151719:0:nick.morgan@sbcglobal.net:password:0:0:0:1:0:0:1:false:false:false:true:false:false:3:2.53
-Karla:Jameson:76015:6825461213:1:karla.jameson@ymail.com:password:0:0:0:1:0:1:0:false:false:true:false:false:false:3:2.04
-Gayle:Nabisco:76004:8178223650:1:gayle.nabisco@sbcglobal.net:password:0:1:0:1:1:1:1:false:false:false:false:false:true:1:1.62
-Ursala:Xilophone:76002:4698922991:0:ursala.xilophone@me.net:password:0:0:0:0:1:1:0:true:false:false:false:false:false:2:3.15
-Wendy:Dennis:76005:2147067344:1:wendy.dennis@charter.net:password:0:0:1:1:1:0:0:true:false:false:false:false:false:3:2.36
-Ron:Owens:76005:6828813007:0:ron.owens@yahoo.com:password:0:1:1:0:0:0:1:false:false:false:false:true:false:3:3.63
-Travis:Luna:76017:4699262648:0:travis.luna@sbcglobal.net:password:0:1:0:1:1:1:1:false:false:false:true:false:false:2:2.10
-Joe:Stephan:76018:9723347702:1:joe.stephan@charter.net:password:0:0:1:1:1:0:0:true:false:false:false:false:false:1:3.75
-Frank:Nabisco:76006:2143094569:1:frank.nabisco@aol.com:password:0:0:1:0:0:0:1:false:false:false:false:false:true:1:2.29
-Tin:Stephan:76012:9721996614:0:tin.stephan@sbcglobal.net:password:0:1:1:1:0:1:1:false:false:true:false:false:false:3:4.44
-Dirk:Jameson:76017:8177819974:0:dirk.jameson@aol.com:password:0:1:1:1:0:1:0:false:false:false:true:false:false:3:1.43
-Maria:Indigo:76010:4698101661:1:maria.indigo@ymail.com:password:0:0:1:1:0:1:1:false:true:false:false:false:false:3:3.24
-Tin:Universe:76005:8174947456:1:tin.universe@uta.edu:password:0:0:1:1:1:0:1:false:false:true:false:false:false:3:1.45
-Nick:Stevens:76010:2145515585:1:nick.stevens@uta.mavs.edu:password:0:0:0:0:1:1:0:true:false:false:false:false:false:2:2.70
-Hank:Green:76004:4695608966:1:hank.green@gmail.com:password:0:0:0:1:1:0:0:false:false:false:false:true:false:2:2.36
-Ryan:Luna:76006:4694966127:0:ryan.luna@aol.com:password:0:1:0:0:0:1:0:false:false:false:false:false:true:1:3.48
-Maria:Jameson:76013:4693492728:1:maria.jameson@ymail.com:password:0:1:1:0:0:1:0:false:true:false:false:false:false:3:4.77
-Maria:Everest:76005:9722509752:0:maria.everest@aol.com:password:0:1:0:0:0:1:1:false:true:false:false:false:false:1:4.07
-Aaron:Ramirez:76008:2141621014:1:aaron.ramirez@charter.net:password:0:0:1:1:1:0:1:false:false:true:false:false:false:2:2.83
-Gabina:Viole:76006:8178780528:0:gabina.viole@hotmail.com:password:0:1:1:1:1:0:1:false:false:false:true:false:false:2:2.93
-Walter:Quill:76003:6827292700:0:walter.quill@charter.net:password:0:1:1:1:0:0:0:false:false:false:true:false:false:2:4.17
-Ron:Coleman:76019:4697652534:0:ron.coleman@ymail.com:password:0:0:0:0:0:0:1:true:false:false:false:false:false:2:1.55
-Jarvis:Mayweather:76006:6822250710:1:jarvis.mayweather@gmail.com:password:0:0:0:0:1:0:1:false:false:true:false:false:false:1:1.61
-Xavier:White:76019:2142596833:1:xavier.white@sbcglobal.net:password:0:1:1:0:1:0:1:true:false:false:false:false:false:2:4.65
-Alex:Ramirez:76008:8172974036:1:alex.ramirez@uta.mavs.edu:password:0:0:1:0:0:1:0:false:true:false:false:false:false:3:3.03
-Ryan:Young:76001:2148293043:0:ryan.young@charter.net:password:0:1:1:0:1:1:0:false:true:false:false:false:false:2:1.97
-Hilary:Morgan:76007:9724956340:0:hilary.morgan@me.net:password:0:1:1:0:0:0:0:true:false:false:false:false:false:2:3.22
-Brittany:Morgan:76005:6825756910:1:brittany.morgan@hotmail.com:password:0:0:1:1:1:1:0:false:false:true:false:false:false:1:4.12
-Walter:Quill:76011:4695331388:0:walter.quill@me.net:password:0:1:1:0:0:1:0:false:false:true:false:false:false:1:3.20
-Rose:Owens:76012:6829484471:0:rose.owens@charter.net:password:0:0:1:0:1:1:1:false:false:false:false:false:true:3:1.72
-Aaron:Everest:76006:9723856719:0:aaron.everest@uta.edu:password:0:0:0:1:1:1:1:false:true:false:false:false:false:2:3.74
-Quinn:Focal:76001:4697857961:0:quinn.focal@charter.net:password:0:0:1:0:0:1:1:false:false:false:false:false:true:3:1.62
-Emily:Young:76019:6822201798:1:emily.young@yahoo.com:password:0:1:0:0:0:0:0:false:false:false:false:true:false:3:2.90
-Vegeta:Krypton:76019:9724235202:0:vegeta.krypton@gmail.com:password:0:0:1:1:0:1:1:false:false:false:false:false:true:2:3.15
-Austin:Trout:76014:4699200211:0:austin.trout@ymail.com:password:0:0:0:1:0:0:0:false:false:false:false:false:true:1:1.40
-Jason:Clifford:76004:8178477642:1:jason.clifford@yahoo.com:password:0:0:0:0:0:1:1:false:false:false:true:false:false:2:1.07
-Tin:Orange:76012:2149487856:0:tin.orange@sbcglobal.net:password:0:0:0:0:1:1:1:false:false:true:false:false:false:2:4.87
-Amanda:White:76002:2146877003:0:amanda.white@me.net:password:0:0:0:0:0:1:0:false:true:false:false:false:false:1:1.96
-Quinn:Hernandez:76011:4691672291:0:quinn.hernandez@live.com:password:0:1:1:0:0:0:0:false:false:true:false:false:false:3:4.80
-Clark:Black:76013:6821838444:0:clark.black@uta.mavs.edu:password:0:1:0:0:0:0:1:false:false:false:false:false:true:2:4.85
-Ron:Clifford:76019:6828382225:0:ron.clifford@hotmail.com:password:0:1:1:0:1:0:0:false:false:false:false:false:true:1:4.75
-Natalie:Everest:76012:8171833006:1:natalie.everest@ymail.com:password:0:0:0:1:1:0:1:false:false:false:false:false:true:3:3.13
-Zach:Weems:76001:9723467659:0:zach.weems@charter.net:password:0:1:0:1:0:1:1:false:false:false:false:false:true:1:2.21
-Quinn:Stephan:76014:8179947335:0:quinn.stephan@uta.mavs.edu:password:0:0:0:0:1:1:1:false:true:false:false:false:false:3:3.04
-Cinnimon:Matthews:76009:9724304367:0:cinnimon.matthews@uta.mavs.edu:password:0:0:1:0:1:0:0:false:false:false:false:true:false:2:4.65
-Gayle:Stevens:76012:9724149766:1:gayle.stevens@gmail.com:password:0:1:0:0:1:1:0:false:false:true:false:false:false:1:4.91
-Jane:Morgan:76014:9723612202:1:jane.morgan@me.net:password:0:1:1:0:0:1:0:false:false:false:false:true:false:3:1.95
-Cinnimon:Baracsh:76014:4698085201:1:cinnimon.baracsh@ymail.com:password:0:1:1:0:1:0:1:true:false:false:false:false:false:2:3.19
-Chelsea:Quill:76002:8179843930:1:chelsea.quill@live.com:password:0:0:1:0:1:0:0:false:false:false:false:true:false:3:4.43
-Beth:Jameson:76003:2146665531:1:beth.jameson@uta.edu:password:0:1:1:1:0:1:1:false:false:false:false:true:false:2:2.30
-Aaron:Atwell:76008:9724297483:1:aaron.atwell@sbcglobal.net:password:0:1:1:0:0:1:0:false:false:false:false:false:true:3:2.36
-Garth:Atwell:76007:2143808106:1:garth.atwell@charter.net:password:0:1:0:1:1:1:0:false:false:false:false:true:false:3:1.12
-Clark:Williams:76017:6826679290:0:clark.williams@yahoo.com:password:0:0:0:0:1:0:0:false:false:false:true:false:false:1:4.75
-Chelsea:Mayweather:76001:8177213510:1:chelsea.mayweather@uta.mavs.edu:password:0:0:0:1:0:0:0:false:false:true:false:false:false:1:1.25
-Emily:Coleman:76007:6823623344:1:emily.coleman@yahoo.com:password:0:1:0:0:0:0:1:false:true:false:false:false:false:1:3.70
-Jason:Patricks:76011:4699281089:1:jason.patricks@live.com:password:0:0:0:1:0:0:0:false:false:false:false:true:false:3:1.15
-Elvis:Trout:76018:2149830558:0:elvis.trout@live.com:password:0:0:0:0:1:0:0:false:true:false:false:false:false:2:3.95
-Ron:Becker:76003:9728864904:0:ron.becker@gmail.com:password:0:0:1:0:1:1:0:false:false:true:false:false:false:1:1.65
-Joe:Jones:76013:8176049270:0:joe.jones@yahoo.com:password:0:1:1:1:1:0:0:true:false:false:false:false:false:1:1.63
-Ivan:Luna:76006:4695394420:1:ivan.luna@sbcglobal.net:password:0:1:1:0:1:1:0:false:false:false:false:true:false:2:2.72
-Lewis:Everest:76002:4699952890:0:lewis.everest@uta.edu:password:0:1:0:0:0:0:0:false:false:false:true:false:false:2:2.94
-Dirk:Ramirez:76013:2149827835:1:dirk.ramirez@yahoo.com:password:0:1:0:0:0:1:0:false:false:false:false:false:true:2:1.89
-Ivan:Dennis:76015:6827205138:1:ivan.dennis@ymail.com:password:0:1:1:1:0:0:1:false:false:true:false:false:false:1:4.60
-Emmanuel:Nguyen:76019:9729202495:0:emmanuel.nguyen@yahoo.com:password:0:0:0:1:0:0:1:false:false:false:true:false:false:1:4.34
-Devin:White:76019:9723934798:0:devin.white@yahoo.com:password:0:0:0:1:0:1:0:false:false:false:false:true:false:3:1.25
-Karla:Beach:76011:4697336115:1:karla.beach@ymail.com:password:0:0:1:1:0:0:0:false:false:true:false:false:false:2:1.28
-Maria:Coleman:76001:2146620357:0:maria.coleman@ymail.com:password:0:0:1:1:1:0:1:false:false:false:true:false:false:2:2.76
-Frank:Love:76004:8179507238:1:frank.love@live.com:password:0:0:0:1:0:0:1:false:true:false:false:false:false:3:4.58
-Jessica:Universe:76011:4693880428:1:jessica.universe@gmail.com:password:0:0:1:1:0:0:0:false:false:false:true:false:false:1:3.52
-Gayle:Weems:76015:6821202249:0:gayle.weems@yahoo.com:password:0:0:0:0:0:0:1:false:true:false:false:false:false:2:2.53
-Ryan:Beach:76017:9721258508:0:ryan.beach@uta.mavs.edu:password:0:1:0:1:1:0:1:false:false:true:false:false:false:2:4.40
-Hilary:Hernandez:76009:2148006223:1:hilary.hernandez@me.net:password:0:1:0:1:0:1:1:false:true:false:false:false:false:3:1.39
-Jessica:Young:76015:9728727910:0:jessica.young@live.com:password:0:0:0:0:0:1:1:false:false:false:true:false:false:3:4.24
-Dallas:Apple:76009:8175253212:1:dallas.apple@uta.edu:password:0:1:1:1:1:1:0:false:true:false:false:false:false:2:2.18
-Gabina:Love:76018:6821087892:1:gabina.love@uta.mavs.edu:password:0:0:1:1:1:1:1:false:false:false:true:false:false:1:1.77
-Frank:Sanchez:76014:9728988855:0:frank.sanchez@yahoo.com:password:0:1:1:1:1:0:0:false:false:true:false:false:false:3:2.47
-Sue:Mayweather:76010:4692691998:1:sue.mayweather@uta.edu:password:0:0:1:1:0:1:1:false:false:false:false:true:false:2:2.01
-Bruce:Wilson:76015:6829514574:1:bruce.wilson@sbcglobal.net:password:0:0:1:0:0:0:0:true:false:false:false:false:false:2:1.50
-Dallas:Quill:76019:2147381663:1:dallas.quill@uta.mavs.edu:password:0:0:0:1:1:1:1:false:false:false:true:false:false:2:1.88
-Goku:Red:76012:8178539529:1:goku.red@yahoo.com:password:0:1:0:0:0:0:0:false:false:true:false:false:false:2:4.36
-Valerie:Apple:76001:2141883283:1:valerie.apple@me.net:password:0:0:0:1:0:1:0:false:false:true:false:false:false:2:1.13
-David:Becker:76011:2148631322:0:david.becker@me.net:password:0:1:1:1:1:1:1:false:false:false:false:true:false:3:3.59
-Yugi:Morgan:76008:2148557144:1:yugi.morgan@live.com:password:0:0:1:0:1:1:0:false:false:false:true:false:false:3:4.35
-Marvin:Young:76003:2146484757:1:marvin.young@hotmail.com:password:0:1:1:0:0:1:0:false:false:false:true:false:false:1:3.17
-Hank:Beach:76008:9728976452:1:hank.beach@live.com:password:0:1:0:0:0:0:1:false:false:false:false:false:true:3:4.95
-Ursala:Zeta:76016:8178791628:1:ursala.zeta@sbcglobal.net:password:0:0:1:1:1:1:0:false:false:false:false:false:true:2:3.11
-Quinn:Patricks:76019:6823304401:0:quinn.patricks@sbcglobal.net:password:0:1:1:1:0:1:1:true:false:false:false:false:false:2:1.77
-Alex:Khalili:76019:2145132011:0:alex.khalili@uta.mavs.edu:password:0:0:0:1:0:0:0:false:false:false:true:false:false:1:1.53
-Oscar:Stephan:76010:9725534937:0:oscar.stephan@gmail.com:password:0:0:1:0:0:1:0:false:true:false:false:false:false:1:4.59
-Brittany:Universe:76007:9721819447:1:brittany.universe@live.com:password:0:0:0:1:0:1:0:false:false:false:true:false:false:1:4.65
-Jane:Apple:76019:6827473199:0:jane.apple@aol.com:password:0:0:1:0:0:0:1:false:false:true:false:false:false:3:2.24
-Sue:Stevens:76016:2145563651:0:sue.stevens@yahoo.com:password:0:0:1:0:1:0:1:false:false:false:false:true:false:2:3.84
-Rose:Black:76016:6825178058:0:rose.black@uta.edu:password:0:0:0:1:1:0:1:true:false:false:false:false:false:1:4.93
-Elvis:Universe:76015:8173715406:1:elvis.universe@charter.net:password:0:0:1:0:1:0:0:false:true:false:false:false:false:1:2.28
-Alex:Becker:76010:6824920374:0:alex.becker@aol.com:password:0:0:0:0:1:1:0:false:false:false:true:false:false:2:1.44
-Tiffany:Overton:76005:9725232978:0:tiffany.overton@sbcglobal.net:password:0:1:1:1:1:1:1:false:false:true:false:false:false:3:1.09
-Elvis:Morgan:76002:9721713711:1:elvis.morgan@aol.com:password:0:0:0:1:0:0:1:false:true:false:false:false:false:3:1.51
-Rodger:Weems:76016:2145036423:1:rodger.weems@me.net:password:0:1:0:1:1:0:1:true:false:false:false:false:false:3:4.30
-David:Owens:76013:2143229491:1:david.owens@sbcglobal.net:password:0:1:1:0:1:1:1:true:false:false:false:false:false:2:3.03
-Connie:Everest:76004:8173111828:0:connie.everest@hotmail.com:password:0:1:1:1:0:0:0:false:true:false:false:false:false:3:3.25
-Oscar:Apple:76006:6826311821:1:oscar.apple@yahoo.com:password:0:0:0:1:1:1:0:false:true:false:false:false:false:3:3.59
-Hank:Red:76013:4691856379:0:hank.red@hotmail.com:password:0:0:0:1:0:1:1:false:false:false:true:false:false:2:4.07
-Travis:Focal:76008:4691461657:1:travis.focal@gmail.com:password:0:1:0:1:1:1:1:true:false:false:false:false:false:3:1.04
-Jake:Nguyen:76018:4698469476:0:jake.nguyen@uta.mavs.edu:password:0:0:0:1:0:1:0:false:false:true:false:false:false:2:4.04
-Marvin:Coleman:76009:8177376772:0:marvin.coleman@aol.com:password:0:1:0:0:1:1:0:false:false:false:false:true:false:2:1.65
-Elvis:Stephan:76005:6823544949:1:elvis.stephan@gmail.com:password:0:0:0:1:1:1:1:false:true:false:false:false:false:1:4.38
-Oscar:Weems:76007:8174107311:1:oscar.weems@uta.edu:password:0:1:0:0:0:1:0:false:false:false:true:false:false:3:4.37
-Karla:Xilophone:76014:9725069564:0:karla.xilophone@ymail.com:password:0:0:1:1:0:1:1:false:false:false:false:false:true:3:1.26
-Elvis:Nguyen:76014:2142302998:1:elvis.nguyen@uta.mavs.edu:password:0:1:1:0:0:0:1:true:false:false:false:false:false:1:2.58
-Michael:Owens:76010:4691867606:1:michael.owens@sbcglobal.net:password:0:1:0:1:0:1:1:false:false:false:false:false:true:2:3.28
-Chelsea:Baracsh:76008:4696226818:1:chelsea.baracsh@ymail.com:password:0:1:0:1:1:0:1:false:false:true:false:false:false:3:1.78
-Gabino:Red:76001:4694178160:0:gabino.red@hotmail.com:password:0:1:1:0:1:1:0:false:false:false:false:false:true:3:4.73
-Goku:Apple:76017:4695660781:1:goku.apple@aol.com:password:0:1:0:1:0:0:0:false:false:true:false:false:false:1:3.26
-Elvis:Red:76006:4692889325:1:elvis.red@live.com:password:0:1:1:1:0:0:1:false:false:false:true:false:false:2:4.26
-Brittany:Viole:76008:9726987749:0:brittany.viole@charter.net:password:0:1:0:0:1:0:0:false:false:false:true:false:false:2:3.21
-Travis:Hernandez:76016:9723253361:1:travis.hernandez@live.com:password:0:0:1:1:1:0:1:false:true:false:false:false:false:3:4.10
-John:Krypton:76012:4693359018:0:john.krypton@aol.com:password:0:0:0:1:1:1:1:true:false:false:false:false:false:1:2.54
-Karla:Universe:76012:8174385133:1:karla.universe@live.com:password:0:0:0:1:1:1:1:false:true:false:false:false:false:1:2.78
-Joe:Luna:76015:2147246781:0:joe.luna@aol.com:password:0:1:1:0:1:1:0:false:true:false:false:false:false:2:3.44
-Jake:Stephan:76018:6821611308:0:jake.stephan@gmail.com:password:0:1:1:0:1:1:0:false:false:true:false:false:false:1:1.53
-Alec:Wilson:76016:9725146884:1:alec.wilson@hotmail.com:password:0:1:0:1:0:1:1:false:false:false:true:false:false:3:2.78
-Zach:Black:76016:6822024146:0:zach.black@hotmail.com:password:0:1:1:1:0:0:0:false:false:true:false:false:false:2:4.08
-Hilary:Apple:76016:6827221600:1:hilary.apple@hotmail.com:password:0:1:0:0:0:1:0:false:false:false:false:true:false:3:2.51
-Walter:Everest:76009:4693165009:0:walter.everest@hotmail.com:password:0:1:1:1:0:1:0:false:false:false:false:false:true:3:4.45
-Peter:Beach:76008:9723501654:0:peter.beach@live.com:password:0:0:0:0:1:1:1:false:false:true:false:false:false:2:1.99
-Peter:Love:76009:2149259035:1:peter.love@charter.net:password:0:0:1:1:1:0:0:false:false:false:false:false:true:2:2.92
-Jessica:Quill:76006:8174089829:1:jessica.quill@live.com:password:0:1:1:1:1:1:0:true:false:false:false:false:false:3:3.15
-Wendy:Jones:76015:8178011760:0:wendy.jones@live.com:password:0:1:0:1:1:1:0:false:true:false:false:false:false:3:2.42
-Walter:Sanchez:76014:2149017175:0:walter.sanchez@uta.mavs.edu:password:0:1:0:0:1:0:1:false:false:false:true:false:false:1:3.53
-Emily:Sanchez:76006:4698226875:0:emily.sanchez@uta.edu:password:0:1:1:1:0:0:1:false:false:false:true:false:false:3:1.84
-Lewis:Young:76003:9729006379:0:lewis.young@ymail.com:password:0:0:0:0:1:0:0:false:false:false:false:false:true:3:3.61
-Dirk:Trout:76017:8172816777:1:dirk.trout@sbcglobal.net:password:0:0:0:0:1:1:1:false:false:false:false:false:true:3:4.99
-Alec:Becker:76007:8179808355:1:alec.becker@uta.mavs.edu:password:0:0:0:1:0:0:1:false:false:false:false:false:true:1:1.83
-Beth:Xilophone:76013:9722404861:1:beth.xilophone@ymail.com:password:0:0:0:1:1:1:0:false:false:true:false:false:false:2:1.31
-Beth:Patricks:76019:4694196275:1:beth.patricks@live.com:password:0:0:0:0:0:1:1:false:false:false:false:true:false:1:4.16
-Austin:Zeta:76011:8176144342:0:austin.zeta@yahoo.com:password:0:1:1:0:0:0:0:true:false:false:false:false:false:1:1.95
-Rose:Cooke:76014:8178126783:0:rose.cooke@hotmail.com:password:0:1:0:0:0:1:0:true:false:false:false:false:false:3:1.05
-Ryan:White:76015:4697982416:0:ryan.white@sbcglobal.net:password:0:0:0:0:1:0:1:false:true:false:false:false:false:3:2.23
-Vegeta:Overton:76013:2145534281:0:vegeta.overton@sbcglobal.net:password:0:1:1:0:0:1:0:false:false:false:false:true:false:3:1.16
-Joe:Beach:76012:8174782782:1:joe.beach@hotmail.com:password:0:0:0:0:0:1:0:false:false:true:false:false:false:3:4.70
-Brittany:Matthews:76003:2147771735:0:brittany.matthews@live.com:password:0:0:1:0:0:1:1:false:false:true:false:false:false:1:2.45
-Dirk:Indigo:76001:2147018283:1:dirk.indigo@sbcglobal.net:password:0:0:1:0:0:0:0:false:false:false:true:false:false:3:4.87
-Ron:Ramirez:76018:2148750605:0:ron.ramirez@hotmail.com:password:0:1:0:0:1:0:1:false:false:true:false:false:false:2:2.67
-Cinnimon:Matthews:76014:2145955808:0:cinnimon.matthews@live.com:password:0:1:0:0:0:1:0:false:false:false:false:true:false:1:4.01
-Sarah:Weems:76004:4695019940:0:sarah.weems@charter.net:password:0:0:0:1:1:0:0:true:false:false:false:false:false:3:3.13
-Connie:Owens:76016:2143175535:0:connie.owens@yahoo.com:password:0:1:0:1:1:0:0:false:false:true:false:false:false:1:4.23
-Clark:Xilophone:76010:6825792200:0:clark.xilophone@charter.net:password:0:0:0:0:1:1:0:false:false:false:false:false:true:3:1.50
-Valerie:Viole:76011:4691557737:0:valerie.viole@live.com:password:0:0:0:1:0:0:0:true:false:false:false:false:false:2:1.26
-Alec:Atwell:76019:4692013299:0:alec.atwell@charter.net:password:0:0:0:1:1:1:1:false:false:true:false:false:false:2:3.31
-Sue:Khalili:76017:8178549098:0:sue.khalili@uta.edu:password:0:1:0:1:0:0:1:false:false:false:false:false:true:2:2.72
-Ryan:Owens:76009:6824816658:1:ryan.owens@yahoo.com:password:0:1:1:0:1:0:0:false:false:false:false:false:true:1:2.73
-Sue:Jameson:76014:9729173108:1:sue.jameson@sbcglobal.net:password:0:1:0:1:0:0:0:false:false:false:false:true:false:2:4.23
-Garth:Nabisco:76007:4696810574:0:garth.nabisco@live.com:password:0:1:1:0:1:1:1:false:false:false:true:false:false:2:1.10
-Tiffany:Red:76008:2145107145:1:tiffany.red@gmail.com:password:0:1:1:1:0:1:1:false:false:false:false:false:true:2:1.22
-Zach:Matthews:76018:6825614954:1:zach.matthews@sbcglobal.net:password:0:0:1:1:0:1:1:false:false:true:false:false:false:1:4.57
-Nick:Trout:76005:6822362383:1:nick.trout@uta.mavs.edu:password:0:0:0:1:1:0:1:true:false:false:false:false:false:2:3.25
-Candi:White:76001:2143947946:1:candi.white@ymail.com:password:0:0:1:1:1:0:0:true:false:false:false:false:false:1:3.10
-Goku:Clifford:76016:2144693870:1:goku.clifford@yahoo.com:password:0:1:0:0:1:1:1:false:false:false:false:false:true:2:2.22
-Cinnimon:Clifford:76019:2146002693:0:cinnimon.clifford@ymail.com:password:0:0:1:1:1:1:1:false:true:false:false:false:false:3:4.33
-Tiffany:Khalili:76013:9727279257:1:tiffany.khalili@uta.mavs.edu:password:0:1:1:0:0:0:0:false:false:false:true:false:false:3:4.20
-Tin:Pinkerton:76005:8178820175:1:tin.pinkerton@ymail.com:password:0:1:0:1:0:0:1:true:false:false:false:false:false:1:1.56
-Ryan:Gandolf:76011:6823848095:1:ryan.gandolf@gmail.com:password:0:0:1:1:0:0:0:false:false:false:false:true:false:1:3.38
-Gabina:Smith:76006:9721245861:1:gabina.smith@charter.net:password:0:0:0:0:0:1:0:true:false:false:false:false:false:2:4.65
-Marvin:Nabisco:76008:6823733661:1:marvin.nabisco@yahoo.com:password:0:0:0:0:1:1:1:false:false:false:true:false:false:2:4.85
-Ivan:Beach:76002:2141481557:1:ivan.beach@live.com:password:0:0:1:0:1:1:0:false:true:false:false:false:false:2:3.01
-Candi:Luna:76009:9726283859:1:candi.luna@charter.net:password:0:0:0:1:1:1:1:true:false:false:false:false:false:3:3.22
-Natalie:Quill:76015:8178460292:1:natalie.quill@me.net:password:0:1:1:1:1:0:0:false:false:true:false:false:false:2:2.30
-Travis:Morgan:76003:4693203867:0:travis.morgan@uta.edu:password:0:1:1:1:1:0:0:false:false:false:false:true:false:2:1.49
-Xavier:Sanchez:76016:8179252058:1:xavier.sanchez@ymail.com:password:0:0:0:0:1:1:1:false:false:false:true:false:false:2:1.03
-Devin:Beach:76019:4696939355:0:devin.beach@gmail.com:password:0:1:1:0:0:0:1:false:true:false:false:false:false:3:1.86
-Karla:Trout:76013:6822241480:0:karla.trout@ymail.com:password:0:1:1:0:1:1:1:false:false:false:true:false:false:1:4.78
-Charles:Nguyen:76019:4695094142:0:charles.nguyen@gmail.com:password:0:1:1:1:1:0:1:false:false:false:false:true:false:1:2.95
-Wendy:Stevens:76019:2143531701:0:wendy.stevens@live.com:password:0:1:1:1:0:0:1:false:false:true:false:false:false:2:2.69
-Valerie:Owens:76013:8178445427:0:valerie.owens@uta.edu:password:0:1:1:1:0:1:0:false:false:false:true:false:false:1:1.81
-Aaron:Quill:76018:2144618853:1:aaron.quill@yahoo.com:password:0:1:1:1:1:0:0:false:true:false:false:false:false:2:4.59
-Jane:Trout:76016:9724986160:1:jane.trout@uta.edu:password:0:0:1:1:1:1:0:true:false:false:false:false:false:1:4.83
-Maria:Zeta:76005:2141042935:0:maria.zeta@uta.edu:password:0:0:0:1:0:0:0:false:true:false:false:false:false:1:2.30
-Amanda:Sanchez:76018:9721269174:0:amanda.sanchez@yahoo.com:password:0:0:1:0:1:0:0:true:false:false:false:false:false:2:4.89
-Sommer:Brazeal:76014:6827557223:0:sommer.brazeal@me.net:password:0:0:0:0:0:1:0:false:false:true:false:false:false:1:2.89
-Ron:Brazeal:76017:6829684522:1:ron.brazeal@hotmail.com:password:0:1:0:0:1:1:1:false:false:false:true:false:false:1:4.68
-Xavier:Wilson:76005:8176021720:0:xavier.wilson@sbcglobal.net:password:0:1:1:1:0:0:1:false:false:true:false:false:false:2:1.56
-Bruce:Weems:76014:8177843360:1:bruce.weems@me.net:password:0:1:1:0:0:0:1:false:true:false:false:false:false:3:4.30
-Alex:Everest:76011:9723968786:1:alex.everest@sbcglobal.net:password:0:1:0:0:1:1:1:false:false:false:false:false:true:1:2.37
-Ryan:Wilson:76016:9726821689:1:ryan.wilson@uta.mavs.edu:password:0:0:0:1:1:1:1:false:true:false:false:false:false:1:1.26
-Peter:Zeta:76016:6821455786:1:peter.zeta@uta.mavs.edu:password:0:1:1:1:1:1:0:true:false:false:false:false:false:2:4.74
-Devin:Viole:76005:2141614077:0:devin.viole@uta.edu:password:0:1:0:1:0:1:0:false:true:false:false:false:false:3:4.76
-Beth:Ramirez:76017:9725508995:1:beth.ramirez@charter.net:password:0:0:1:1:0:1:0:false:false:false:false:true:false:3:1.94
-Dallas:Sanchez:76016:8177194219:1:dallas.sanchez@charter.net:password:0:0:0:0:1:1:0:false:false:false:false:false:true:2:1.07
-Travis:Weems:76009:8177971027:0:travis.weems@sbcglobal.net:password:0:0:1:0:0:1:1:false:false:false:false:false:true:2:1.85
-Charles:Black:76017:2147724540:1:charles.black@ymail.com:password:0:1:0:1:0:1:0:false:false:false:false:false:true:3:1.83
-Devin:Red:76013:2146764879:1:devin.red@yahoo.com:password:0:1:0:0:0:1:1:false:false:false:true:false:false:3:1.75
-Cinnimon:Everest:76003:8176708512:0:cinnimon.everest@live.com:password:0:1:1:0:0:0:1:false:false:false:false:false:true:1:1.09
-Emily:Baracsh:76012:9723165740:0:emily.baracsh@sbcglobal.net:password:0:0:1:0:1:1:0:false:false:true:false:false:false:3:3.69
-Ivan:Patricks:76004:2143153617:0:ivan.patricks@hotmail.com:password:0:1:0:1:1:1:0:false:false:true:false:false:false:2:2.62
-Ron:Hernandez:76003:6829467725:1:ron.hernandez@hotmail.com:password:0:1:1:0:1:1:1:true:false:false:false:false:false:1:1.31
-Wendy:Trout:76010:6829701767:1:wendy.trout@hotmail.com:password:0:1:1:0:1:1:1:false:false:true:false:false:false:3:2.40
-Hilary:Khalili:76005:8175983454:1:hilary.khalili@uta.mavs.edu:password:0:0:0:1:1:0:1:false:true:false:false:false:false:1:1.77
-Jarvis:Orange:76015:2145356764:0:jarvis.orange@hotmail.com:password:0:1:1:1:0:0:1:false:false:true:false:false:false:1:1.83
-Jason:Zeta:76003:4691688444:1:jason.zeta@uta.edu:password:0:1:1:0:0:1:0:false:false:false:false:true:false:3:4.34
-Jane:Nguyen:76003:8177311875:0:jane.nguyen@hotmail.com:password:0:0:0:1:1:1:1:false:false:true:false:false:false:2:2.76
-Beth:Jameson:76006:6828606094:1:beth.jameson@hotmail.com:password:0:0:1:1:0:1:1:false:false:false:false:true:false:3:4.98
-Alec:White:76001:6821499060:1:alec.white@sbcglobal.net:password:0:0:0:1:0:0:1:false:false:true:false:false:false:1:3.35
-Goku:Pinkerton:76015:4698257160:1:goku.pinkerton@gmail.com:password:0:1:1:0:1:1:1:true:false:false:false:false:false:3:3.16
-Walter:Morgan:76007:8177753266:1:walter.morgan@uta.mavs.edu:password:0:0:0:1:1:0:1:false:false:true:false:false:false:1:2.91
-Bill:Apple:76018:4694423328:1:bill.apple@charter.net:password:0:0:1:0:0:1:1:false:true:false:false:false:false:3:2.80
-Bruce:Wilson:76012:4696552542:0:bruce.wilson@hotmail.com:password:0:1:1:0:0:0:1:false:false:false:true:false:false:2:2.01
-Joe:Everest:76004:2146478150:0:joe.everest@sbcglobal.net:password:0:1:1:1:1:1:0:false:false:false:false:false:true:2:3.56
-Emmanuel:Baracsh:76019:6829660583:1:emmanuel.baracsh@aol.com:password:0:1:1:0:0:0:0:false:true:false:false:false:false:1:3.24
-Ursala:Cooke:76001:6826882194:0:ursala.cooke@ymail.com:password:0:0:1:0:0:0:0:false:false:false:false:false:true:2:5.00
-Jane:Indigo:76014:9729917689:0:jane.indigo@hotmail.com:password:0:0:1:0:1:0:1:true:false:false:false:false:false:2:2.58
-Brittany:Hernandez:76009:4694108915:0:brittany.hernandez@sbcglobal.net:password:0:0:1:1:1:1:1:false:false:false:true:false:false:1:2.01
-Marvin:Green:76007:4699528972:0:marvin.green@live.com:password:0:1:0:0:0:0:1:false:true:false:false:false:false:3:4.77
-Bruce:Trout:76001:4695298346:0:bruce.trout@uta.edu:password:0:1:1:1:0:1:1:true:false:false:false:false:false:1:4.53
-Brenda:Indigo:76010:4695844397:1:brenda.indigo@live.com:password:0:0:0:0:1:0:0:true:false:false:false:false:false:1:3.07
-Wendy:Viole:76007:9723248068:0:wendy.viole@ymail.com:password:0:1:0:0:1:1:1:true:false:false:false:false:false:1:3.29
-Connie:Mayweather:76006:6827235428:0:connie.mayweather@uta.edu:password:0:1:1:0:0:1:1:false:false:true:false:false:false:2:3.99
-Bruce:Jones:76016:9723966577:0:bruce.jones@yahoo.com:password:0:1:1:0:0:0:1:false:true:false:false:false:false:3:3.96
-Frank:Khalili:76009:9723185231:0:frank.khalili@me.net:password:0:1:0:0:1:0:1:false:false:true:false:false:false:2:3.64
-Rodger:Sanchez:76006:4694107172:1:rodger.sanchez@aol.com:password:0:1:0:0:0:1:0:false:false:false:true:false:false:3:3.67
-Tin:Gandolf:76014:2146612041:1:tin.gandolf@ymail.com:password:0:0:0:0:0:1:0:false:false:false:false:false:true:2:1.13
-Clark:Viole:76016:2145805341:0:clark.viole@charter.net:password:0:1:0:0:1:0:0:false:false:false:false:false:true:1:3.85
-Clark:Mayweather:76018:4695699768:0:clark.mayweather@uta.edu:password:0:0:0:1:0:1:0:false:false:false:true:false:false:1:2.43
-Charles:Weems:76008:8171651038:0:charles.weems@me.net:password:0:1:0:0:1:1:0:false:true:false:false:false:false:1:3.76
-Walter:Luna:76004:8176260777:0:walter.luna@yahoo.com:password:0:1:0:0:0:0:0:false:false:false:true:false:false:2:1.40
-Alec:Apple:76010:6828559486:1:alec.apple@hotmail.com:password:0:0:0:0:1:1:1:false:true:false:false:false:false:1:3.14
-David:Overton:76008:2142331801:0:david.overton@ymail.com:password:0:1:0:0:0:1:0:true:false:false:false:false:false:2:4.83
-Gayle:Gandolf:76011:8178602298:0:gayle.gandolf@me.net:password:0:1:0:0:0:0:1:false:false:false:true:false:false:2:3.77
-Michael:Overton:76019:4695831900:0:michael.overton@ymail.com:password:0:1:1:0:1:1:0:false:false:true:false:false:false:1:3.14
-Garth:Green:76008:6827007313:0:garth.green@live.com:password:0:1:0:1:0:0:1:false:false:true:false:false:false:2:3.84
-Jarvis:Beach:76001:8177351599:0:jarvis.beach@me.net:password:0:1:0:0:0:1:1:false:false:false:false:false:true:2:1.62
-Peter:Trout:76015:2144581306:0:peter.trout@gmail.com:password:0:1:1:0:1:0:1:false:false:false:false:false:true:3:2.52
-Frank:Zeta:76016:6825582602:1:frank.zeta@charter.net:password:0:1:0:1:1:0:1:false:false:true:false:false:false:2:1.49
-Dirk:Jones:76015:4693676679:1:dirk.jones@yahoo.com:password:0:0:0:1:1:1:1:false:false:false:true:false:false:2:2.69
-David:Focal:76014:9723398824:0:david.focal@hotmail.com:password:0:1:1:0:1:0:0:false:false:true:false:false:false:3:1.56
-Chelsea:Universe:76005:9727350354:0:chelsea.universe@ymail.com:password:0:1:1:1:0:0:1:false:false:false:false:true:false:3:3.90
-Gabina:Focal:76015:9723248238:0:gabina.focal@yahoo.com:password:0:1:1:0:0:0:0:false:false:false:true:false:false:3:4.86
-Peter:Zeta:76017:8179054439:1:peter.zeta@live.com:password:0:1:1:1:0:1:0:false:true:false:false:false:false:2:4.32
-Yugi:Brazeal:76006:8179316862:1:yugi.brazeal@gmail.com:password:0:1:0:0:1:1:0:false:false:false:true:false:false:2:1.91
-Hank:Matthews:76003:9725911754:1:hank.matthews@gmail.com:password:0:0:1:0:1:0:1:false:false:false:false:true:false:2:1.38
-Hank:Smith:76011:4691807640:0:hank.smith@sbcglobal.net:password:0:0:0:0:1:0:1:true:false:false:false:false:false:2:3.24
-Jason:Weems:76013:9721546691:1:jason.weems@aol.com:password:0:1:0:1:1:1:1:true:false:false:false:false:false:2:1.08
-Yugi:Matthews:76005:9722765218:1:yugi.matthews@yahoo.com:password:0:0:1:1:0:1:1:false:false:true:false:false:false:2:4.39
-David:Overton:76017:8173066899:1:david.overton@yahoo.com:password:0:1:1:1:1:0:1:false:false:false:false:true:false:2:2.24
-Jessica:Williams:76016:2147341206:1:jessica.williams@yahoo.com:password:0:1:1:0:0:0:1:false:false:false:false:true:false:3:2.34
-Bill:Cooke:76016:6826179840:0:bill.cooke@uta.mavs.edu:password:0:0:1:0:1:0:1:false:false:false:true:false:false:3:1.55
-Emily:Williams:76012:9726387825:0:emily.williams@gmail.com:password:0:1:0:1:1:0:0:true:false:false:false:false:false:1:3.94
-Garth:Orange:76001:6825069171:1:garth.orange@sbcglobal.net:password:0:1:1:0:0:0:0:false:false:false:false:false:true:1:3.95
-Wendy:Morgan:76006:4697925471:1:wendy.morgan@hotmail.com:password:0:1:1:0:1:1:0:true:false:false:false:false:false:2:2.69
-Karla:Patricks:76019:8179674623:1:karla.patricks@gmail.com:password:0:0:1:1:0:1:1:false:false:false:true:false:false:3:3.87
-Amber:Viole:76013:9725972440:1:amber.viole@hotmail.com:password:0:1:1:0:0:0:0:false:false:false:false:false:true:2:2.31
-Ryan:Focal:76011:4691993744:0:ryan.focal@live.com:password:0:1:0:0:1:0:0:false:true:false:false:false:false:3:1.69
-Peter:Apple:76007:4694856425:0:peter.apple@gmail.com:password:0:1:0:0:1:1:1:false:false:false:false:true:false:1:4.27
-Wendy:Jones:76016:6826496561:0:wendy.jones@uta.mavs.edu:password:0:1:0:0:1:1:1:false:false:true:false:false:false:2:4.15
-Amanda:Viole:76012:4693718274:1:amanda.viole@yahoo.com:password:0:1:1:1:0:1:1:false:false:false:false:true:false:2:1.70
-Zach:Zeta:76014:9721376979:0:zach.zeta@hotmail.com:password:0:0:1:0:1:0:1:false:false:false:false:false:true:1:2.81
-Michael:Sanchez:76016:9729854065:1:michael.sanchez@sbcglobal.net:password:0:0:0:0:1:1:0:false:false:true:false:false:false:2:3.54
-Sarah:Overton:76011:4694957789:1:sarah.overton@aol.com:password:0:0:1:1:1:0:0:false:false:false:false:false:true:1:2.38
-Jessica:Coleman:76002:2148410874:0:jessica.coleman@charter.net:password:0:0:1:1:0:1:1:false:false:true:false:false:false:1:2.15
-Austin:Krypton:76016:8178677666:1:austin.krypton@uta.edu:password:0:0:0:0:1:0:0:true:false:false:false:false:false:3:2.48
-John:Williams:76016:9726777531:1:john.williams@uta.edu:password:0:0:1:1:1:1:0:false:false:false:true:false:false:2:2.86
-Jane:Pinkerton:76006:6828238340:0:jane.pinkerton@me.net:password:0:0:1:1:1:1:0:false:false:true:false:false:false:1:2.48
-Beth:Becker:76003:9721041474:0:beth.becker@me.net:password:0:1:1:1:1:0:0:false:false:false:true:false:false:1:2.24
-Vegeta:Everest:76013:6829072326:1:vegeta.everest@aol.com:password:0:0:0:1:0:1:1:false:false:false:false:true:false:1:3.27
-Karla:Sanchez:76010:2147662638:1:karla.sanchez@ymail.com:password:0:0:0:1:0:0:0:false:true:false:false:false:false:2:1.25
+Ryan:Nguyen:76010:(469) 384-4464:0:ryan.nguyen@aol.com:password:0:1:1:0:0:1:1:false:false:false:true:false:false:3:3.56
+Bill:Apple:76013:(682) 169-8073:0:bill.apple@gmail.com:password:0:1:0:1:1:1:0:false:false:false:true:false:false:1:4.79
+Devin:Khalili:76007:(817) 919-8694:0:devin.khalili@me.net:password:0:1:1:1:0:0:1:false:false:true:false:false:false:1:3.69
+Bill:Coleman:76013:(972) 588-10719:0:bill.coleman@sbcglobal.net:password:0:0:0:1:0:0:1:true:false:false:false:false:false:3:1.37
+Michael:Becker:76019:(817) 169-9427:0:michael.becker@yahoo.com:password:0:1:1:0:1:0:0:true:false:false:false:false:false:3:1.63
+Bruce:Apple:76001:(682) 812-5599:1:bruce.apple@live.com:password:0:1:1:0:1:1:1:false:true:false:false:false:false:2:4.19
+Bruce:Zeta:76004:(469) 919-5826:1:bruce.zeta@ymail.com:password:0:1:0:0:1:0:1:false:false:false:false:true:false:2:4.88
+Tin:Owens:76017:(214) 493-6232:0:tin.owens@hotmail.com:password:0:0:1:1:0:1:1:false:false:false:false:true:false:3:2.32
+Rodger:Matthews:76019:(469) 246-9281:0:rodger.matthews@aol.com:password:0:0:1:1:1:1:1:false:false:false:false:true:false:3:1.96
+Bruce:Green:76004:(469) 943-3926:0:bruce.green@sbcglobal.net:password:0:1:1:1:1:0:1:false:false:false:false:true:false:3:1.45
+Michael:Viole:76006:(817) 997-3510:0:michael.viole@hotmail.com:password:0:1:1:1:1:1:1:false:false:false:false:false:true:3:2.40
+Frank:Ramirez:76018:(972) 142-3292:0:frank.ramirez@gmail.com:password:0:0:0:1:1:0:1:false:false:false:false:false:true:1:3.88
+Cinnimon:Pinkerton:76014:(682) 624-8523:0:cinnimon.pinkerton@me.net:password:0:0:0:1:0:0:1:false:false:true:false:false:false:2:1.23
+Sommer:Focal:76003:(972) 157-2259:0:sommer.focal@gmail.com:password:0:0:0:1:1:0:0:true:false:false:false:false:false:1:3.27
+Rose:Krypton:76001:(682) 952-4302:1:rose.krypton@me.net:password:0:0:1:0:1:0:0:false:false:false:true:false:false:2:1.40
+Sue:Matthews:76005:(972) 639-9899:1:sue.matthews@charter.net:password:0:1:0:1:0:0:1:false:true:false:false:false:false:2:4.52
+Tiffany:Pinkerton:76019:(682) 996-1275:1:tiffany.pinkerton@live.com:password:0:1:0:1:0:0:0:true:false:false:false:false:false:2:2.25
+Alex:Nabisco:76010:(972) 127-1197:1:alex.nabisco@aol.com:password:0:1:1:0:0:1:1:false:true:false:false:false:false:2:1.95
+Vegeta:White:76001:(972) 925-9836:0:vegeta.white@yahoo.com:password:0:0:1:1:0:0:0:false:false:true:false:false:false:1:1.82
+Joe:Mayweather:76014:(469) 841-8773:0:joe.mayweather@sbcglobal.net:password:0:1:1:0:1:0:1:false:false:false:false:false:true:3:4.89
+Dallas:Young:76001:(214) 569-10195:0:dallas.young@hotmail.com:password:0:0:0:0:1:1:0:false:false:false:false:false:true:3:3.30
+Peter:Stephan:76005:(469) 553-4064:1:peter.stephan@aol.com:password:0:0:0:0:0:0:0:false:false:true:false:false:false:2:4.13
+Austin:Trout:76006:(214) 447-7916:0:austin.trout@me.net:password:0:0:0:1:1:0:0:false:true:false:false:false:false:3:4.57
+Vegeta:Brazeal:76005:(214) 706-3684:1:vegeta.brazeal@aol.com:password:0:0:0:1:0:1:0:false:false:false:true:false:false:1:1.84
+Vegeta:Sanchez:76006:(682) 357-5155:0:vegeta.sanchez@ymail.com:password:0:0:0:0:1:1:1:true:false:false:false:false:false:3:2.07
+Sue:Overton:76015:(972) 575-6623:0:sue.overton@gmail.com:password:0:0:1:1:1:1:1:true:false:false:false:false:false:1:2.40
+Candi:Weems:76014:(682) 904-6829:1:candi.weems@live.com:password:0:1:0:0:1:1:1:false:false:false:true:false:false:3:4.17
+David:Viole:76002:(682) 556-7988:1:david.viole@uta.edu:password:0:1:0:1:0:1:0:false:false:false:true:false:false:3:1.42
+Jason:Trout:76016:(972) 826-6245:1:jason.trout@aol.com:password:0:0:1:1:0:1:0:false:false:false:true:false:false:2:3.91
+Oscar:Ramirez:76013:(214) 817-1651:1:oscar.ramirez@charter.net:password:0:0:1:0:1:1:0:false:false:false:true:false:false:1:4.22
+Goku:Focal:76016:(469) 508-6951:0:goku.focal@hotmail.com:password:0:1:1:0:1:0:0:false:false:false:false:false:true:3:1.30
+John:Luna:76018:(214) 132-4845:0:john.luna@ymail.com:password:0:1:1:1:0:0:0:false:false:true:false:false:false:2:3.03
+Sarah:Coleman:76012:(469) 780-9579:0:sarah.coleman@yahoo.com:password:0:1:1:1:0:0:0:true:false:false:false:false:false:2:1.20
+Dallas:Quill:76011:(817) 675-8560:0:dallas.quill@hotmail.com:password:0:1:1:0:0:0:0:false:false:false:false:true:false:2:1.90
+Tin:Stevens:76011:(214) 575-10772:1:tin.stevens@hotmail.com:password:0:1:1:1:0:1:0:false:false:false:false:false:true:1:3.71
+Jane:Becker:76018:(682) 171-3806:1:jane.becker@uta.edu:password:0:0:1:1:0:0:1:true:false:false:false:false:false:1:3.18
+Zach:Indigo:76008:(817) 976-1967:1:zach.indigo@yahoo.com:password:0:1:0:0:1:0:1:false:false:false:false:true:false:1:3.19
+Bruce:Beach:76001:(214) 521-7497:0:bruce.beach@uta.edu:password:0:0:0:1:1:0:0:false:false:false:false:true:false:1:2.00
+Bill:Williams:76015:(817) 774-6176:1:bill.williams@charter.net:password:0:1:1:1:1:1:1:false:false:false:false:true:false:2:4.95
+Brenda:Matthews:76006:(682) 899-5899:0:brenda.matthews@charter.net:password:0:1:1:1:0:1:1:false:true:false:false:false:false:2:1.12
+Austin:Baracsh:76016:(214) 292-2277:1:austin.baracsh@sbcglobal.net:password:0:0:1:1:1:1:0:false:false:true:false:false:false:2:2.22
+Peter:Becker:76010:(214) 798-1133:1:peter.becker@charter.net:password:0:0:0:1:1:0:1:false:false:false:false:true:false:2:3.92
+Dirk:Xilophone:76019:(817) 402-6984:0:dirk.xilophone@aol.com:password:0:0:1:1:1:1:0:false:false:false:false:true:false:1:3.99
+Travis:Apple:76011:(682) 433-3280:1:travis.apple@uta.mavs.edu:password:0:0:1:1:0:0:1:true:false:false:false:false:false:3:2.65
+Ursala:White:76013:(972) 818-8698:1:ursala.white@sbcglobal.net:password:0:0:0:1:1:1:0:false:false:false:false:false:true:2:4.14
+David:Zeta:76013:(817) 699-10920:0:david.zeta@sbcglobal.net:password:0:0:0:1:1:1:0:true:false:false:false:false:false:1:2.23
+Amber:Dennis:76004:(817) 101-7826:0:amber.dennis@uta.edu:password:0:0:1:1:1:0:1:false:false:false:false:true:false:1:2.67
+Sue:Morgan:76014:(214) 294-5685:1:sue.morgan@ymail.com:password:0:0:1:1:0:0:0:false:false:true:false:false:false:1:1.66
+Gabina:Brazeal:76012:(682) 543-4809:1:gabina.brazeal@hotmail.com:password:0:0:1:0:0:0:0:false:true:false:false:false:false:1:4.22
+Elvis:Indigo:76013:(682) 296-7715:1:elvis.indigo@uta.mavs.edu:password:0:0:1:0:0:0:0:false:false:false:true:false:false:3:4.01
+Jake:Dennis:76008:(469) 435-10221:0:jake.dennis@sbcglobal.net:password:0:0:1:0:1:1:1:false:false:false:true:false:false:2:4.55
+Alec:Nabisco:76003:(469) 107-6481:1:alec.nabisco@yahoo.com:password:0:0:0:1:0:0:1:false:false:false:true:false:false:1:3.81
+Vegeta:Atwell:76003:(972) 480-8205:0:vegeta.atwell@live.com:password:0:1:1:1:1:1:0:false:false:false:false:true:false:2:2.90
+Tiffany:Focal:76018:(214) 864-9785:0:tiffany.focal@yahoo.com:password:0:0:0:0:0:0:1:false:false:true:false:false:false:2:4.79
+Michael:Green:76012:(214) 914-3151:0:michael.green@sbcglobal.net:password:0:0:1:0:1:0:0:false:false:false:true:false:false:1:2.28
+Natalie:Luna:76015:(214) 964-10576:0:natalie.luna@ymail.com:password:0:1:0:1:1:1:0:false:false:false:true:false:false:3:4.19
+Sue:Gandolf:76003:(817) 324-8835:0:sue.gandolf@yahoo.com:password:0:0:1:0:0:0:1:false:true:false:false:false:false:1:3.28
+Dallas:Young:76007:(972) 849-6458:0:dallas.young@gmail.com:password:0:1:0:0:0:0:1:false:false:true:false:false:false:1:1.38
+Xavier:Focal:76014:(682) 794-3289:0:xavier.focal@yahoo.com:password:0:0:0:1:0:1:1:true:false:false:false:false:false:3:4.89
+David:Focal:76007:(682) 379-10719:0:david.focal@charter.net:password:0:1:1:1:1:1:0:false:false:false:true:false:false:1:3.67
+Garth:Brazeal:76009:(972) 524-7051:0:garth.brazeal@charter.net:password:0:1:0:0:1:1:1:false:false:true:false:false:false:3:3.93
+Bill:Pinkerton:76001:(469) 353-3998:1:bill.pinkerton@gmail.com:password:0:1:0:1:1:1:0:false:false:true:false:false:false:1:2.98
+Michael:Love:76018:(972) 596-7474:0:michael.love@aol.com:password:0:0:0:1:0:0:1:false:false:true:false:false:false:2:2.67
+Jarvis:Black:76015:(682) 445-3358:1:jarvis.black@gmail.com:password:0:0:0:1:0:0:1:true:false:false:false:false:false:1:1.02
+Devin:Nabisco:76002:(214) 372-4435:0:devin.nabisco@sbcglobal.net:password:0:0:1:1:0:1:0:true:false:false:false:false:false:3:4.99
+Aaron:Matthews:76013:(817) 168-4921:1:aaron.matthews@uta.mavs.edu:password:0:0:0:0:1:0:1:false:false:false:false:false:true:2:3.27
+Valerie:Apple:76008:(682) 869-2028:1:valerie.apple@hotmail.com:password:0:1:0:0:0:0:0:true:false:false:false:false:false:3:2.95
+John:Apple:76019:(469) 666-3230:0:john.apple@charter.net:password:0:0:1:1:0:1:1:false:false:false:false:true:false:3:3.19
+Chelsea:Jameson:76011:(214) 439-8010:0:chelsea.jameson@me.net:password:0:0:1:1:0:1:1:false:false:true:false:false:false:3:2.24
+Austin:Atwell:76004:(469) 167-5499:1:austin.atwell@me.net:password:0:1:0:1:0:0:0:false:false:false:false:true:false:2:3.40
+Dirk:Focal:76019:(469) 249-3694:0:dirk.focal@ymail.com:password:0:1:1:1:1:1:0:false:false:false:false:true:false:3:1.82
+Clark:White:76015:(682) 950-3576:1:clark.white@gmail.com:password:0:1:0:0:1:0:0:false:false:true:false:false:false:1:1.77
+Austin:Xilophone:76011:(817) 628-7353:1:austin.xilophone@yahoo.com:password:0:0:0:0:1:0:0:true:false:false:false:false:false:3:4.40
+Ryan:Sanchez:76011:(972) 629-6945:0:ryan.sanchez@me.net:password:0:1:1:1:1:1:0:false:true:false:false:false:false:3:3.17
+Elvis:Khalili:76005:(972) 508-5022:0:elvis.khalili@live.com:password:0:1:0:0:1:0:1:false:false:false:true:false:false:3:1.84
+Gayle:Pinkerton:76001:(214) 790-6364:0:gayle.pinkerton@me.net:password:0:1:0:1:0:1:0:false:false:false:false:true:false:1:4.60
+Devin:Love:76018:(469) 540-1333:1:devin.love@aol.com:password:0:1:1:0:1:1:1:false:false:true:false:false:false:3:2.72
+Yugi:Stephan:76019:(972) 865-1851:1:yugi.stephan@ymail.com:password:0:0:0:0:1:0:0:false:true:false:false:false:false:1:4.77
+Jason:Jameson:76018:(469) 289-7359:1:jason.jameson@ymail.com:password:0:0:1:0:1:0:1:false:true:false:false:false:false:3:3.77
+Amanda:Red:76005:(214) 485-10998:1:amanda.red@hotmail.com:password:0:0:1:0:1:0:0:false:false:false:false:true:false:2:1.90
+Jessica:Cooke:76018:(214) 159-2270:1:jessica.cooke@aol.com:password:0:0:0:1:0:1:0:false:false:false:false:true:false:1:1.79
+Lewis:Smith:76002:(682) 398-6299:1:lewis.smith@yahoo.com:password:0:0:0:1:1:1:0:true:false:false:false:false:false:1:1.61
+Clark:Clifford:76010:(682) 986-5615:1:clark.clifford@sbcglobal.net:password:0:0:1:1:1:1:1:false:true:false:false:false:false:3:1.54
+Amanda:Xilophone:76007:(469) 770-7431:1:amanda.xilophone@charter.net:password:0:1:0:1:0:0:0:false:false:false:false:false:true:1:3.88
+Oscar:Viole:76009:(817) 996-8032:0:oscar.viole@uta.edu:password:0:1:0:0:0:0:0:false:false:false:true:false:false:3:1.19
+Yugi:Morgan:76006:(682) 743-5507:1:yugi.morgan@gmail.com:password:0:1:1:1:1:1:1:false:false:true:false:false:false:1:3.57
+Zach:Matthews:76014:(682) 447-3506:1:zach.matthews@charter.net:password:0:1:1:1:0:1:0:false:false:false:false:false:true:1:4.26
+Xavier:Ramirez:76017:(972) 622-6978:0:xavier.ramirez@uta.mavs.edu:password:0:0:1:1:1:0:0:false:false:false:true:false:false:2:4.95
+Karla:Wilson:76003:(214) 347-5607:0:karla.wilson@sbcglobal.net:password:0:1:0:1:1:1:1:true:false:false:false:false:false:3:3.67
+Travis:Cooke:76008:(682) 746-10864:0:travis.cooke@aol.com:password:0:1:0:0:0:0:1:false:false:false:true:false:false:3:4.00
+Dallas:Nguyen:76006:(817) 818-1780:1:dallas.nguyen@hotmail.com:password:0:0:1:0:1:1:1:false:false:true:false:false:false:1:4.66
+Natalie:Morgan:76019:(214) 297-7169:0:natalie.morgan@uta.edu:password:0:0:1:0:0:1:1:false:true:false:false:false:false:3:4.46
+Aaron:Focal:76013:(682) 731-3738:1:aaron.focal@ymail.com:password:0:0:0:0:0:0:0:false:false:false:false:false:true:3:2.28
+Brittany:White:76005:(972) 106-7019:1:brittany.white@me.net:password:0:1:1:1:0:0:1:false:false:false:true:false:false:2:3.33
+Lewis:Indigo:76016:(469) 480-3910:1:lewis.indigo@aol.com:password:0:0:0:1:0:1:0:true:false:false:false:false:false:1:3.20
+Nick:Hernandez:76001:(972) 770-10923:1:nick.hernandez@me.net:password:0:0:0:0:1:0:1:false:false:false:false:true:false:3:2.14
+Chelsea:Stephan:76019:(817) 885-5375:0:chelsea.stephan@uta.edu:password:0:0:1:0:1:0:0:false:false:false:true:false:false:3:2.20
+Jake:Beach:76005:(817) 615-6612:1:jake.beach@live.com:password:0:1:0:0:0:1:0:false:false:false:false:false:true:3:4.97
+John:Stephan:76002:(682) 648-1455:1:john.stephan@uta.edu:password:0:1:0:0:0:1:1:false:false:false:false:true:false:1:2.58
+Nick:Gandolf:76005:(469) 722-9314:0:nick.gandolf@live.com:password:0:0:1:1:0:1:0:true:false:false:false:false:false:2:2.75
+Maria:Morgan:76013:(972) 137-8994:0:maria.morgan@uta.mavs.edu:password:0:0:0:1:0:1:1:true:false:false:false:false:false:3:3.41
+Hank:Jones:76015:(214) 681-3067:1:hank.jones@me.net:password:0:1:0:1:0:1:0:true:false:false:false:false:false:2:2.11
+Elvis:Jameson:76001:(469) 584-10396:1:elvis.jameson@gmail.com:password:0:0:1:1:1:1:0:false:false:true:false:false:false:2:3.77
+Bruce:Green:76019:(469) 923-9973:0:bruce.green@yahoo.com:password:0:0:1:0:0:0:0:true:false:false:false:false:false:3:4.98
+Emily:Gandolf:76019:(682) 171-5037:0:emily.gandolf@gmail.com:password:0:1:0:1:1:0:1:false:false:true:false:false:false:1:2.62
+Valerie:Mayweather:76011:(214) 982-2410:1:valerie.mayweather@ymail.com:password:0:1:0:0:1:1:0:false:false:true:false:false:false:1:4.88
+Zach:Ramirez:76001:(214) 550-6066:0:zach.ramirez@charter.net:password:0:0:1:1:1:0:0:true:false:false:false:false:false:3:1.02
+Bill:Morgan:76002:(214) 356-7751:0:bill.morgan@uta.mavs.edu:password:0:1:0:0:0:1:0:false:false:false:true:false:false:3:4.42
+Lewis:Brazeal:76010:(214) 921-6586:0:lewis.brazeal@yahoo.com:password:0:1:0:1:1:1:1:false:false:true:false:false:false:2:3.56
+Emmanuel:Black:76018:(817) 381-10119:1:emmanuel.black@uta.edu:password:0:1:0:1:1:1:0:false:false:false:false:true:false:2:4.97
+Wendy:Mayweather:76006:(817) 308-6774:0:wendy.mayweather@gmail.com:password:0:1:1:1:0:0:1:false:false:true:false:false:false:2:3.21
+Ryan:Mayweather:76005:(682) 318-3453:0:ryan.mayweather@gmail.com:password:0:0:0:0:0:1:1:false:false:true:false:false:false:1:3.70
+Emily:Black:76017:(817) 565-9321:0:emily.black@ymail.com:password:0:1:0:0:1:1:1:true:false:false:false:false:false:1:3.94
+Jake:White:76010:(214) 549-10408:1:jake.white@charter.net:password:0:0:1:0:0:0:0:false:false:false:false:false:true:1:4.48
+John:Nabisco:76012:(817) 496-10575:0:john.nabisco@me.net:password:0:1:1:0:1:0:0:true:false:false:false:false:false:2:4.24
+Sue:Universe:76002:(682) 782-10648:1:sue.universe@hotmail.com:password:0:0:0:1:1:0:1:true:false:false:false:false:false:1:1.90
+Cinnimon:Jones:76003:(214) 603-10792:1:cinnimon.jones@live.com:password:0:1:1:0:0:0:0:true:false:false:false:false:false:3:3.13
+David:Zeta:76015:(469) 182-6913:1:david.zeta@uta.edu:password:0:1:0:0:1:0:1:true:false:false:false:false:false:3:4.84
+Marvin:Red:76005:(682) 641-6344:0:marvin.red@hotmail.com:password:0:1:0:1:0:1:0:false:false:false:true:false:false:3:2.70
+Amber:Brazeal:76015:(469) 435-10746:1:amber.brazeal@charter.net:password:0:1:0:1:0:1:1:true:false:false:false:false:false:2:2.27
+Jason:Wilson:76017:(214) 992-5803:1:jason.wilson@sbcglobal.net:password:0:1:0:1:0:1:1:false:false:true:false:false:false:3:3.27
+Gabino:Trout:76006:(972) 997-5503:1:gabino.trout@ymail.com:password:0:1:0:0:0:1:1:false:false:false:true:false:false:2:1.72
+Jake:Zeta:76001:(972) 166-4685:0:jake.zeta@gmail.com:password:0:0:1:1:1:0:1:true:false:false:false:false:false:3:2.26
+Clark:Stevens:76006:(214) 831-10823:1:clark.stevens@me.net:password:0:1:0:0:0:0:1:false:false:false:false:true:false:1:3.73
+Ursala:Khalili:76012:(682) 213-6053:0:ursala.khalili@yahoo.com:password:0:1:0:0:0:0:1:false:false:false:false:true:false:1:2.42
+Gayle:Patricks:76003:(214) 491-2057:1:gayle.patricks@live.com:password:0:0:0:1:1:0:0:false:false:false:false:false:true:2:1.60
+Brittany:Orange:76018:(817) 196-5853:1:brittany.orange@hotmail.com:password:0:1:1:0:1:1:0:true:false:false:false:false:false:3:3.99
+Jarvis:Dennis:76007:(817) 569-5072:0:jarvis.dennis@yahoo.com:password:0:1:1:0:0:0:0:true:false:false:false:false:false:3:4.60
+Sommer:Wilson:76004:(972) 744-10014:0:sommer.wilson@sbcglobal.net:password:0:0:1:0:1:0:1:false:false:false:true:false:false:2:2.40
+Tin:Patricks:76007:(817) 355-2762:1:tin.patricks@ymail.com:password:0:0:1:0:0:1:1:false:false:false:false:true:false:3:4.92
+Emily:Khalili:76018:(972) 496-9598:1:emily.khalili@uta.mavs.edu:password:0:1:1:1:0:0:1:false:false:false:true:false:false:2:4.55
+Emily:Everest:76007:(972) 503-2803:1:emily.everest@uta.mavs.edu:password:0:1:0:0:1:0:1:false:false:false:false:true:false:2:4.95
+John:Williams:76005:(972) 321-9524:1:john.williams@uta.edu:password:0:1:1:1:0:1:1:false:false:true:false:false:false:1:3.55
+Alex:Nguyen:76015:(469) 804-3565:1:alex.nguyen@aol.com:password:0:1:1:1:1:0:0:false:true:false:false:false:false:3:2.01
+David:Stephan:76016:(972) 620-7732:1:david.stephan@charter.net:password:0:0:1:0:0:0:0:false:false:false:true:false:false:1:3.61
+Emmanuel:Hernandez:76001:(214) 279-2167:1:emmanuel.hernandez@aol.com:password:0:0:0:0:1:1:0:true:false:false:false:false:false:1:1.75
+Michael:Nguyen:76014:(972) 131-9022:1:michael.nguyen@gmail.com:password:0:0:0:1:1:0:1:false:false:false:false:false:true:3:2.12
+Brenda:Becker:76019:(972) 927-6006:0:brenda.becker@aol.com:password:0:0:0:1:1:0:0:false:false:false:false:false:true:1:3.40
+David:Dennis:76013:(469) 834-8042:0:david.dennis@ymail.com:password:0:1:0:0:1:0:0:false:false:true:false:false:false:3:1.24
+Rose:Trout:76015:(214) 615-9882:0:rose.trout@uta.mavs.edu:password:0:0:1:0:1:1:0:false:false:false:false:false:true:2:4.76
+Ursala:Jones:76013:(817) 213-4092:0:ursala.jones@aol.com:password:0:0:1:0:0:0:1:false:false:false:false:false:true:3:1.50
+Charles:Cooke:76009:(214) 594-8375:0:charles.cooke@yahoo.com:password:0:0:0:1:0:1:0:false:false:false:true:false:false:1:1.56
+Dallas:Green:76005:(817) 449-8929:1:dallas.green@uta.edu:password:0:0:0:1:0:1:0:true:false:false:false:false:false:1:4.49
+Rose:Focal:76003:(469) 255-2926:0:rose.focal@ymail.com:password:0:1:0:0:0:1:1:false:false:false:false:true:false:2:1.55
+Elvis:Nguyen:76009:(214) 660-9696:1:elvis.nguyen@uta.mavs.edu:password:0:0:0:0:1:1:0:false:true:false:false:false:false:3:1.64
+Ursala:Patricks:76019:(972) 598-4064:1:ursala.patricks@hotmail.com:password:0:1:0:1:1:1:0:false:true:false:false:false:false:2:3.20
+Sarah:Khalili:76014:(469) 788-4832:0:sarah.khalili@gmail.com:password:0:1:0:0:0:1:0:true:false:false:false:false:false:2:2.13
+Amber:Stevens:76019:(682) 561-1979:1:amber.stevens@ymail.com:password:0:0:1:1:1:0:0:false:false:true:false:false:false:2:1.12
+Walter:Khalili:76005:(682) 568-4384:0:walter.khalili@sbcglobal.net:password:0:1:1:0:1:1:1:true:false:false:false:false:false:1:2.02
+Jessica:Quill:76009:(972) 475-5651:0:jessica.quill@uta.edu:password:0:0:0:1:0:0:0:false:false:false:false:true:false:1:3.93
+Ivan:Beach:76006:(972) 396-3663:1:ivan.beach@uta.mavs.edu:password:0:0:1:1:1:1:1:false:true:false:false:false:false:3:3.01
+Travis:Red:76015:(682) 336-4386:1:travis.red@sbcglobal.net:password:0:0:1:0:1:1:0:false:false:false:true:false:false:1:3.10
+Xavier:Pinkerton:76013:(817) 684-3924:0:xavier.pinkerton@charter.net:password:0:0:1:0:0:1:1:false:false:false:false:true:false:1:2.14
+Lewis:Matthews:76009:(972) 106-8355:1:lewis.matthews@me.net:password:0:1:0:0:1:0:0:false:false:true:false:false:false:1:1.63
+Sommer:Indigo:76016:(469) 299-1553:1:sommer.indigo@uta.mavs.edu:password:0:0:0:0:0:1:0:true:false:false:false:false:false:2:3.35
+Jessica:Owens:76008:(214) 118-9415:0:jessica.owens@gmail.com:password:0:0:0:0:1:0:0:false:true:false:false:false:false:1:4.15
+Peter:Apple:76013:(682) 972-10431:0:peter.apple@charter.net:password:0:1:0:0:1:0:1:false:true:false:false:false:false:1:3.63
+Sue:Krypton:76004:(972) 157-4022:1:sue.krypton@live.com:password:0:0:0:0:0:1:0:false:false:true:false:false:false:2:1.14
+John:Krypton:76010:(469) 916-6832:1:john.krypton@ymail.com:password:0:1:1:1:0:1:1:false:false:false:false:true:false:3:1.27
+Travis:Gandolf:76007:(817) 472-10263:0:travis.gandolf@ymail.com:password:0:1:0:0:0:0:1:false:false:false:false:false:true:3:3.44
+Jessica:Atwell:76004:(682) 820-1939:0:jessica.atwell@uta.mavs.edu:password:0:1:0:0:0:1:0:false:true:false:false:false:false:3:3.85
+Charles:Williams:76016:(469) 121-9545:0:charles.williams@aol.com:password:0:0:1:1:0:1:0:false:false:true:false:false:false:1:4.75
+Peter:Universe:76007:(972) 352-7134:0:peter.universe@yahoo.com:password:0:0:1:0:0:0:1:false:false:true:false:false:false:1:3.18
+Aaron:Atwell:76019:(817) 730-8787:1:aaron.atwell@aol.com:password:0:0:0:0:1:0:0:false:false:false:false:true:false:3:2.33
+Connie:Green:76003:(469) 682-1224:0:connie.green@me.net:password:0:0:1:1:0:0:0:false:false:false:true:false:false:2:3.65
+Sarah:Zeta:76008:(682) 620-3434:1:sarah.zeta@uta.mavs.edu:password:0:1:0:1:0:0:0:true:false:false:false:false:false:3:2.25
+Karla:Hernandez:76015:(469) 563-9535:0:karla.hernandez@gmail.com:password:0:0:1:1:0:0:1:true:false:false:false:false:false:2:4.37
+Bruce:Zeta:76006:(469) 779-4294:1:bruce.zeta@charter.net:password:0:1:0:0:1:0:1:false:false:true:false:false:false:3:1.47
+Connie:Trout:76002:(972) 156-9727:1:connie.trout@gmail.com:password:0:1:1:1:0:0:0:false:false:false:false:false:true:2:2.74
+Amber:Jameson:76007:(469) 292-9268:0:amber.jameson@charter.net:password:0:1:0:1:0:1:0:false:true:false:false:false:false:1:2.07
+Karla:Atwell:76001:(469) 201-9554:0:karla.atwell@uta.mavs.edu:password:0:0:0:0:1:1:0:true:false:false:false:false:false:1:1.28
+Cinnimon:Becker:76007:(682) 512-5022:1:cinnimon.becker@hotmail.com:password:0:0:1:1:1:1:0:false:false:true:false:false:false:3:2.81
+Valerie:Xilophone:76002:(972) 389-2606:1:valerie.xilophone@yahoo.com:password:0:0:1:1:1:1:1:true:false:false:false:false:false:1:4.53
+Emily:Red:76013:(972) 649-9332:1:emily.red@me.net:password:0:1:0:1:1:0:1:true:false:false:false:false:false:3:3.22
+Nick:Khalili:76007:(682) 319-6617:0:nick.khalili@me.net:password:0:1:1:0:0:1:1:false:false:false:false:false:true:2:2.15
+Bill:Red:76014:(469) 993-3771:0:bill.red@hotmail.com:password:0:1:0:0:0:0:1:false:false:false:false:true:false:1:3.88
+Rodger:Orange:76008:(817) 459-1883:1:rodger.orange@gmail.com:password:0:1:1:0:1:0:1:false:true:false:false:false:false:3:4.50
+Alec:Krypton:76008:(469) 729-8768:1:alec.krypton@gmail.com:password:0:0:1:0:1:1:0:false:false:false:false:false:true:1:4.80
+Sarah:Universe:76009:(817) 121-7705:0:sarah.universe@ymail.com:password:0:0:0:1:0:1:0:false:false:false:false:true:false:2:2.25
+Vegeta:Stevens:76011:(682) 309-6243:0:vegeta.stevens@charter.net:password:0:1:1:0:1:1:1:false:true:false:false:false:false:3:4.03
+Gabina:Universe:76003:(682) 963-6185:1:gabina.universe@charter.net:password:0:0:0:0:1:1:0:false:false:false:true:false:false:3:4.02
+Wendy:White:76007:(469) 374-6621:0:wendy.white@gmail.com:password:0:1:1:0:1:1:0:false:false:true:false:false:false:2:3.10
+Jason:Red:76013:(817) 504-3376:0:jason.red@charter.net:password:0:1:0:1:1:0:0:false:true:false:false:false:false:1:2.87
+Aaron:Hernandez:76010:(682) 732-8894:0:aaron.hernandez@aol.com:password:0:1:0:1:1:1:0:false:false:false:false:false:true:1:1.83
+Cinnimon:Universe:76007:(469) 591-7109:1:cinnimon.universe@uta.mavs.edu:password:0:1:0:1:0:1:1:false:false:false:true:false:false:1:3.27
+Garth:Brazeal:76012:(972) 103-4813:0:garth.brazeal@me.net:password:0:0:1:1:0:0:1:false:true:false:false:false:false:1:2.44
+Ursala:Mayweather:76004:(972) 979-3042:0:ursala.mayweather@uta.mavs.edu:password:0:0:0:0:1:1:1:false:false:false:true:false:false:2:2.42
+Natalie:Smith:76008:(214) 779-7464:1:natalie.smith@hotmail.com:password:0:0:0:1:1:0:1:false:true:false:false:false:false:2:3.29
+Ivan:Apple:76016:(972) 175-6701:0:ivan.apple@uta.edu:password:0:0:1:0:1:1:0:false:true:false:false:false:false:2:1.68
+David:Morgan:76013:(972) 723-2152:0:david.morgan@aol.com:password:0:1:1:1:1:0:0:false:false:false:false:false:true:3:4.57
+Vegeta:Khalili:76001:(214) 296-4208:0:vegeta.khalili@uta.mavs.edu:password:0:0:0:1:1:1:1:true:false:false:false:false:false:3:1.49
+Valerie:Beach:76019:(682) 870-1317:1:valerie.beach@yahoo.com:password:0:1:0:1:1:1:1:false:false:false:true:false:false:1:3.53
+Goku:Beach:76001:(972) 287-6837:1:goku.beach@yahoo.com:password:0:0:1:0:1:0:1:true:false:false:false:false:false:1:3.75
+Amber:Apple:76008:(817) 414-6504:0:amber.apple@live.com:password:0:1:0:0:0:0:0:false:false:false:false:false:true:3:4.09
+Gabina:Everest:76003:(469) 518-7290:1:gabina.everest@ymail.com:password:0:0:0:1:0:1:1:true:false:false:false:false:false:1:3.91
+Ursala:Luna:76006:(817) 496-8957:1:ursala.luna@uta.edu:password:0:1:1:1:0:1:1:false:false:false:false:true:false:1:2.65
+Rodger:Nguyen:76016:(682) 610-6497:1:rodger.nguyen@gmail.com:password:0:1:1:1:0:0:0:false:false:false:false:false:true:2:1.32
+Elvis:Xilophone:76011:(469) 546-6028:1:elvis.xilophone@sbcglobal.net:password:0:1:1:1:0:1:1:false:false:false:false:true:false:1:3.00
+Nick:Orange:76001:(972) 372-4421:1:nick.orange@charter.net:password:0:0:1:1:1:0:0:false:true:false:false:false:false:2:3.19
+Gayle:Morgan:76019:(972) 757-10661:0:gayle.morgan@yahoo.com:password:0:0:0:0:1:0:0:false:true:false:false:false:false:3:2.93
+Quinn:Stephan:76015:(972) 482-2438:0:quinn.stephan@me.net:password:0:0:0:1:0:0:1:false:false:false:false:true:false:2:4.55
+Michael:Indigo:76010:(214) 120-1124:0:michael.indigo@uta.edu:password:0:0:1:1:0:1:1:false:false:false:false:true:false:3:1.69
+Quinn:Coleman:76004:(469) 309-8742:1:quinn.coleman@uta.mavs.edu:password:0:1:1:1:0:1:0:false:false:false:false:true:false:3:3.75
+Sommer:Love:76012:(817) 428-9118:1:sommer.love@yahoo.com:password:0:1:0:1:1:1:0:false:false:false:false:true:false:2:1.87
+Gayle:Krypton:76013:(214) 698-4901:0:gayle.krypton@uta.mavs.edu:password:0:1:0:0:1:0:0:false:false:true:false:false:false:1:1.64
+Karla:Nabisco:76011:(214) 478-10336:0:karla.nabisco@sbcglobal.net:password:0:0:1:0:0:0:1:false:false:false:false:true:false:2:2.53
+Gabina:Mayweather:76005:(214) 210-8277:0:gabina.mayweather@aol.com:password:0:0:0:0:0:1:1:false:false:false:false:false:true:2:4.20
+Joe:Orange:76015:(972) 784-1895:1:joe.orange@uta.mavs.edu:password:0:1:0:0:0:0:1:false:true:false:false:false:false:2:4.92
+Jessica:Stephan:76014:(469) 697-7938:0:jessica.stephan@uta.edu:password:0:1:0:1:0:1:0:false:false:false:false:false:true:3:1.88
+Bill:Mayweather:76001:(469) 966-3743:1:bill.mayweather@ymail.com:password:0:1:1:0:1:0:0:true:false:false:false:false:false:2:2.52
+Austin:Khalili:76001:(972) 616-7600:0:austin.khalili@me.net:password:0:1:1:0:0:1:0:false:true:false:false:false:false:2:1.37
+Rose:Apple:76015:(817) 322-7773:1:rose.apple@hotmail.com:password:0:1:0:0:1:0:0:false:true:false:false:false:false:3:3.86
+Gabino:Clifford:76009:(469) 845-2125:0:gabino.clifford@uta.mavs.edu:password:0:1:0:1:1:0:0:true:false:false:false:false:false:2:3.93
+Wendy:Becker:76001:(682) 233-8714:0:wendy.becker@charter.net:password:0:0:1:1:0:0:1:false:false:true:false:false:false:1:4.12
+Vegeta:Red:76011:(214) 978-1826:1:vegeta.red@uta.mavs.edu:password:0:0:1:0:0:0:0:false:false:false:false:false:true:2:3.29
+Jarvis:Everest:76015:(469) 745-10667:0:jarvis.everest@live.com:password:0:1:1:0:1:1:1:false:false:false:false:false:true:3:2.57
+Austin:Focal:76014:(972) 654-9930:1:austin.focal@me.net:password:0:0:1:0:0:0:0:false:false:false:false:false:true:1:1.36
+Ursala:Green:76006:(469) 336-10027:1:ursala.green@uta.mavs.edu:password:0:1:0:0:0:0:1:true:false:false:false:false:false:2:4.39
+Frank:Atwell:76005:(214) 385-1076:1:frank.atwell@charter.net:password:0:0:1:0:1:1:0:false:true:false:false:false:false:2:1.78
+Vegeta:Nabisco:76008:(972) 187-9138:0:vegeta.nabisco@sbcglobal.net:password:0:1:0:0:0:1:0:true:false:false:false:false:false:1:1.31
+Jake:White:76010:(817) 729-6485:1:jake.white@hotmail.com:password:0:0:0:1:1:1:0:false:false:true:false:false:false:2:1.18
+Xavier:Coleman:76014:(682) 641-6599:0:xavier.coleman@me.net:password:0:1:1:0:1:1:0:false:true:false:false:false:false:2:4.33
+Tin:Patricks:76003:(972) 219-2360:0:tin.patricks@charter.net:password:0:1:1:0:1:0:1:false:false:false:true:false:false:3:1.72
+Jessica:Williams:76009:(469) 589-6007:1:jessica.williams@yahoo.com:password:0:1:1:1:0:1:0:false:false:true:false:false:false:3:1.02
+Jake:Patricks:76015:(682) 563-8772:1:jake.patricks@charter.net:password:0:0:1:1:1:1:0:false:true:false:false:false:false:2:2.66
+Jessica:Jones:76008:(682) 904-10985:0:jessica.jones@charter.net:password:0:0:1:0:0:0:1:false:false:false:true:false:false:3:2.66
+Tiffany:Jones:76017:(972) 625-7216:0:tiffany.jones@uta.mavs.edu:password:0:1:0:1:1:0:1:false:false:false:false:false:true:3:3.43
+Sarah:Mayweather:76009:(469) 467-10282:1:sarah.mayweather@uta.edu:password:0:0:1:1:0:0:0:true:false:false:false:false:false:1:3.99
+Oscar:Wilson:76011:(682) 780-5584:1:oscar.wilson@yahoo.com:password:0:1:0:0:0:1:0:false:false:false:true:false:false:1:2.27
+Emmanuel:Matthews:76013:(817) 998-6961:1:emmanuel.matthews@yahoo.com:password:0:1:1:1:0:1:1:false:false:false:false:false:true:1:1.62
+Ryan:Stephan:76009:(972) 403-8940:1:ryan.stephan@hotmail.com:password:0:1:0:1:1:1:0:true:false:false:false:false:false:1:4.88
+Wendy:Ramirez:76001:(214) 550-3067:1:wendy.ramirez@sbcglobal.net:password:0:1:0:1:1:1:0:false:false:false:true:false:false:2:4.72
+Peter:Xilophone:76001:(817) 721-3060:1:peter.xilophone@charter.net:password:0:0:1:1:0:0:1:false:false:false:true:false:false:3:4.11
+Goku:Overton:76005:(469) 385-5962:0:goku.overton@charter.net:password:0:0:1:1:0:1:0:false:false:false:false:true:false:2:1.82
+Wendy:Brazeal:76014:(972) 661-4802:1:wendy.brazeal@me.net:password:0:1:1:0:1:1:0:false:false:true:false:false:false:1:1.77
+Natalie:Everest:76005:(214) 766-4548:0:natalie.everest@aol.com:password:0:1:1:1:1:0:1:false:false:false:false:true:false:3:1.14
+Hilary:Overton:76013:(469) 843-4444:0:hilary.overton@me.net:password:0:1:0:1:0:0:1:false:false:false:false:false:true:1:2.99
+Clark:Apple:76007:(682) 119-8664:1:clark.apple@ymail.com:password:0:0:1:0:1:1:1:true:false:false:false:false:false:3:1.08
+Jessica:Becker:76012:(214) 871-4028:0:jessica.becker@charter.net:password:0:0:1:0:0:1:0:false:false:true:false:false:false:3:3.82
+Jason:Atwell:76008:(972) 676-1656:0:jason.atwell@charter.net:password:0:1:1:1:1:1:0:false:true:false:false:false:false:3:3.70
+Michael:Smith:76004:(682) 191-6200:1:michael.smith@me.net:password:0:1:1:1:1:0:1:false:false:true:false:false:false:3:3.08
+Bruce:Owens:76012:(972) 711-4934:1:bruce.owens@live.com:password:0:1:1:1:0:0:1:false:true:false:false:false:false:3:3.20
+Amber:Patricks:76011:(972) 211-9991:0:amber.patricks@ymail.com:password:0:1:1:0:0:0:0:true:false:false:false:false:false:2:2.56
+Travis:Xilophone:76004:(682) 267-3872:1:travis.xilophone@hotmail.com:password:0:1:1:1:1:1:1:false:false:false:false:true:false:3:4.29
+Connie:Luna:76009:(972) 190-6547:1:connie.luna@me.net:password:0:1:0:0:0:1:1:false:true:false:false:false:false:1:2.65
+Brittany:Wilson:76010:(214) 373-5563:0:brittany.wilson@uta.mavs.edu:password:0:1:0:0:1:1:1:false:false:true:false:false:false:2:4.83
+Oscar:Viole:76003:(972) 972-3458:0:oscar.viole@sbcglobal.net:password:0:1:1:0:0:1:0:false:false:true:false:false:false:2:2.11
+Ron:Apple:76004:(469) 436-9599:0:ron.apple@hotmail.com:password:0:0:1:1:1:1:0:false:false:false:false:true:false:2:2.56
+Connie:Nguyen:76010:(214) 943-2195:0:connie.nguyen@hotmail.com:password:0:0:0:1:1:1:1:false:true:false:false:false:false:1:2.94
+Walter:Pinkerton:76010:(682) 392-5668:0:walter.pinkerton@uta.edu:password:0:1:0:1:1:1:0:false:false:false:false:false:true:3:4.71
+Zach:Cooke:76012:(682) 851-1754:0:zach.cooke@me.net:password:0:1:1:1:0:1:1:true:false:false:false:false:false:1:2.28
+Rodger:Matthews:76008:(682) 484-5920:0:rodger.matthews@hotmail.com:password:0:0:0:0:0:0:1:false:false:false:true:false:false:2:1.81
+Rodger:Zeta:76018:(682) 805-2969:0:rodger.zeta@live.com:password:0:0:1:1:0:0:1:false:true:false:false:false:false:2:3.92
+Peter:Hernandez:76016:(972) 550-5382:0:peter.hernandez@charter.net:password:0:0:1:1:1:0:1:false:false:false:false:true:false:3:1.25
+Emily:Red:76015:(817) 849-10554:0:emily.red@charter.net:password:0:0:0:0:0:1:1:false:false:false:false:true:false:2:3.80
+Marvin:Mayweather:76014:(469) 113-7129:0:marvin.mayweather@aol.com:password:0:1:1:0:0:0:1:false:false:false:false:false:true:3:2.86
+Jake:Trout:76006:(972) 347-4698:0:jake.trout@uta.mavs.edu:password:0:1:0:1:0:0:1:true:false:false:false:false:false:1:1.79
+Yugi:Ramirez:76017:(214) 463-4174:0:yugi.ramirez@yahoo.com:password:0:0:1:1:1:1:1:false:false:false:true:false:false:1:2.78
+Peter:Khalili:76002:(682) 890-7926:0:peter.khalili@uta.edu:password:0:1:1:1:1:0:0:false:false:true:false:false:false:3:2.89
+Marvin:Green:76005:(682) 741-3024:0:marvin.green@gmail.com:password:0:0:1:0:0:0:1:false:false:true:false:false:false:2:4.93
+Hilary:Owens:76007:(469) 738-4041:0:hilary.owens@uta.mavs.edu:password:0:0:0:1:0:1:1:false:false:false:false:false:true:1:2.14
+Rose:Jones:76002:(469) 635-2701:0:rose.jones@charter.net:password:0:0:1:0:0:1:1:false:true:false:false:false:false:3:3.62
+Jake:Stephan:76016:(469) 507-8079:0:jake.stephan@sbcglobal.net:password:0:1:0:0:0:0:0:false:false:false:false:true:false:3:2.67
+Austin:Patricks:76004:(682) 953-7941:0:austin.patricks@gmail.com:password:0:0:1:0:0:0:1:false:false:true:false:false:false:3:2.57
+Ron:Everest:76005:(817) 977-9050:1:ron.everest@aol.com:password:0:0:0:0:0:1:1:false:false:false:false:false:true:2:2.95
+Hank:Gandolf:76001:(214) 936-3094:1:hank.gandolf@ymail.com:password:0:1:1:1:1:1:1:false:true:false:false:false:false:3:1.26
+Ryan:Owens:76009:(972) 321-9190:1:ryan.owens@aol.com:password:0:0:0:1:0:1:1:false:true:false:false:false:false:3:3.99
+Beth:Weems:76019:(469) 686-6708:1:beth.weems@charter.net:password:0:0:0:0:0:1:0:false:false:true:false:false:false:2:4.37
+Devin:Baracsh:76002:(817) 386-2558:1:devin.baracsh@charter.net:password:0:0:1:1:0:1:0:false:false:false:false:true:false:2:2.88
+David:Gandolf:76007:(972) 838-8332:1:david.gandolf@me.net:password:0:0:0:1:1:0:0:false:false:false:false:false:true:3:4.28
+Candi:Khalili:76010:(469) 959-3295:0:candi.khalili@uta.edu:password:0:1:1:1:1:1:0:true:false:false:false:false:false:2:1.45
+Candi:Williams:76007:(817) 378-8634:1:candi.williams@ymail.com:password:0:0:0:0:0:1:0:false:false:false:true:false:false:3:4.92
+Tin:Baracsh:76005:(817) 809-2445:0:tin.baracsh@uta.mavs.edu:password:0:0:1:0:1:1:0:false:true:false:false:false:false:3:1.10
+David:Owens:76010:(972) 739-8358:0:david.owens@sbcglobal.net:password:0:1:0:0:1:1:1:false:false:true:false:false:false:1:4.75
+Elvis:Wilson:76018:(682) 649-10485:0:elvis.wilson@ymail.com:password:0:0:0:0:1:1:1:false:false:false:true:false:false:1:3.39
+Garth:Luna:76008:(817) 941-2480:1:garth.luna@uta.mavs.edu:password:0:0:0:0:0:1:0:false:false:false:true:false:false:3:1.88
+Gabina:Mayweather:76003:(469) 965-4210:0:gabina.mayweather@live.com:password:0:0:0:1:1:0:0:false:false:false:true:false:false:3:2.90
+Garth:Dennis:76002:(817) 492-4992:1:garth.dennis@yahoo.com:password:0:0:0:0:0:1:0:false:false:true:false:false:false:1:3.31
+Chelsea:Green:76009:(469) 393-4316:0:chelsea.green@uta.mavs.edu:password:0:1:0:1:0:1:1:false:false:false:false:true:false:1:4.37
+Frank:Nguyen:76003:(682) 725-4479:1:frank.nguyen@live.com:password:0:0:0:1:1:1:1:false:false:false:false:true:false:3:2.24
+Frank:Stephan:76006:(469) 551-4637:1:frank.stephan@aol.com:password:0:1:0:0:1:1:0:false:false:false:false:false:true:3:1.51
+Vegeta:Young:76006:(469) 167-8682:1:vegeta.young@aol.com:password:0:0:1:0:0:0:1:false:false:true:false:false:false:3:1.09
+Travis:Stephan:76008:(214) 326-8137:1:travis.stephan@me.net:password:0:1:1:0:0:0:0:true:false:false:false:false:false:2:3.05
+Amber:Krypton:76016:(214) 595-10920:0:amber.krypton@me.net:password:0:1:1:0:0:0:0:true:false:false:false:false:false:1:3.17
+Ron:Young:76017:(469) 316-4466:0:ron.young@charter.net:password:0:0:0:1:0:0:1:false:false:true:false:false:false:2:3.91
+Bill:Pinkerton:76005:(214) 972-9833:1:bill.pinkerton@hotmail.com:password:0:0:0:1:1:0:0:false:false:false:false:false:true:3:3.47
+Joe:Dennis:76015:(972) 467-9906:0:joe.dennis@live.com:password:0:1:0:0:0:1:0:false:false:false:true:false:false:1:2.90
+Candi:White:76005:(972) 958-4748:0:candi.white@ymail.com:password:0:0:1:1:1:0:0:false:true:false:false:false:false:2:1.84
+Charles:Universe:76013:(972) 498-2282:0:charles.universe@uta.mavs.edu:password:0:1:0:0:1:1:0:false:false:true:false:false:false:3:3.56
+Amanda:Stevens:76006:(972) 167-7849:0:amanda.stevens@uta.edu:password:0:0:1:1:0:0:0:false:false:true:false:false:false:3:2.73
+Amanda:Xilophone:76018:(972) 723-4207:0:amanda.xilophone@yahoo.com:password:0:0:0:1:0:1:0:false:false:false:false:true:false:3:4.57
+Travis:Nguyen:76005:(469) 691-1520:1:travis.nguyen@ymail.com:password:0:0:1:1:0:1:1:false:true:false:false:false:false:3:1.10
+Austin:Viole:76006:(469) 696-4587:0:austin.viole@gmail.com:password:0:1:1:1:0:1:0:false:false:true:false:false:false:1:1.44
+Connie:Overton:76007:(214) 819-5921:0:connie.overton@charter.net:password:0:0:1:0:0:1:1:false:true:false:false:false:false:1:4.84
+Amber:White:76013:(972) 246-6001:1:amber.white@sbcglobal.net:password:0:0:1:0:0:0:1:false:true:false:false:false:false:3:2.68
+Ursala:Young:76003:(817) 885-5558:1:ursala.young@uta.mavs.edu:password:0:0:0:0:0:0:1:false:false:true:false:false:false:3:2.01
+Ryan:Stephan:76018:(214) 543-7875:0:ryan.stephan@live.com:password:0:1:0:0:0:0:1:false:false:false:false:false:true:1:1.65
+Rodger:Apple:76002:(682) 984-7781:1:rodger.apple@charter.net:password:0:1:1:1:1:1:0:false:true:false:false:false:false:1:1.29
+Connie:Xilophone:76008:(972) 256-3748:1:connie.xilophone@ymail.com:password:0:1:1:1:1:0:0:false:false:true:false:false:false:2:3.56
+Rodger:Nabisco:76012:(214) 817-9010:0:rodger.nabisco@ymail.com:password:0:0:1:1:0:0:1:true:false:false:false:false:false:3:4.90
+Vegeta:Jones:76008:(972) 353-2128:0:vegeta.jones@gmail.com:password:0:0:0:0:0:1:1:true:false:false:false:false:false:1:4.14
+Sarah:Weems:76014:(469) 263-3460:1:sarah.weems@me.net:password:0:0:1:1:1:1:0:false:false:false:false:false:true:3:4.37
+Lewis:Becker:76009:(469) 748-4341:0:lewis.becker@yahoo.com:password:0:1:1:1:1:1:1:false:false:false:false:false:true:1:3.09
+Wendy:Black:76003:(817) 483-2799:1:wendy.black@me.net:password:0:1:1:0:0:0:1:false:false:false:false:false:true:2:4.01
+Ivan:Coleman:76012:(682) 636-6012:1:ivan.coleman@charter.net:password:0:0:1:1:0:0:0:false:false:false:false:false:true:1:4.34
+Marvin:Jameson:76014:(469) 316-6961:1:marvin.jameson@aol.com:password:0:1:0:1:1:1:1:false:false:false:true:false:false:1:4.22
+Charles:Clifford:76016:(682) 470-10047:0:charles.clifford@ymail.com:password:0:0:1:1:1:0:0:false:false:true:false:false:false:3:2.45
+Travis:Young:76010:(817) 203-9023:0:travis.young@me.net:password:0:1:1:0:0:0:0:false:false:false:false:true:false:3:1.67
+Lewis:Smith:76014:(214) 307-10471:1:lewis.smith@live.com:password:0:1:0:0:1:1:0:true:false:false:false:false:false:3:3.66
+Travis:Matthews:76005:(972) 234-6900:0:travis.matthews@ymail.com:password:0:0:0:0:0:0:1:false:false:true:false:false:false:3:2.06
+Connie:Brazeal:76003:(682) 983-10605:1:connie.brazeal@live.com:password:0:1:0:0:1:0:0:false:false:false:false:false:true:2:3.19
+Jake:Sanchez:76007:(817) 724-4846:0:jake.sanchez@ymail.com:password:0:0:0:0:0:0:1:false:false:true:false:false:false:3:1.46
+Sommer:Hernandez:76014:(214) 924-1813:1:sommer.hernandez@ymail.com:password:0:1:1:0:1:0:0:true:false:false:false:false:false:3:4.03
+Xavier:Owens:76001:(817) 465-2883:1:xavier.owens@aol.com:password:0:1:0:0:1:0:1:false:false:false:false:true:false:2:1.54
+Tin:Ramirez:76011:(972) 578-8967:1:tin.ramirez@uta.edu:password:0:1:0:0:0:1:0:false:false:false:false:false:true:3:4.97
+Travis:Baracsh:76018:(817) 119-4308:1:travis.baracsh@sbcglobal.net:password:0:1:0:0:0:1:1:false:true:false:false:false:false:3:2.06
+Emmanuel:Indigo:76006:(817) 438-5668:1:emmanuel.indigo@uta.mavs.edu:password:0:0:1:1:0:0:0:true:false:false:false:false:false:1:1.57
+Emmanuel:Stevens:76004:(214) 770-3465:1:emmanuel.stevens@aol.com:password:0:0:1:0:0:0:0:false:false:false:false:true:false:1:4.85
+Emmanuel:Love:76016:(214) 535-1790:0:emmanuel.love@sbcglobal.net:password:0:1:0:0:1:0:1:false:false:false:false:false:true:3:1.54
+Gayle:Quill:76001:(469) 388-9238:0:gayle.quill@aol.com:password:0:1:0:1:0:0:0:true:false:false:false:false:false:3:1.93
+Austin:Morgan:76003:(972) 442-5179:0:austin.morgan@hotmail.com:password:0:1:1:0:0:1:1:false:false:false:false:false:true:1:2.33
+Maria:Black:76010:(469) 519-2345:0:maria.black@sbcglobal.net:password:0:0:1:1:1:1:1:false:false:false:false:false:true:1:2.06
+Sommer:Hernandez:76002:(817) 906-4452:1:sommer.hernandez@sbcglobal.net:password:0:1:0:1:0:0:1:false:false:false:false:false:true:3:2.93
+Emily:Cooke:76001:(972) 737-3666:0:emily.cooke@aol.com:password:0:1:0:1:1:0:1:true:false:false:false:false:false:1:3.49
+Gabina:Luna:76005:(469) 827-2942:0:gabina.luna@sbcglobal.net:password:0:1:0:1:0:0:1:false:false:false:false:false:true:1:4.55
+Rose:Patricks:76018:(682) 714-2470:0:rose.patricks@uta.edu:password:0:1:1:1:0:0:0:true:false:false:false:false:false:1:4.34
+Travis:Krypton:76015:(972) 844-6337:1:travis.krypton@aol.com:password:0:1:0:0:1:0:1:true:false:false:false:false:false:1:2.58
+Cinnimon:Indigo:76016:(682) 280-7752:0:cinnimon.indigo@sbcglobal.net:password:0:1:1:1:0:1:1:false:false:true:false:false:false:2:3.31
+Goku:Viole:76011:(682) 816-8994:0:goku.viole@uta.mavs.edu:password:0:0:0:0:0:0:1:false:false:true:false:false:false:1:4.41
+Rodger:Hernandez:76001:(817) 966-10526:1:rodger.hernandez@sbcglobal.net:password:0:0:1:0:1:1:0:false:false:false:false:false:true:3:3.49
+Peter:Dennis:76005:(817) 696-1114:0:peter.dennis@yahoo.com:password:0:0:0:1:0:1:0:false:true:false:false:false:false:2:1.83
+Alec:Becker:76002:(682) 359-1402:0:alec.becker@me.net:password:0:0:0:1:1:0:1:false:true:false:false:false:false:3:3.69
+Joe:Brazeal:76018:(972) 389-3863:1:joe.brazeal@uta.mavs.edu:password:0:0:0:1:1:1:0:false:false:false:false:false:true:2:4.14
+Yugi:Trout:76016:(682) 250-8215:1:yugi.trout@live.com:password:0:0:0:0:1:1:0:false:false:false:false:false:true:1:3.10
+Sommer:Brazeal:76017:(817) 806-8560:1:sommer.brazeal@charter.net:password:0:0:1:1:0:0:0:false:false:false:true:false:false:2:2.64
+Devin:Atwell:76007:(817) 498-8593:1:devin.atwell@hotmail.com:password:0:1:1:0:0:0:1:false:false:true:false:false:false:2:1.51
+Maria:Orange:76016:(972) 211-7101:1:maria.orange@gmail.com:password:0:1:1:1:1:0:1:false:false:false:true:false:false:3:4.46
+Rodger:Universe:76015:(214) 218-9866:0:rodger.universe@gmail.com:password:0:0:0:0:1:0:0:false:false:false:true:false:false:3:2.18
+Wendy:Brazeal:76015:(214) 632-4259:1:wendy.brazeal@sbcglobal.net:password:0:1:0:0:0:0:0:false:false:false:false:true:false:3:1.35
+Bruce:Coleman:76004:(469) 408-1800:0:bruce.coleman@hotmail.com:password:0:1:0:1:0:0:1:true:false:false:false:false:false:1:2.45
+Frank:Love:76011:(469) 769-2618:0:frank.love@yahoo.com:password:0:1:0:0:1:0:0:false:true:false:false:false:false:1:2.93
+Valerie:Dennis:76004:(817) 768-7602:1:valerie.dennis@charter.net:password:0:1:0:0:1:1:1:true:false:false:false:false:false:1:4.33
+Charles:Gandolf:76002:(817) 453-3769:1:charles.gandolf@hotmail.com:password:0:1:1:0:0:1:1:false:false:false:false:false:true:2:3.92
+Maria:Overton:76011:(214) 893-4130:1:maria.overton@uta.mavs.edu:password:0:0:1:0:0:0:1:true:false:false:false:false:false:3:4.81
+Cinnimon:Jones:76017:(817) 460-5149:1:cinnimon.jones@uta.edu:password:0:0:1:1:0:1:0:false:true:false:false:false:false:2:2.18
+Sue:Apple:76009:(682) 895-2131:1:sue.apple@yahoo.com:password:0:0:0:0:0:0:0:false:true:false:false:false:false:2:1.93
+Oscar:Quill:76010:(972) 443-1754:0:oscar.quill@charter.net:password:0:0:0:0:1:0:0:false:false:false:false:false:true:1:3.96
+Jessica:Love:76006:(972) 794-10121:0:jessica.love@uta.edu:password:0:0:1:1:1:1:0:true:false:false:false:false:false:3:3.80
+Jason:Cooke:76018:(817) 761-8073:0:jason.cooke@uta.edu:password:0:1:0:0:0:0:0:false:false:false:false:false:true:1:1.36
+Rose:Wilson:76005:(682) 740-3444:1:rose.wilson@charter.net:password:0:1:1:1:0:0:1:false:false:false:true:false:false:1:1.18
+Nick:Dennis:76001:(214) 341-3089:1:nick.dennis@gmail.com:password:0:1:0:1:1:0:1:true:false:false:false:false:false:2:2.67
+Alec:Baracsh:76011:(817) 576-7510:1:alec.baracsh@sbcglobal.net:password:0:0:1:1:1:0:0:false:true:false:false:false:false:1:1.94
+Bruce:Green:76011:(469) 115-8304:1:bruce.green@uta.edu:password:0:1:0:1:0:0:1:true:false:false:false:false:false:2:3.99
+Ron:Green:76015:(214) 425-7675:0:ron.green@sbcglobal.net:password:0:1:0:0:1:1:0:false:false:false:false:true:false:1:4.84
+Austin:Orange:76018:(972) 709-9274:0:austin.orange@uta.edu:password:0:0:0:0:0:1:0:false:false:false:false:false:true:1:3.82
+Hilary:Brazeal:76007:(469) 874-7721:0:hilary.brazeal@live.com:password:0:1:1:0:0:0:1:false:true:false:false:false:false:1:2.18
+Nick:Stevens:76002:(682) 894-9820:0:nick.stevens@sbcglobal.net:password:0:1:0:0:0:1:0:false:false:false:true:false:false:2:3.34
+Alex:Focal:76019:(972) 374-8032:1:alex.focal@gmail.com:password:0:1:1:0:1:0:1:false:false:false:false:true:false:2:3.97
+Ivan:Matthews:76013:(972) 795-8269:0:ivan.matthews@yahoo.com:password:0:1:1:1:0:1:1:false:false:false:false:false:true:3:3.76
+Gabino:Trout:76017:(682) 846-2958:0:gabino.trout@yahoo.com:password:0:1:0:1:0:1:0:false:false:false:false:false:true:1:1.49
+Jessica:Everest:76019:(972) 678-1796:0:jessica.everest@aol.com:password:0:1:0:0:0:0:1:true:false:false:false:false:false:2:4.55
+Brittany:Khalili:76016:(817) 791-4884:1:brittany.khalili@live.com:password:0:0:1:1:0:1:1:true:false:false:false:false:false:2:4.84
+Gayle:Weems:76016:(469) 702-9489:1:gayle.weems@aol.com:password:0:0:0:0:0:1:0:false:false:false:true:false:false:1:2.03
+Goku:Green:76006:(682) 726-1161:0:goku.green@hotmail.com:password:0:0:0:1:1:1:1:false:false:false:false:true:false:1:1.02
+Bill:Coleman:76006:(214) 205-6116:1:bill.coleman@ymail.com:password:0:0:1:1:1:0:0:false:false:false:false:false:true:3:4.97
+Gabina:Patricks:76002:(682) 404-2641:1:gabina.patricks@live.com:password:0:0:0:0:0:0:0:false:true:false:false:false:false:3:1.82
+Lewis:Red:76004:(469) 673-9515:1:lewis.red@gmail.com:password:0:1:1:0:1:1:1:false:false:false:true:false:false:2:3.79
+Ursala:Sanchez:76001:(214) 965-5050:0:ursala.sanchez@uta.edu:password:0:1:0:1:0:0:1:false:false:false:true:false:false:1:1.83
+Gayle:Patricks:76018:(214) 802-7169:0:gayle.patricks@ymail.com:password:0:0:0:1:1:0:0:true:false:false:false:false:false:2:4.49
+Amanda:Apple:76004:(469) 592-2996:0:amanda.apple@uta.edu:password:0:1:1:1:0:0:1:true:false:false:false:false:false:2:4.37
+Amber:Hernandez:76006:(972) 464-3038:1:amber.hernandez@charter.net:password:0:1:0:1:1:0:1:false:false:false:false:true:false:3:4.26
+Jason:Apple:76016:(469) 220-2806:0:jason.apple@uta.edu:password:0:1:0:0:1:1:1:false:true:false:false:false:false:3:4.41
+Devin:Green:76015:(469) 898-4409:0:devin.green@uta.edu:password:0:0:1:0:1:1:0:false:false:false:false:false:true:2:1.39
+Sommer:Nguyen:76016:(214) 586-4771:1:sommer.nguyen@uta.edu:password:0:0:0:0:1:0:1:false:false:true:false:false:false:2:4.80
+John:Stevens:76015:(469) 968-6894:0:john.stevens@uta.mavs.edu:password:0:1:1:1:1:0:1:false:false:false:true:false:false:2:4.54
+Rose:Universe:76010:(972) 989-10086:1:rose.universe@aol.com:password:0:1:0:1:1:1:1:false:false:true:false:false:false:3:1.73
+Joe:Nguyen:76010:(469) 575-1205:1:joe.nguyen@hotmail.com:password:0:0:1:1:1:1:0:true:false:false:false:false:false:3:3.30
+Gabino:Becker:76009:(469) 139-2398:0:gabino.becker@yahoo.com:password:0:0:1:0:0:0:0:false:false:true:false:false:false:2:4.16
+Yugi:Indigo:76008:(972) 138-8431:1:yugi.indigo@gmail.com:password:0:0:0:0:0:1:0:true:false:false:false:false:false:2:1.12
+Jarvis:Morgan:76018:(682) 592-4336:0:jarvis.morgan@yahoo.com:password:0:1:1:0:0:0:1:true:false:false:false:false:false:3:3.33
+Ryan:Brazeal:76008:(972) 651-3718:0:ryan.brazeal@live.com:password:0:1:1:1:0:0:1:false:false:false:false:true:false:2:1.77
+Devin:Wilson:76014:(469) 221-1979:0:devin.wilson@charter.net:password:0:1:0:0:0:1:0:false:false:false:false:true:false:1:2.75
+Beth:Nguyen:76015:(972) 857-2432:0:beth.nguyen@me.net:password:0:1:0:1:0:0:0:false:false:false:true:false:false:3:4.92
+Walter:Cooke:76005:(682) 577-8073:1:walter.cooke@gmail.com:password:0:0:0:0:0:1:0:false:true:false:false:false:false:2:1.62
+Dirk:Apple:76003:(214) 365-4593:0:dirk.apple@me.net:password:0:1:0:1:1:0:0:false:false:false:false:true:false:1:2.95
+Travis:Trout:76016:(469) 389-7297:1:travis.trout@uta.edu:password:0:1:1:1:1:0:1:false:false:false:false:false:true:2:4.40
+Garth:Xilophone:76007:(682) 735-9977:1:garth.xilophone@uta.mavs.edu:password:0:0:1:1:0:1:0:false:false:false:false:true:false:1:2.40
+Natalie:Indigo:76011:(817) 673-1813:0:natalie.indigo@hotmail.com:password:0:1:0:1:1:0:1:false:false:false:false:false:true:1:1.65
+Joe:Quill:76008:(972) 386-3005:1:joe.quill@ymail.com:password:0:0:1:1:0:0:0:true:false:false:false:false:false:3:2.72
+Sarah:Love:76016:(214) 582-1395:1:sarah.love@uta.edu:password:0:0:0:0:0:0:1:false:false:false:false:true:false:1:1.61
+Charles:Williams:76002:(214) 774-6013:0:charles.williams@ymail.com:password:0:0:1:0:0:1:0:false:false:true:false:false:false:3:1.91
+Nick:Orange:76008:(682) 998-3883:0:nick.orange@yahoo.com:password:0:1:0:1:0:1:0:false:false:false:true:false:false:3:4.75
+Travis:Xilophone:76002:(972) 994-7700:1:travis.xilophone@sbcglobal.net:password:0:1:1:0:0:0:0:true:false:false:false:false:false:2:3.49
+Wendy:Quill:76008:(214) 224-2011:0:wendy.quill@hotmail.com:password:0:0:1:0:1:1:1:false:false:false:false:true:false:2:3.74
+Clark:White:76019:(469) 987-7209:0:clark.white@yahoo.com:password:0:1:1:1:1:0:1:false:false:false:false:true:false:2:4.00
+Sue:Coleman:76002:(972) 950-1907:0:sue.coleman@yahoo.com:password:0:1:0:0:0:1:1:false:false:false:false:true:false:2:1.02
+Jessica:Stephan:76004:(972) 738-3522:1:jessica.stephan@live.com:password:0:1:1:0:0:0:1:true:false:false:false:false:false:1:2.77
+Aaron:Brazeal:76013:(817) 330-7905:1:aaron.brazeal@sbcglobal.net:password:0:0:1:0:1:1:0:false:false:true:false:false:false:1:3.78
+Ryan:Trout:76014:(682) 502-7013:1:ryan.trout@charter.net:password:0:1:0:1:1:1:0:true:false:false:false:false:false:2:2.83
+Quinn:Becker:76003:(682) 613-8471:0:quinn.becker@uta.mavs.edu:password:0:0:0:1:0:0:0:false:false:false:true:false:false:1:4.16
+Ivan:Young:76010:(469) 971-3999:0:ivan.young@ymail.com:password:0:1:0:1:0:1:1:false:false:false:false:false:true:2:2.96
+Emmanuel:Becker:76007:(469) 974-8930:0:emmanuel.becker@me.net:password:0:1:1:1:0:1:1:false:false:false:true:false:false:3:3.36
+Ryan:Jones:76010:(682) 957-5317:0:ryan.jones@hotmail.com:password:0:0:1:0:1:0:0:true:false:false:false:false:false:3:3.45
+Chelsea:Krypton:76002:(817) 357-1953:0:chelsea.krypton@ymail.com:password:0:1:0:1:0:0:1:false:false:false:false:false:true:2:4.04
+Candi:Green:76004:(469) 532-6780:1:candi.green@me.net:password:0:0:1:0:0:1:1:false:false:false:true:false:false:1:2.09
+Alec:Indigo:76011:(817) 652-5717:0:alec.indigo@ymail.com:password:0:1:0:1:1:1:1:false:false:false:true:false:false:3:3.17
+Hank:Quill:76002:(972) 594-6541:0:hank.quill@sbcglobal.net:password:0:0:0:0:0:1:0:false:false:false:true:false:false:3:4.58
+Joe:Orange:76014:(682) 809-8124:0:joe.orange@live.com:password:0:1:1:0:1:0:1:false:true:false:false:false:false:3:4.48
+Lewis:Dennis:76015:(817) 252-5838:0:lewis.dennis@uta.mavs.edu:password:0:1:0:0:1:0:0:false:false:false:true:false:false:3:3.63
+Xavier:Hernandez:76019:(817) 251-7770:1:xavier.hernandez@yahoo.com:password:0:0:0:0:1:0:1:false:true:false:false:false:false:1:3.66
+Jessica:Mayweather:76016:(817) 428-10680:1:jessica.mayweather@uta.edu:password:0:0:1:0:1:1:1:false:true:false:false:false:false:3:1.95
+Sommer:Trout:76004:(972) 766-10432:1:sommer.trout@uta.mavs.edu:password:0:1:1:0:1:1:0:false:false:false:true:false:false:2:1.36
+Clark:Ramirez:76002:(972) 574-3362:0:clark.ramirez@uta.mavs.edu:password:0:1:1:0:0:0:1:false:false:true:false:false:false:3:3.57
+John:Black:76006:(682) 719-7707:0:john.black@yahoo.com:password:0:0:1:0:0:0:1:false:false:false:false:true:false:2:4.77
+Tin:Universe:76010:(214) 614-4897:0:tin.universe@live.com:password:0:1:1:1:1:1:0:false:false:false:true:false:false:3:3.95
+Tiffany:Viole:76008:(469) 324-2462:1:tiffany.viole@gmail.com:password:0:1:1:0:0:1:0:true:false:false:false:false:false:2:4.52
+Brittany:Brazeal:76008:(682) 484-8955:0:brittany.brazeal@gmail.com:password:0:0:0:0:0:0:0:false:false:true:false:false:false:3:2.01
+Peter:Krypton:76019:(469) 489-4218:1:peter.krypton@me.net:password:0:0:0:1:0:0:1:false:false:true:false:false:false:3:1.40
+Garth:Smith:76010:(214) 338-1825:1:garth.smith@ymail.com:password:0:1:1:0:1:0:0:false:true:false:false:false:false:1:3.84
+Alec:Green:76016:(682) 845-8335:1:alec.green@me.net:password:0:0:1:0:0:0:0:false:true:false:false:false:false:1:2.25
+Jake:Pinkerton:76011:(972) 660-2227:0:jake.pinkerton@live.com:password:0:0:1:0:1:1:0:false:false:true:false:false:false:2:2.24
+Dirk:Stevens:76013:(214) 462-6011:1:dirk.stevens@uta.edu:password:0:1:1:1:0:0:0:true:false:false:false:false:false:1:4.35
+Emmanuel:Zeta:76008:(469) 528-4099:0:emmanuel.zeta@hotmail.com:password:0:0:1:0:1:0:1:false:false:false:false:true:false:2:3.07
+Zach:Hernandez:76017:(469) 607-1462:0:zach.hernandez@ymail.com:password:0:1:0:0:0:1:1:false:false:true:false:false:false:1:2.63
+Emmanuel:Beach:76005:(214) 565-5113:1:emmanuel.beach@uta.mavs.edu:password:0:1:0:1:0:0:0:false:false:true:false:false:false:3:3.86
+Marvin:Williams:76010:(469) 818-4347:0:marvin.williams@uta.edu:password:0:0:0:1:0:1:1:true:false:false:false:false:false:1:1.13
+Zach:White:76007:(469) 834-2516:0:zach.white@me.net:password:0:1:1:1:1:0:1:false:true:false:false:false:false:1:2.79
+Cinnimon:Luna:76019:(817) 148-3612:0:cinnimon.luna@sbcglobal.net:password:0:1:1:0:1:0:0:false:false:false:true:false:false:2:3.11
+Cinnimon:Green:76010:(682) 227-8190:0:cinnimon.green@ymail.com:password:0:0:0:0:0:0:0:false:false:false:false:true:false:3:4.08
+Sue:Love:76010:(972) 663-7603:0:sue.love@aol.com:password:0:1:0:0:0:0:0:false:false:false:true:false:false:1:3.07
+Amber:Apple:76001:(469) 540-2610:1:amber.apple@ymail.com:password:0:1:1:0:0:1:1:false:true:false:false:false:false:1:3.05
+Garth:Overton:76014:(817) 580-7750:1:garth.overton@charter.net:password:0:1:0:0:1:1:1:false:false:false:true:false:false:3:4.52
+Ryan:Zeta:76010:(682) 165-1063:0:ryan.zeta@ymail.com:password:0:0:0:0:0:0:0:false:false:false:true:false:false:2:4.39
+David:Apple:76002:(817) 344-2260:1:david.apple@uta.mavs.edu:password:0:0:1:0:1:1:0:false:false:true:false:false:false:3:3.53
+John:Sanchez:76018:(682) 927-8520:0:john.sanchez@uta.mavs.edu:password:0:0:1:0:0:1:0:false:false:false:false:false:true:2:3.67
+Jane:Focal:76001:(817) 250-10195:0:jane.focal@live.com:password:0:0:0:0:0:1:1:false:false:false:true:false:false:1:2.39
+Dallas:Brazeal:76018:(817) 922-5351:1:dallas.brazeal@charter.net:password:0:1:0:0:0:0:0:false:true:false:false:false:false:3:4.48
+David:Jameson:76010:(214) 119-1382:1:david.jameson@live.com:password:0:0:0:0:1:0:0:false:true:false:false:false:false:2:1.00
+Lewis:Brazeal:76011:(682) 722-6964:0:lewis.brazeal@aol.com:password:0:1:0:0:0:0:1:false:false:false:false:true:false:3:3.55
+Jarvis:Trout:76012:(469) 394-10581:0:jarvis.trout@gmail.com:password:0:1:0:0:1:1:0:false:false:true:false:false:false:3:2.31
+Jarvis:Brazeal:76015:(682) 535-1517:1:jarvis.brazeal@sbcglobal.net:password:0:0:0:1:1:1:1:false:true:false:false:false:false:3:1.87
+Ursala:Green:76016:(682) 375-9893:1:ursala.green@me.net:password:0:0:1:0:0:0:1:false:false:true:false:false:false:1:4.07
+Charles:Weems:76011:(817) 596-9094:1:charles.weems@me.net:password:0:0:1:1:0:1:1:false:false:false:false:true:false:3:2.55
+Tin:Owens:76007:(469) 371-7804:0:tin.owens@yahoo.com:password:0:1:0:0:1:1:0:true:false:false:false:false:false:1:3.83
+Bruce:Nabisco:76019:(682) 384-8157:1:bruce.nabisco@live.com:password:0:1:0:0:1:1:0:false:false:false:false:false:true:1:4.45
+Brittany:Clifford:76010:(972) 190-2642:1:brittany.clifford@me.net:password:0:0:1:0:1:1:1:false:false:true:false:false:false:1:4.92
+Goku:Coleman:76013:(214) 894-10281:1:goku.coleman@live.com:password:0:1:0:0:1:1:1:false:false:false:false:true:false:1:1.54
+Candi:Dennis:76013:(682) 839-9650:0:candi.dennis@uta.edu:password:0:1:0:0:0:1:1:false:false:false:false:true:false:1:4.36
+Cinnimon:Wilson:76008:(214) 152-7831:1:cinnimon.wilson@ymail.com:password:0:1:1:1:0:1:0:false:false:true:false:false:false:2:1.43
+Joe:Jones:76004:(682) 206-7024:1:joe.jones@ymail.com:password:0:0:0:1:0:1:0:false:false:true:false:false:false:2:4.57
+Elvis:Zeta:76017:(817) 683-8845:1:elvis.zeta@hotmail.com:password:0:1:1:1:1:0:0:false:false:true:false:false:false:1:4.28
+Elvis:Matthews:76019:(469) 893-7059:1:elvis.matthews@gmail.com:password:0:0:1:1:1:1:0:false:true:false:false:false:false:2:4.44
+Jason:Sanchez:76010:(682) 490-3916:1:jason.sanchez@sbcglobal.net:password:0:1:1:0:0:0:0:false:true:false:false:false:false:2:3.90
+Gabino:Stephan:76004:(469) 422-6386:1:gabino.stephan@hotmail.com:password:0:0:0:1:0:0:1:false:false:false:false:false:true:3:1.01
+Jake:Becker:76008:(682) 109-5809:1:jake.becker@hotmail.com:password:0:1:0:1:0:0:1:false:false:false:false:false:true:2:2.51
+Oscar:Smith:76007:(817) 632-8472:1:oscar.smith@uta.edu:password:0:1:1:0:1:0:1:true:false:false:false:false:false:2:3.11
+Bill:Mayweather:76006:(817) 899-7565:0:bill.mayweather@me.net:password:0:0:1:1:1:1:0:false:false:false:false:false:true:1:4.16
+Brenda:Orange:76019:(214) 304-5995:0:brenda.orange@yahoo.com:password:0:0:0:0:0:0:1:false:false:false:false:false:true:3:1.02
+Valerie:Jones:76004:(817) 975-8969:0:valerie.jones@charter.net:password:0:0:0:0:1:1:1:false:false:false:false:false:true:1:2.48
+Joe:Quill:76004:(817) 994-10635:0:joe.quill@sbcglobal.net:password:0:0:1:0:1:0:0:false:false:false:true:false:false:2:1.14
+Garth:Clifford:76005:(469) 435-6102:0:garth.clifford@hotmail.com:password:0:0:0:0:1:1:1:false:true:false:false:false:false:2:4.19
+Ursala:White:76012:(682) 463-2223:1:ursala.white@gmail.com:password:0:1:1:0:1:1:1:false:false:false:false:true:false:2:4.72
+Gabino:Hernandez:76009:(682) 810-2574:1:gabino.hernandez@hotmail.com:password:0:1:1:1:0:1:0:true:false:false:false:false:false:1:3.53
+Wendy:Pinkerton:76009:(469) 758-1416:1:wendy.pinkerton@me.net:password:0:1:0:0:0:1:0:false:false:false:false:false:true:3:3.41
+Vegeta:Jameson:76009:(817) 601-4368:1:vegeta.jameson@hotmail.com:password:0:1:0:0:0:0:0:false:false:false:true:false:false:3:3.18
+David:Mayweather:76019:(972) 626-5229:0:david.mayweather@hotmail.com:password:0:1:0:0:0:0:1:true:false:false:false:false:false:3:3.79
+Amber:Overton:76009:(214) 391-3368:1:amber.overton@charter.net:password:0:0:0:1:1:0:0:false:true:false:false:false:false:1:2.71
+Valerie:Universe:76017:(972) 211-1415:0:valerie.universe@charter.net:password:0:1:1:0:0:0:1:false:false:false:false:true:false:1:1.75
+Alec:Atwell:76011:(214) 379-7456:0:alec.atwell@me.net:password:0:0:1:0:1:0:1:false:false:false:false:false:true:2:3.94
+Ursala:Atwell:76019:(469) 947-1054:1:ursala.atwell@live.com:password:0:1:0:0:0:1:1:false:false:false:false:true:false:3:3.88
+Chelsea:Black:76010:(469) 259-8916:1:chelsea.black@charter.net:password:0:1:0:1:1:0:0:true:false:false:false:false:false:3:1.47
+Cinnimon:Cooke:76018:(972) 752-8406:0:cinnimon.cooke@live.com:password:0:1:0:1:1:0:1:true:false:false:false:false:false:2:3.21
+Sommer:Pinkerton:76017:(817) 665-5305:0:sommer.pinkerton@uta.mavs.edu:password:0:0:0:1:0:1:0:false:false:false:true:false:false:2:3.00
+David:Hernandez:76002:(972) 730-9932:1:david.hernandez@yahoo.com:password:0:1:0:1:1:1:0:false:false:true:false:false:false:3:3.85
+Beth:Jones:76007:(469) 820-1890:1:beth.jones@gmail.com:password:0:1:1:1:1:1:0:false:false:false:true:false:false:2:3.13
+Bill:Jameson:76011:(469) 312-6728:0:bill.jameson@me.net:password:0:1:0:0:0:1:0:false:true:false:false:false:false:3:2.33
+Vegeta:Stevens:76018:(972) 126-3467:1:vegeta.stevens@hotmail.com:password:0:0:1:0:0:0:0:false:true:false:false:false:false:3:1.19
+Frank:Xilophone:76006:(682) 602-2053:1:frank.xilophone@me.net:password:0:0:1:1:1:1:1:false:false:false:false:false:true:3:3.21
+Marvin:Becker:76001:(469) 793-8385:0:marvin.becker@yahoo.com:password:0:1:1:1:1:0:1:false:true:false:false:false:false:3:2.76
+Joe:Apple:76015:(469) 636-4783:0:joe.apple@me.net:password:0:1:1:0:0:1:1:true:false:false:false:false:false:3:1.13
+Zach:Stephan:76003:(214) 705-9140:0:zach.stephan@hotmail.com:password:0:1:1:1:0:0:1:true:false:false:false:false:false:3:2.49
+Jane:Orange:76018:(682) 120-3171:0:jane.orange@yahoo.com:password:0:1:1:1:1:0:1:false:false:false:true:false:false:3:2.88
+Bruce:Xilophone:76007:(214) 811-8735:1:bruce.xilophone@me.net:password:0:1:0:1:1:0:0:false:false:false:false:true:false:1:1.79
+Brenda:Khalili:76008:(682) 113-2761:1:brenda.khalili@charter.net:password:0:0:0:1:1:1:1:false:false:false:false:false:true:2:1.74
+Karla:Red:76014:(214) 157-9910:1:karla.red@hotmail.com:password:0:1:0:1:0:1:1:false:false:true:false:false:false:1:4.12
+Jarvis:Jameson:76019:(214) 253-9083:1:jarvis.jameson@aol.com:password:0:0:1:1:0:1:0:false:false:false:false:false:true:2:3.74
+Tiffany:Xilophone:76013:(469) 118-7005:0:tiffany.xilophone@uta.mavs.edu:password:0:1:1:0:0:0:1:false:false:false:false:true:false:3:4.60
+Jane:Viole:76008:(817) 449-6316:1:jane.viole@charter.net:password:0:0:1:1:1:1:0:false:false:false:false:false:true:2:4.67
+Karla:Viole:76008:(469) 619-8156:1:karla.viole@yahoo.com:password:0:1:0:0:1:1:0:false:true:false:false:false:false:2:3.94
+Wendy:Green:76019:(682) 182-3300:0:wendy.green@sbcglobal.net:password:0:0:0:1:1:0:1:true:false:false:false:false:false:1:2.87
+Jarvis:Overton:76010:(682) 169-5365:0:jarvis.overton@yahoo.com:password:0:0:0:1:0:1:1:false:false:false:true:false:false:3:1.11
+Bill:Morgan:76005:(817) 304-9114:1:bill.morgan@ymail.com:password:0:0:0:0:0:0:1:false:false:false:false:true:false:1:2.19
+Walter:Brazeal:76005:(469) 595-2889:1:walter.brazeal@aol.com:password:0:1:1:0:1:1:0:false:false:false:false:true:false:2:3.75
+Xavier:Green:76011:(972) 457-1177:1:xavier.green@yahoo.com:password:0:0:1:1:1:0:1:false:false:false:false:true:false:1:2.26
+Gayle:Orange:76010:(469) 972-5731:0:gayle.orange@uta.mavs.edu:password:0:0:1:1:1:0:1:true:false:false:false:false:false:1:3.26
+Vegeta:Cooke:76002:(682) 269-4254:0:vegeta.cooke@ymail.com:password:0:0:1:1:0:0:0:false:false:false:false:true:false:3:4.22
