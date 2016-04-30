@@ -8,14 +8,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="team7.tutoringappv1.LoginActivity">
+    tools:context="team7.tutoringappv1.LoginActivity"
+    android:weightSum="1">
 
     <!-- Login progress -->
 
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="231dp">
 
         <LinearLayout
             android:id="@+id/email_login_form"
@@ -67,5 +68,14 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Need to register? Click here."
+        android:id="@+id/txtRegister"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true" />
 
 </LinearLayout>

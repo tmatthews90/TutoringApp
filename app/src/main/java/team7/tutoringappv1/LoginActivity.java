@@ -72,6 +72,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     ArrayList<String> loginListPassword = new ArrayList<>();
     SQLiteDatabase mydatabase;
     Context context;
+    TextView registerText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +123,17 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
                 attemptLogin();
+            }
+        });
+
+        TextView registerText = (TextView) findViewById(R.id.txtRegister);
+
+        registerText.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivityForResult(registerIntent, 0);
+                finish();
             }
         });
 
