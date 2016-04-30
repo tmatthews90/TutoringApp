@@ -14,7 +14,7 @@ public class RegisterActivity extends AppCompatActivity {
     String lName;
     String email;
     String phoneNumber;
-    String address;
+    int zipCode;
     String password;
     String confirmPassword;
     String math = "0";
@@ -29,6 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
 
         Button registerButton = (Button) findViewById(R.id.btnNext);
         assert registerButton != null;
@@ -132,6 +133,16 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private boolean isEmailValid(String email) {
+        //TODO: Replace this with your own logic
+        return email.contains("@");
+    }
+
+    private boolean isPasswordValid(String password) {
+        //TODO: Replace this with your own logic
+        return password.length() > 4;
     }
 
 

@@ -58,7 +58,7 @@ public class landingPage extends AppCompatActivity {
 
         db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
 
-//        mydatabase.execSQL("drop table userst");
+        //db.execSQL("drop table userst");
 
         db.execSQL("CREATE TABLE IF NOT EXISTS userst(" +
                 "firstName VARCHAR,lastName VARCHAR, zipcode INT, phonenumber VARCHAR,isTutor BOOL, " +
