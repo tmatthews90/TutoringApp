@@ -23,6 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
     String history = "0";
     String musicTheory = "0";
     String musicInstument = "0";
+    String tutor = "0";
 
 
     @Override
@@ -121,6 +122,21 @@ public class RegisterActivity extends AppCompatActivity {
         CheckBox cbMusicIns = (CheckBox) findViewById(R.id.checkBoxMusicInstrument);
         assert cbMusicIns != null;
         cbMusicIns.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                System.out.println("Checkbox checked: " + isChecked);
+                if (isChecked){
+                    tutor = "1";
+                }
+                else{
+                    tutor = "0";
+                }
+            }
+        });
+
+        CheckBox cbTutor = (CheckBox) findViewById(R.id.checkBoxTutor);
+        assert cbTutor != null;
+        cbTutor.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);

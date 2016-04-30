@@ -15,7 +15,8 @@
         android:text="NEXT"
         android:id="@+id/btnNext"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/tableLayout3"
+        android:layout_alignEnd="@+id/tableLayout3" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -239,5 +240,15 @@
         </TableRow>
 
     </TableLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check if you would like to tutor."
+        android:id="@+id/checkBoxTutor"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
