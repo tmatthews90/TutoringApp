@@ -55,6 +55,7 @@ public class TutorProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent sendIntent = new Intent(Intent.ACTION_VIEW);
                 sendIntent.setData(Uri.parse("sms:" + tempUser.getPhoneNumber()));
+                sendIntent.putExtra("sms_body", "Hi, I Found you on the tutoring app and would like to meet up for some tutoring.\n\n");
                 startActivity(sendIntent);
             }
         });
