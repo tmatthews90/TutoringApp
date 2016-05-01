@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import java.lang.Math;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +26,11 @@ public class TutorListActivity extends ListActivity {
     int rate;
     String rateMoneySign;
     String entry;
+    String wholeStar = "★";
+    String partialStar = "✩";
+    int ratingCount;
+    String ratingString = "";
+
     SQLiteDatabase mydatabase;
     Users tutor;
 
@@ -34,7 +40,7 @@ public class TutorListActivity extends ListActivity {
         setContentView(R.layout.activity_tutors);
 
         mydatabase = openOrCreateDatabase("Users",MODE_PRIVATE,null);
-
+//        mydatabase.rawQuery("DROP TABLE userst;", null);
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
                 "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email FROM userst WHERE isTutor = '1' ORDER BY lastName",null);
         dbEntry.moveToFirst();
@@ -71,6 +77,7 @@ public class TutorListActivity extends ListActivity {
             lName = tutor.getLastName();
             name = fName + " " + lName;
             rating = tutor.getReviewRate();
+            System.out.println(rating);
             rate = tutor.getTutorRate();
 
             if (tutor.isT_math()){
@@ -109,7 +116,19 @@ public class TutorListActivity extends ListActivity {
                     break;
             }
 
-            entry = name + "\nSubject:  " + subject + "\nRating:    "+ rating + "\nRate:       " + rateMoneySign;
+            ratingCount = Math.round(rating);
+            ratingString = "";
+            for (int j = 0; j < ratingCount; j++) {
+                ratingString += wholeStar;
+            }
+
+            if (ratingCount != 5) {
+                for (int j = 0; j < 5 - ratingCount; j++) {
+                    ratingString += partialStar;
+                }
+            }
+            System.out.println(ratingCount + " " + ratingString);
+            entry = name + "\nSubject:  " + subject + "\nRating:    "+ ratingString + "\nRate:       " + rateMoneySign;
 
             tutorNames.add(entry);
         }

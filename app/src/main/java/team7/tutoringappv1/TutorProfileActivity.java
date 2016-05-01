@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.lang.Math;
 
 import java.text.DecimalFormat;
 
@@ -19,6 +20,12 @@ public class TutorProfileActivity extends AppCompatActivity {
 
     String name;
     String subject;
+    int rate;
+    String rateMoneySign;
+    String wholeStar = "★";
+    String partialStar = "✩";
+    int rating;
+    String ratingString = "";
 
     TextView fieldName;
     TextView fieldEmail;
@@ -129,6 +136,7 @@ public class TutorProfileActivity extends AppCompatActivity {
             tempUser.setZipCode(dbEntry.getString(12));
 
             name = tempUser.getFirstName() + " " + tempUser.getLastName();
+            rate = tempUser.getTutorRate();
 
             if (tempUser.isT_math()) {
                 subject = "Math";
@@ -146,12 +154,39 @@ public class TutorProfileActivity extends AppCompatActivity {
                 subject = "N/A";
             }
 
+            switch(rate) {
+                case 1:
+                    rateMoneySign = "$";
+                    break;
+                case 2:
+                    rateMoneySign = "$$";
+                    break;
+                case 3:
+                    rateMoneySign = "$$$";
+                    break;
+                default:
+                    rateMoneySign = "-";
+                    break;
+            }
+
+            rating = Math.round(tempUser.getReviewRate());
+
+            for (int i = 0; i < rating; i++) {
+                ratingString += wholeStar;
+            }
+
+            if (rating != 5) {
+                for (int i = 0; i < 5 - rating; i++) {
+                    ratingString += partialStar;
+                }
+            }
+
             fieldName.setText(name);
             fieldEmail.setText(tempUser.getEmail());
             fieldPhone.setText(tempUser.getPhoneNumber());
             fieldSubject.setText(subject);
-            fieldRate.setText(Integer.toString(tempUser.getTutorRate()));
-            fieldOverallRating.setText(Float.toString(tempUser.getReviewRate()));
+            fieldRate.setText(rateMoneySign);
+            fieldOverallRating.setText(ratingString);
             fieldZipCode.setText(tempUser.getZipCode());
         }
     }
