@@ -12,11 +12,15 @@ public class FilterActivity extends AppCompatActivity {
 
     String distanceFilter;
     String priceFilter;
+    String maxDistance;
+    String maxPrice;
+    String minRating;
 
     RatingBar ratingBar;
     TextView txtRatingValue;
     TextView txtDistanceValue;
     TextView txtPriceValue;
+    Bundle bundle;
 
 
     @Override
@@ -32,6 +36,7 @@ public class FilterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Apply btn logic here
                 priceFilter = "$";
+                maxPrice = "1";
                 txtPriceValue.setText("≤ " + priceFilter);            }
         });
 
@@ -41,6 +46,7 @@ public class FilterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Apply btn logic here
                 priceFilter = "$$";
+                maxPrice = "2";
                 txtPriceValue.setText("≤ " + priceFilter);            }
         });
 
@@ -50,6 +56,7 @@ public class FilterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Apply btn logic here
                 priceFilter = "$$$";
+                maxPrice = "1";
                 txtPriceValue.setText("≤ " + priceFilter);
             }
         });
@@ -63,6 +70,7 @@ public class FilterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Apply filter logic here
                 distanceFilter = "5 Miles";
+                maxDistance = "5";
                 txtDistanceValue.setText("≤ " + distanceFilter);
             }
         });
@@ -73,6 +81,7 @@ public class FilterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Apply filter logic here
                 distanceFilter = "15 Miles";
+                maxDistance = "15";
                 txtDistanceValue.setText("≤ " + distanceFilter);
             }
         });
@@ -83,6 +92,7 @@ public class FilterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Apply filter logic here
                 distanceFilter = "25 Miles";
+                maxDistance = "25";
                 txtDistanceValue.setText("≤ " + distanceFilter);
             }
         });
@@ -93,7 +103,7 @@ public class FilterActivity extends AppCompatActivity {
         //display the current rating value in the result (textview) automatically
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-
+                minRating = String.valueOf(rating);
                 txtRatingValue.setText("≥ " + String.valueOf(rating));
 
             }
@@ -105,6 +115,17 @@ public class FilterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Apply filter logic here
+                // adding the variables to pass onto the TutorsListActivity to check for the filter
+                bundle = new Bundle();
+                if (maxPrice != null)
+                    bundle.putString("maxPrice", maxPrice);
+                if (maxDistance != null)
+                    bundle.putString("maxDistance", maxDistance);
+                if (minRating != null)
+                    bundle.putString("minRating", minRating);
+                Intent intent = new Intent(view.getContext(), TutorListActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 finish();
             }
         });
