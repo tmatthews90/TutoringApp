@@ -5,12 +5,18 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+
+import java.io.IOException;
 import java.lang.Math;
+import android.location.Location;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +40,15 @@ public class TutorListActivity extends ListActivity {
     String distance;
     Bundle filters;
     Intent myIntent;
+    String startCoords;
+    String targetCoords;
+    float startLatitude = 32.7310991f;
+    float startlongitude = -97.1177082f;
+    float targetLatitude;
+    float targetLongitude;
+    Location loc1;
+    Location loc2;
+
 
     SQLiteDatabase mydatabase;
     Users tutor;
@@ -44,9 +59,12 @@ public class TutorListActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutors);
-
         myIntent = getIntent();
         filters = myIntent.getExtras();
+        loc1 = new Location("");
+        loc2 = new Location("");
+        updateDistanceTable();
+
 
         listActivity = this;
 
@@ -380,7 +398,7 @@ public class TutorListActivity extends ListActivity {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
-                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email FROM userst WHERE isTutor = '1' ORDER BY lastName", null);
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' ORDER BY lastName", null);
         dbEntry.moveToFirst();
 
         for (int i = 0; i < dbEntry.getCount(); i++) {
@@ -399,6 +417,7 @@ public class TutorListActivity extends ListActivity {
             tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(9)));
             tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(10)));
             tempUser.setEmail(dbEntry.getString(11));
+            tempUser.setDistance(dbEntry.getString(12));
 
             tutorList.add(tempUser);
 
@@ -415,6 +434,7 @@ public class TutorListActivity extends ListActivity {
             name = fName + " " + lName;
             rating = tutor.getReviewRate();
             rate = tutor.getTutorRate();
+            distance = tutor.getDistance();
 
             if (tutor.isT_math()) {
                 subject = "Math";
@@ -458,10 +478,61 @@ public class TutorListActivity extends ListActivity {
                     ratingString += partialStar;
                 }
             }
-            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign;
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance;
 
             tutorNames.add(entry);
         }
     }
 
+    public void updateDistanceTable() {
+        loc1.setLatitude(startLatitude);
+        loc1.setLongitude(startlongitude);
+        String userZipcode;
+        String query;
+        String distance;
+        float distanceInMeters;
+        float distanceInMiles;
+        mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
+
+        Cursor dbEntry = mydatabase.rawQuery("select distinct zipcode from userst", null);
+        dbEntry.moveToFirst();
+
+        for (int i = 0; i < dbEntry.getCount(); i++) {
+            userZipcode = dbEntry.getString(0);
+            getCoorFromZip(userZipcode);
+//            targetLatitude = 32.6890010f + (float)(.00001 * i);
+//            targetLongitude = -97.6331130f + (float)(.00001 * i);;
+            loc2.setLatitude(targetLatitude);
+            loc2.setLongitude(targetLongitude);
+
+
+            distanceInMeters = loc1.distanceTo(loc2);
+            distanceInMiles = distanceInMeters * 0.000621371f;
+            distance = String.format("%.2f", distanceInMiles);
+            query = "UPDATE userst SET distance = " + distanceInMiles + " WHERE zipcode = " + userZipcode;
+            System.out.println(distanceInMiles);
+            mydatabase.execSQL(query);
+            dbEntry.move(1);
+
+        }
+    }
+
+    public void getCoorFromZip(String zip){
+        final Geocoder geocoder = new Geocoder(this);
+        try {
+            List<Address> addresses = geocoder.getFromLocationName(zip, 1);
+            if (addresses != null && !addresses.isEmpty()) {
+                Address address = addresses.get(0);
+                // Use the address as needed
+                targetCoords = String.format("%f, %f", address.getLatitude(), address.getLongitude());
+                targetLatitude = (float)address.getLatitude();
+                targetLongitude = (float)address.getLongitude();
+            } else {
+                // Display appropriate message when Geocoder services are not available
+                Toast.makeText(this, "Unable to geocode zipcode", Toast.LENGTH_LONG).show();
+            }
+        } catch (IOException e) {
+            // handle exception
+        }
+    }
 }
