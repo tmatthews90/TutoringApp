@@ -29,6 +29,7 @@ public class Users {
 
     private int tutorRate;
     private float reviewRate;
+    private String distance;
 
     List<String> tokens;
     //class category
@@ -243,5 +244,13 @@ public class Users {
 
     public void setReviewRate(Float reviewRate) {
         this.reviewRate = reviewRate;
+    }
+
+    public String getDistance() {
+        return distance;
+    }
+
+    public void setDistance(String distance) {
+        this.distance = distance;
     }
 }
