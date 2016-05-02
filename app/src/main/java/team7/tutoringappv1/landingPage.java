@@ -63,7 +63,7 @@ public class landingPage extends AppCompatActivity {
         db.execSQL("CREATE TABLE IF NOT EXISTS userst(" +
                 "firstName VARCHAR,lastName VARCHAR, zipcode INT, phonenumber VARCHAR,isTutor BOOL, " +
                 "email VARCHAR PRIMARY KEY, password VARCHAR, loggedIn BOOL, math BOOL, science BOOL, literature BOOL, history BOOL, musicInstrument BOOL, " +
-                "musicTheory BOOL, t_math BOOL, t_science BOOL, t_literature BOOL, t_history BOOL, t_musicInstrument BOOL, t_musicTheory BOOL, tutorRate INT, rating FLOAT);");
+                "musicTheory BOOL, t_math BOOL, t_science BOOL, t_literature BOOL, t_history BOOL, t_musicInstrument BOOL, t_musicTheory BOOL, tutorRate INT, rating FLOAT, distance FLOAT);");
 
         Cursor result = db.rawQuery("Select email from userst where loggedIn = '1'",null);
 
@@ -84,7 +84,7 @@ public class landingPage extends AppCompatActivity {
                     query = "INSERT INTO userst VALUES('" + c.getFirstName() + b + c.getLastName() + b + c.getZipCode() + b + c.getPhoneNumber() + b + c.getIsTutor() + b +
                             c.getEmail() + b + c.getPassword() + b + c.getLoggedIn() + b + c.isMath() + b + c.isScience() + b + c.isLiterature() + b +
                             c.isHistory() + b + c.isMusicInstrument() + b + c.isMusicTheory() + b + c.isT_math() + b + c.isT_science() + b + c.isT_literature() +
-                            b + c.isT_history() + b + c.isT_musicInstrument() + b + c.isT_musicTheory() + b + c.getTutorRate() + b + c.getReviewRate() + "');";
+                            b + c.isT_history() + b + c.isT_musicInstrument() + b + c.isT_musicTheory() + b + c.getTutorRate() + b + c.getReviewRate() + b + "0" + "');";
                     db.execSQL(query);
                 }
             } catch (IOException|SQLiteConstraintException e) {

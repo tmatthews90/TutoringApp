@@ -1,5 +1,6 @@
 package team7.tutoringappv1;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 
 public class RegisterActivity extends AppCompatActivity {
+
+    SQLiteDatabase db;
 
     String fName;
     String lName;
@@ -35,6 +38,8 @@ public class RegisterActivity extends AppCompatActivity {
     EditText fieldZipCode;
     EditText fieldPassword;
     EditText fieldConfirmPassword;
+
+    Boolean login = false;
 
 
     @Override
@@ -66,15 +71,13 @@ public class RegisterActivity extends AppCompatActivity {
 
                 checkFields();
 
-                String insertIntoTableString = fName + ", " + lName + ", " + zipCode + ", " + phoneNumber + ", " + isTutor + ", " + email + ", " + password +
-                        ", " + loggedIn + ", " + math + ", " + science + ", " + literature + ", " + history + ", " + musicInstrument + ", " + musicTheory +
-                        ", " + "false" + ", " + "false" + ", " + "false" + ", " + "false" + ", " + "false" + ", " + "false" + ", " + "0" + ", " +  "0" + ", " +  "0";
+                if (login){
+                    Intent doneIntent = new Intent(view.getContext(), PostLogin.class);
+                    startActivityForResult(doneIntent, 0);
+                    landingPage.landingActivity.finish();
+                    finish();
+                }
 
-                System.out.println(insertIntoTableString);
-//                Intent doneIntent = new Intent(view.getContext(), LoginActivity.class);
-//                startActivityForResult(doneIntent, 0);
-//                landingPage.landingActivity.finish();
-//                finish(); //to stop back button from going back to main menu
             }
         });
 
@@ -250,10 +253,12 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         // Check for a phone number.
-        if (TextUtils.isEmpty(phoneNumber) && isPhoneValid()) {
+        if (TextUtils.isEmpty(phoneNumber)) {
             fieldPhone.setError(getString(R.string.error_field_required));
             focusView = fieldPhone;
             cancel = true;
+        } else if(!isPhoneValid()){
+            fieldPhone.setError("Invalid phone number");
         }
 
         // Check for a zip code.
@@ -292,8 +297,25 @@ public class RegisterActivity extends AppCompatActivity {
         } else {
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
+            insertIntoDB();
+            login = true;
 
         }
+    }
+
+    private void insertIntoDB(){
+
+        String insertIntoTableString = fName + "', '" + lName + "', '" + zipCode + "', '" + phoneNumber + "', '" + isTutor + "', '" + email + "', '" + password +
+                "', '" + loggedIn + "', '" + math + "', '" + science + "', '" + literature + "', '" + history + "', '" + musicInstrument + "', '" + musicTheory +
+                "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "0" + "', '" +  "0" + "', '" +  "0";
+
+        System.out.println(insertIntoTableString);
+
+        db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
+
+        String query = "INSERT INTO userst VALUES('" + insertIntoTableString + "');";
+
+        db.execSQL(query);
     }
 
 }

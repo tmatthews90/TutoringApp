@@ -50,27 +50,28 @@ public class TutorListActivity extends ListActivity {
 
         listActivity = this;
 
-        if (filters == null || (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == false)) {
+        if (filters == null || (!filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating"))) {
             createDefaultList();
-        } else if ((filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == false) ||
-                (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == false) ||
-                (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == true)){
+        } else if ((filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating")) ||
+                (!filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating"))){
 
-            if (filters.containsKey("maxDistance") == true) {
+            if (filters.containsKey("maxDistance")) {
                 String maxDistance = filters.getString("maxDistance");
 //                createList("maxDistance", maxDistance);
             }
-            if (filters.containsKey("maxPrice") == true) {
+            if (filters.containsKey("maxPrice")) {
                 String tutorRate = filters.getString("maxPrice");
                 createListWithPriceFilter("tutorRate", tutorRate);
             }
-            if (filters.containsKey("minRating") == true) {
+            if (filters.containsKey("minRating")) {
                 String rating = filters.getString("minRating");
                 createListWithRatingFilter("rating", rating);
             } // Commented out the cases where we need the distance from the tutor and user
         } else if (/*(filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == false)*/
                 /*(filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == true)*/
-                (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == true)) {
+                (filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating"))) {
+
+            mydatabase.close();
 
             String tutorRate = filters.getString("maxPrice");
             String rating = filters.getString("minRating");
