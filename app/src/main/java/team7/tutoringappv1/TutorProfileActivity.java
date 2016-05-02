@@ -91,7 +91,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
 
         startCoords = String.format("%f, %f", startLatitude, startlongitude);
 
-//        getCoorFromZip();
+        getCoorFromZip();
 
 
         Button btnCall = (Button) findViewById(R.id.btnCall);
@@ -236,6 +236,8 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
 
             Location loc1 = new Location("");
             Location loc2 = new Location("");
+
+            getCoorFromZip();
 
             loc1.setLatitude(startLatitude);
             loc1.setLongitude(startlongitude);

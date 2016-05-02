@@ -67,25 +67,29 @@ public class TutorListActivity extends ListActivity {
 
 
         listActivity = this;
-
+        // if no filters are applied
         if (filters == null || (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == false)) {
             createDefaultList();
+
+            // if only one filter is active
         } else if ((filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == false) ||
                 (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == false) ||
                 (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == true)){
 
             if (filters.containsKey("maxDistance") == true) {
                 String maxDistance = filters.getString("maxDistance");
-//                createList("maxDistance", maxDistance);
+                createListWithMaxFilter("distance", maxDistance);
             }
             if (filters.containsKey("maxPrice") == true) {
                 String tutorRate = filters.getString("maxPrice");
-                createListWithPriceFilter("tutorRate", tutorRate);
+                createListWithMaxFilter("tutorRate", tutorRate);
             }
             if (filters.containsKey("minRating") == true) {
                 String rating = filters.getString("minRating");
                 createListWithRatingFilter("rating", rating);
-            } // Commented out the cases where we need the distance from the tutor and user
+            }
+
+            // if two filters are active
         } else if (/*(filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == false)*/
                 /*(filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == true)*/
                 (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == true)) {
@@ -93,6 +97,25 @@ public class TutorListActivity extends ListActivity {
             String tutorRate = filters.getString("maxPrice");
             String rating = filters.getString("minRating");
             createListWithMaxAndMinFilter("tutorRate", tutorRate, "rating", rating);
+        }
+        else if (filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == true) {
+
+            String maxDistance = filters.getString("maxDistance");
+            String rating = filters.getString("minRating");
+            createListWithMaxAndMinFilter("distance", maxDistance, "rating", rating);
+        } else if (filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == false) {
+
+            String maxDistance = filters.getString("maxDistance");
+            String tutorRate = filters.getString("maxPrice");
+            createListWithMaxAndMaxFilter("distance", maxDistance, "tutorRate", tutorRate);
+            // if all 3 filters are active
+        } else if (filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == true) {
+
+            String maxDistance = filters.getString("maxDistance");
+            String tutorRate = filters.getString("maxPrice");
+            String rating = filters.getString("minRating");
+
+            createListWithThreeFilters("distance", maxDistance, "tutorRate", tutorRate, "rating", rating);
         }
 
         this.setListAdapter(new ArrayAdapter<String>(this, R.layout.actvity_listview, R.id.itemName,tutorNames));
@@ -121,13 +144,211 @@ public class TutorListActivity extends ListActivity {
 
     }
 
+    // all 3 filters are active
+    public void createListWithThreeFilters(String maxFilter1, String maxFilterValue1, String maxFilter2, String maxFilterValue2, String minFilter, String minFilterValue) {
+        mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
+//            mydatabase.rawQuery("DROP TABLE userst;", null);
+        Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + maxFilter1 + " <= " + maxFilterValue1
+                +
+                " AND "
+                +
+                maxFilter2 + " <= " + maxFilterValue2
+                +
+                " AND "
+                +
+                minFilter + " >= " + minFilterValue
+                + " ORDER BY " + minFilter, null);
+        dbEntry.moveToFirst();
+
+        for (int i = 0; i < dbEntry.getCount(); i++) {
+
+            Users tempUser = new Users();
+
+            tempUser.setFirstName(dbEntry.getString(0));
+            tempUser.setLastName(dbEntry.getString(1));
+            tempUser.setReviewRate(Float.parseFloat(dbEntry.getString(2)));
+            tempUser.setTutorRate(Integer.parseInt(dbEntry.getString(3)));
+            tempUser.setIsTutor(dbEntry.getString(4));
+            tempUser.setT_math(Boolean.parseBoolean(dbEntry.getString(5)));
+            tempUser.setT_science(Boolean.parseBoolean(dbEntry.getString(6)));
+            tempUser.setT_literature(Boolean.parseBoolean(dbEntry.getString(7)));
+            tempUser.setT_history(Boolean.parseBoolean(dbEntry.getString(8)));
+            tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(9)));
+            tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(10)));
+            tempUser.setEmail(dbEntry.getString(11));
+            tempUser.setDistance(dbEntry.getString(12));
+
+
+            tutorList.add(tempUser);
+
+            dbEntry.move(1);
+        }
+
+
+        for (int i = 0; i < tutorList.size(); i++) {
+
+            tutor = tutorList.get(i);
+
+            fName = tutor.getFirstName();
+            lName = tutor.getLastName();
+            name = fName + " " + lName;
+            rating = tutor.getReviewRate();
+            rate = tutor.getTutorRate();
+            distance = tutor.getDistance();
+
+            if (tutor.isT_math()) {
+                subject = "Math";
+            } else if (tutor.isT_science()) {
+                subject = "Science";
+            } else if (tutor.isT_literature()) {
+                subject = "Literature";
+            } else if (tutor.isT_history()) {
+                subject = "History";
+            } else if (tutor.isT_musicInstrument()) {
+                subject = "Musical Instruments";
+            } else if (tutor.isT_musicTheory()) {
+                subject = "Music Theory";
+            } else {
+                subject = "N/A";
+            }
+
+            switch (rate) {
+                case 1:
+                    rateMoneySign = "$";
+                    break;
+                case 2:
+                    rateMoneySign = "$$";
+                    break;
+                case 3:
+                    rateMoneySign = "$$$";
+                    break;
+                default:
+                    rateMoneySign = "-";
+                    break;
+            }
+
+            ratingCount = Math.round(rating);
+            ratingString = "";
+            for (int j = 0; j < ratingCount; j++) {
+                ratingString += wholeStar;
+            }
+
+            if (ratingCount != 5) {
+                for (int j = 0; j < 5 - ratingCount; j++) {
+                    ratingString += partialStar;
+                }
+            }
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
+
+            tutorNames.add(entry);
+        }
+    }
+
+    // this will create a list based on having 2 filters where we have 2 max restrictions (maxPrice &maxDistance)
+    public void createListWithMaxAndMaxFilter(String maxFilter1, String maxFilterValue1, String maxFilter2, String maxFilterValue2) {
+        mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
+//            mydatabase.rawQuery("DROP TABLE userst;", null);
+        Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + maxFilter1 + " <= " + maxFilterValue1
+                +
+                " AND "
+                +
+                maxFilter2 + " <= " + maxFilterValue2
+                + " ORDER BY " + maxFilter1, null);
+        dbEntry.moveToFirst();
+
+        for (int i = 0; i < dbEntry.getCount(); i++) {
+
+            Users tempUser = new Users();
+
+            tempUser.setFirstName(dbEntry.getString(0));
+            tempUser.setLastName(dbEntry.getString(1));
+            tempUser.setReviewRate(Float.parseFloat(dbEntry.getString(2)));
+            tempUser.setTutorRate(Integer.parseInt(dbEntry.getString(3)));
+            tempUser.setIsTutor(dbEntry.getString(4));
+            tempUser.setT_math(Boolean.parseBoolean(dbEntry.getString(5)));
+            tempUser.setT_science(Boolean.parseBoolean(dbEntry.getString(6)));
+            tempUser.setT_literature(Boolean.parseBoolean(dbEntry.getString(7)));
+            tempUser.setT_history(Boolean.parseBoolean(dbEntry.getString(8)));
+            tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(9)));
+            tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(10)));
+            tempUser.setEmail(dbEntry.getString(11));
+            tempUser.setDistance(dbEntry.getString(12));
+
+
+            tutorList.add(tempUser);
+
+            dbEntry.move(1);
+        }
+
+
+        for (int i = 0; i < tutorList.size(); i++) {
+
+            tutor = tutorList.get(i);
+
+            fName = tutor.getFirstName();
+            lName = tutor.getLastName();
+            name = fName + " " + lName;
+            rating = tutor.getReviewRate();
+            rate = tutor.getTutorRate();
+            distance = tutor.getDistance();
+
+            if (tutor.isT_math()) {
+                subject = "Math";
+            } else if (tutor.isT_science()) {
+                subject = "Science";
+            } else if (tutor.isT_literature()) {
+                subject = "Literature";
+            } else if (tutor.isT_history()) {
+                subject = "History";
+            } else if (tutor.isT_musicInstrument()) {
+                subject = "Musical Instruments";
+            } else if (tutor.isT_musicTheory()) {
+                subject = "Music Theory";
+            } else {
+                subject = "N/A";
+            }
+
+            switch (rate) {
+                case 1:
+                    rateMoneySign = "$";
+                    break;
+                case 2:
+                    rateMoneySign = "$$";
+                    break;
+                case 3:
+                    rateMoneySign = "$$$";
+                    break;
+                default:
+                    rateMoneySign = "-";
+                    break;
+            }
+
+            ratingCount = Math.round(rating);
+            ratingString = "";
+            for (int j = 0; j < ratingCount; j++) {
+                ratingString += wholeStar;
+            }
+
+            if (ratingCount != 5) {
+                for (int j = 0; j < 5 - ratingCount; j++) {
+                    ratingString += partialStar;
+                }
+            }
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
+
+            tutorNames.add(entry);
+        }
+    }
+
     // this will create a list based on having 2 filters where we have a max restriction (maxPrice/maxDistance)
     // and a minimum restriction (minRating)
     public void createListWithMaxAndMinFilter(String maxFilter, String maxFilterValue, String minFilter, String minFilterValue) {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
-                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email FROM userst WHERE isTutor = '1' AND " + maxFilter + " <= " + maxFilterValue
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + maxFilter + " <= " + maxFilterValue
                 +
                 " AND "
                 +
@@ -151,6 +372,8 @@ public class TutorListActivity extends ListActivity {
             tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(9)));
             tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(10)));
             tempUser.setEmail(dbEntry.getString(11));
+            tempUser.setDistance(dbEntry.getString(12));
+
 
             tutorList.add(tempUser);
 
@@ -167,6 +390,7 @@ public class TutorListActivity extends ListActivity {
             name = fName + " " + lName;
             rating = tutor.getReviewRate();
             rate = tutor.getTutorRate();
+            distance = tutor.getDistance();
 
             if (tutor.isT_math()) {
                 subject = "Math";
@@ -210,17 +434,17 @@ public class TutorListActivity extends ListActivity {
                     ratingString += partialStar;
                 }
             }
-            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign;
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
             tutorNames.add(entry);
         }
     }
 
-    public void createListWithPriceFilter(String filter, String filterValue) {
+    public void createListWithMaxFilter(String filter, String filterValue) {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
-                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email FROM userst WHERE isTutor = '1' AND " + filter + " <= " + filterValue
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + filter + " <= " + filterValue
                 + " ORDER BY " + filter, null);
         dbEntry.moveToFirst();
 
@@ -240,6 +464,7 @@ public class TutorListActivity extends ListActivity {
             tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(9)));
             tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(10)));
             tempUser.setEmail(dbEntry.getString(11));
+            tempUser.setDistance(dbEntry.getString(12));
 
             tutorList.add(tempUser);
 
@@ -256,6 +481,8 @@ public class TutorListActivity extends ListActivity {
             name = fName + " " + lName;
             rating = tutor.getReviewRate();
             rate = tutor.getTutorRate();
+            distance = tutor.getDistance();
+
 
             if (tutor.isT_math()) {
                 subject = "Math";
@@ -299,7 +526,7 @@ public class TutorListActivity extends ListActivity {
                     ratingString += partialStar;
                 }
             }
-            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\n\nDistance    " + distance;
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
             tutorNames.add(entry);
         }
@@ -478,7 +705,7 @@ public class TutorListActivity extends ListActivity {
                     ratingString += partialStar;
                 }
             }
-            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance;
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
             tutorNames.add(entry);
         }
@@ -500,8 +727,7 @@ public class TutorListActivity extends ListActivity {
         for (int i = 0; i < dbEntry.getCount(); i++) {
             userZipcode = dbEntry.getString(0);
             getCoorFromZip(userZipcode);
-//            targetLatitude = 32.6890010f + (float)(.00001 * i);
-//            targetLongitude = -97.6331130f + (float)(.00001 * i);;
+
             loc2.setLatitude(targetLatitude);
             loc2.setLongitude(targetLongitude);
 
@@ -509,7 +735,7 @@ public class TutorListActivity extends ListActivity {
             distanceInMeters = loc1.distanceTo(loc2);
             distanceInMiles = distanceInMeters * 0.000621371f;
             distance = String.format("%.2f", distanceInMiles);
-            query = "UPDATE userst SET distance = " + distanceInMiles + " WHERE zipcode = " + userZipcode;
+            query = "UPDATE userst SET distance = " + distance + " WHERE zipcode = " + userZipcode;
             System.out.println(distanceInMiles);
             mydatabase.execSQL(query);
             dbEntry.move(1);
