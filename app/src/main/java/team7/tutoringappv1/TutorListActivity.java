@@ -31,6 +31,7 @@ public class TutorListActivity extends ListActivity {
     String partialStar = "✩";
     int ratingCount;
     String ratingString = "";
+    String distance;
     Bundle filters;
     Intent myIntent;
 
@@ -280,7 +281,7 @@ public class TutorListActivity extends ListActivity {
                     ratingString += partialStar;
                 }
             }
-            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign;
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\n\nDistance    " + distance;
 
             tutorNames.add(entry);
         }
