@@ -123,6 +123,7 @@ public class FilterActivity extends AppCompatActivity {
                     bundle.putString("maxDistance", maxDistance);
                 if (minRating != null)
                     bundle.putString("minRating", minRating);
+                TutorListActivity.listActivity.finish();
                 Intent intent = new Intent(view.getContext(), TutorListActivity.class);
                 intent.putExtras(bundle);
                 startActivity(intent);

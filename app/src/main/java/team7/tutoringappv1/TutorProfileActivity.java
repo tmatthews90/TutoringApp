@@ -1,19 +1,34 @@
 package team7.tutoringappv1;
 
+import android.Manifest;
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.IOException;
 import java.lang.Math;
 
 import java.text.DecimalFormat;
+import java.util.List;
 
-public class TutorProfileActivity extends AppCompatActivity {
+public class TutorProfileActivity extends AppCompatActivity implements LocationListener {
 
     SQLiteDatabase db;
     String selectedTutor;
@@ -27,6 +42,9 @@ public class TutorProfileActivity extends AppCompatActivity {
     int rating;
     String ratingString = "";
 
+    String startCoords;
+    String targetCoords;
+
     TextView fieldName;
     TextView fieldEmail;
     TextView fieldPhone;
@@ -37,12 +55,37 @@ public class TutorProfileActivity extends AppCompatActivity {
 
     Users tempUser;
 
+    protected String latitude, longitude;
+    protected boolean gps_enabled, network_enabled;
+    protected Context context;
+    protected LocationManager locationManager;
+    protected LocationListener locationListener;
+    Location location;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor_profile);
 
         setTextFields();
+
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+
+        getCoorFromZip();
+
 
         Button btnCall = (Button) findViewById(R.id.btnCall);
         assert btnCall != null;
@@ -87,7 +130,9 @@ public class TutorProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Mapping logic here
-                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + tempUser.getZipCode());
+//                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + tempUser.getZipCode());
+                Uri gmmIntentUri = Uri.parse("http://maps.google.com/maps?" + "saddr=" + startCoords + "&daddr=" + targetCoords);
+
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
@@ -191,5 +236,44 @@ public class TutorProfileActivity extends AppCompatActivity {
         }
     }
 
+
+    @Override
+    public void onLocationChanged(Location location) {
+        System.out.println("Latitude: " + location.getLatitude() + ", Longitude:" + location.getLongitude());
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+    }
+
+    public void getCoorFromZip(){
+        final Geocoder geocoder = new Geocoder(this);
+        final String zip = tempUser.getZipCode();
+        try {
+            List<Address> addresses = geocoder.getFromLocationName(zip, 1);
+            if (addresses != null && !addresses.isEmpty()) {
+                Address address = addresses.get(0);
+                // Use the address as needed
+                String message = String.format("Latitude: %f, Longitude: %f",
+                        address.getLatitude(), address.getLongitude());
+                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+            } else {
+                // Display appropriate message when Geocoder services are not available
+                Toast.makeText(this, "Unable to geocode zipcode", Toast.LENGTH_LONG).show();
+            }
+        } catch (IOException e) {
+            // handle exception
+        }
+    }
 
 }

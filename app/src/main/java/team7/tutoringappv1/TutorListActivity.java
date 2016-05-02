@@ -1,5 +1,6 @@
 package team7.tutoringappv1;
 
+import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -36,12 +37,18 @@ public class TutorListActivity extends ListActivity {
     SQLiteDatabase mydatabase;
     Users tutor;
 
+    public static Activity listActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutors);
+
         myIntent = getIntent();
         filters = myIntent.getExtras();
+
+        listActivity = this;
+
         if (filters == null || (filters.containsKey("maxDistance") == false && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == false)) {
             createDefaultList();
         } else if ((filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == false) ||
@@ -77,7 +84,6 @@ public class TutorListActivity extends ListActivity {
             public void onClick(View view) {
                 Intent filterIntent = new Intent(view.getContext(), FilterActivity.class);
                 startActivityForResult(filterIntent, 0);
-                finish();
             }
         });
 
