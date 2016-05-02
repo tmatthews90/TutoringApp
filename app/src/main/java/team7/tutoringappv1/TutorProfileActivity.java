@@ -55,12 +55,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
 
     Users tempUser;
 
-    protected String latitude, longitude;
-    protected boolean gps_enabled, network_enabled;
     protected Context context;
-    protected LocationManager locationManager;
-    protected LocationListener locationListener;
-    Location location;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +77,11 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
             return;
         }
 
+
+
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+
+        startCoords = String.format("%f, %f", 32.7310991, -97.1177082);
 
         getCoorFromZip();
 
@@ -240,6 +239,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
     @Override
     public void onLocationChanged(Location location) {
         System.out.println("Latitude: " + location.getLatitude() + ", Longitude:" + location.getLongitude());
+        startCoords = String.format("%f, %f", location.getLatitude(), location.getLongitude());
     }
 
     @Override
@@ -264,9 +264,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
             if (addresses != null && !addresses.isEmpty()) {
                 Address address = addresses.get(0);
                 // Use the address as needed
-                String message = String.format("Latitude: %f, Longitude: %f",
-                        address.getLatitude(), address.getLongitude());
-                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+                targetCoords = String.format("%f, %f", address.getLatitude(), address.getLongitude());
             } else {
                 // Display appropriate message when Geocoder services are not available
                 Toast.makeText(this, "Unable to geocode zipcode", Toast.LENGTH_LONG).show();
