@@ -16,7 +16,7 @@
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="231dp">
+        android:layout_height="133dp">
 
         <LinearLayout
             android:id="@+id/email_login_form"
@@ -35,7 +35,10 @@
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:phoneNumber="false"
+                    android:textColor="#FF10FD53"
+                    android:textColorHint="#FF10FD53" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -50,24 +53,27 @@
                     android:hint="@string/prompt_password"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
-                    android:imeOptions="actionUnspecified"
+                    android:imeOptions="actionUnspecified|actionDone"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColor="#FF10FD53"
+                    android:textColorHint="#FF10FD53" />
 
             </android.support.design.widget.TextInputLayout>
 
-            <Button
-                android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="SIGN IN"
-                android:textStyle="bold" />
-
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/email_sign_in_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:layout_weight="0.04" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,7 +81,6 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Need to register? Click here."
         android:id="@+id/txtRegister"
-        android:layout_gravity="center_horizontal"
         android:clickable="true" />
 
 </LinearLayout>
