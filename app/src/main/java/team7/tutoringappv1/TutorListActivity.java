@@ -65,6 +65,8 @@ public class TutorListActivity extends ListActivity {
         loc2 = new Location("");
         updateDistanceTable();
 
+        listActivity = this;
+
 
         if (filters == null || (!filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating"))) {
             createDefaultList();
@@ -95,18 +97,18 @@ public class TutorListActivity extends ListActivity {
             String rating = filters.getString("minRating");
             createListWithMaxAndMinFilter("tutorRate", tutorRate, "rating", rating);
         }
-        else if (filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == true) {
+        else if (filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating")) {
 
             String maxDistance = filters.getString("maxDistance");
             String rating = filters.getString("minRating");
             createListWithMaxAndMinFilter("distance", maxDistance, "rating", rating);
-        } else if (filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == false) {
+        } else if (filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating")) {
 
             String maxDistance = filters.getString("maxDistance");
             String tutorRate = filters.getString("maxPrice");
             createListWithMaxAndMaxFilter("distance", maxDistance, "tutorRate", tutorRate);
             // if all 3 filters are active
-        } else if (filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == true) {
+        } else if (filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating")) {
 
             String maxDistance = filters.getString("maxDistance");
             String tutorRate = filters.getString("maxPrice");
@@ -130,8 +132,6 @@ public class TutorListActivity extends ListActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                System.out.println("Item Clicked: " + position);
-                System.out.println("Selected user: " + tutorList.get(position).getFirstName() + " " + tutorList.get(position).getLastName());
                 Intent tutorDisplayIntent = new Intent(view.getContext(), TutorProfileActivity.class);
                 tutorDisplayIntent.putExtra("selectedTutor", tutorList.get(position).getEmail());
                 startActivityForResult(tutorDisplayIntent, 0);
@@ -733,7 +733,6 @@ public class TutorListActivity extends ListActivity {
             distanceInMiles = distanceInMeters * 0.000621371f;
             distance = String.format("%.2f", distanceInMiles);
             query = "UPDATE userst SET distance = " + distance + " WHERE zipcode = " + userZipcode;
-            System.out.println(distanceInMiles);
             mydatabase.execSQL(query);
             dbEntry.move(1);
 
