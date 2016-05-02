@@ -44,6 +44,10 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
 
     String startCoords;
     String targetCoords;
+    float startLatitude = 32.7310991f;
+    float startlongitude = -97.1177082f;
+    float targetLatitude = 32.6890010f;
+    float targetLongitude = -97.6331130f;
 
     TextView fieldName;
     TextView fieldEmail;
@@ -52,6 +56,9 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
     TextView fieldRate;
     TextView fieldOverallRating;
     TextView fieldZipCode;
+
+
+
 
     Users tempUser;
 
@@ -81,9 +88,9 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
 
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
 
-        startCoords = String.format("%f, %f", 32.7310991, -97.1177082);
+        startCoords = String.format("%f, %f", startLatitude, startlongitude);
 
-        getCoorFromZip();
+//        getCoorFromZip();
 
 
         Button btnCall = (Button) findViewById(R.id.btnCall);
@@ -225,6 +232,19 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
                 }
             }
 
+            Location loc1 = new Location("");
+            Location loc2 = new Location("");
+
+            loc1.setLatitude(startLatitude);
+            loc1.setLongitude(startlongitude);
+            loc2.setLatitude(targetLatitude);
+            loc2.setLongitude(targetLongitude);
+
+            float distanceInMeters = loc1.distanceTo(loc2);
+            float distanceInMiles = distanceInMeters * 0.000621371f;
+            String distance = String.format("%.2f", distanceInMiles);
+
+
             fieldName.setText(name);
             fieldEmail.setText(tempUser.getEmail());
             fieldPhone.setText(tempUser.getPhoneNumber());
@@ -265,6 +285,8 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
                 Address address = addresses.get(0);
                 // Use the address as needed
                 targetCoords = String.format("%f, %f", address.getLatitude(), address.getLongitude());
+                targetLatitude = (float)address.getLatitude();
+                targetLongitude = (float)address.getLongitude();
             } else {
                 // Display appropriate message when Geocoder services are not available
                 Toast.makeText(this, "Unable to geocode zipcode", Toast.LENGTH_LONG).show();
