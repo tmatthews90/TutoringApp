@@ -478,7 +478,7 @@ public class TutorListActivity extends ListActivity {
                     ratingString += partialStar;
                 }
             }
-            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance;
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
             tutorNames.add(entry);
         }
@@ -509,7 +509,7 @@ public class TutorListActivity extends ListActivity {
             distanceInMeters = loc1.distanceTo(loc2);
             distanceInMiles = distanceInMeters * 0.000621371f;
             distance = String.format("%.2f", distanceInMiles);
-            query = "UPDATE userst SET distance = " + distanceInMiles + " WHERE zipcode = " + userZipcode;
+            query = "UPDATE userst SET distance = " + distance + " WHERE zipcode = " + userZipcode;
             System.out.println(distanceInMiles);
             mydatabase.execSQL(query);
             dbEntry.move(1);
