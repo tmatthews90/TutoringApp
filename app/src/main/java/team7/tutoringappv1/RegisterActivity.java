@@ -1,23 +1,19 @@
 package team7.tutoringappv1;
 
-import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class RegisterActivity extends AppCompatActivity {
+
+    SQLiteDatabase db;
 
     String fName;
     String lName;
@@ -31,9 +27,9 @@ public class RegisterActivity extends AppCompatActivity {
     String literature = "0";
     String history = "0";
     String musicTheory = "0";
-    String musicInstument = "0";
-    String tutor = "0";
-
+    String musicInstrument = "0";
+    String isTutor = "0";
+    String loggedIn = "1";
 
     EditText fieldFName;
     EditText fieldLName;
@@ -42,6 +38,8 @@ public class RegisterActivity extends AppCompatActivity {
     EditText fieldZipCode;
     EditText fieldPassword;
     EditText fieldConfirmPassword;
+
+    Boolean login = false;
 
 
     @Override
@@ -66,24 +64,20 @@ public class RegisterActivity extends AppCompatActivity {
                 fName = fieldFName.getText().toString();
                 lName = fieldLName.getText().toString();
                 email = fieldEmail.getText().toString();
-
-                isEmailValid(email);
-
                 phoneNumber = fieldPhone.getText().toString();
                 zipCode = isValidZipCode(fieldZipCode.getText().toString());
-
                 password = fieldPassword.getText().toString();
-
-                isPasswordValid(password);
-
                 confirmPassword = fieldConfirmPassword.getText().toString();
 
-                System.out.println(fName + " " + lName + " | " + email + " | " + phoneNumber + " | " + zipCode + " | " + password + " | " + confirmPassword);
+                checkFields();
 
-//                Intent doneIntent = new Intent(view.getContext(), LoginActivity.class);
-//                startActivityForResult(doneIntent, 0);
-//                landingPage.landingActivity.finish();
-//                finish(); //to stop back button from going back to main menu
+                if (login){
+                    Intent doneIntent = new Intent(view.getContext(), PostLogin.class);
+                    startActivityForResult(doneIntent, 0);
+                    landingPage.landingActivity.finish();
+                    finish();
+                }
+
             }
         });
 
@@ -170,10 +164,10 @@ public class RegisterActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);
                 if (isChecked){
-                    tutor = "1";
+                    musicInstrument = "1";
                 }
                 else{
-                    tutor = "0";
+                    musicInstrument = "0";
                 }
             }
         });
@@ -185,17 +179,17 @@ public class RegisterActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);
                 if (isChecked){
-                    musicInstument = "1";
+                    isTutor = "1";
                 }
                 else{
-                    musicInstument = "0";
+                    isTutor = "0";
                 }
             }
         });
 
     }
 
-    private boolean isEmailValid(String email) {
+    private boolean isEmailValid() {
         //TODO: Replace this with your own logic
         return email.contains("@");
     }
@@ -203,6 +197,17 @@ public class RegisterActivity extends AppCompatActivity {
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
         return password.length() > 4;
+    }
+
+    private boolean isPhoneValid() {
+        //TODO: Replace this with your own logic
+        return phoneNumber.length() >= 10;
+    }
+
+    private boolean passwordMatch() {
+        //TODO: Replace this with your own logic
+
+        return (password.equals(confirmPassword));
     }
 
     private int isValidZipCode(String zipCode){
@@ -214,5 +219,103 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
+    private void checkFields(){
+        // Reset errors.
+        fieldEmail.setError(null);
+        fieldPassword.setError(null);
+
+        boolean cancel = false;
+        View focusView = null;
+
+        // Check for a first name.
+        if (TextUtils.isEmpty(fName)) {
+            fieldFName.setError(getString(R.string.error_field_required));
+            focusView = fieldFName;
+            cancel = true;
+        }
+
+        // Check for a last name.
+        if (TextUtils.isEmpty(lName)) {
+            fieldLName.setError(getString(R.string.error_field_required));
+            focusView = fieldLName;
+            cancel = true;
+        }
+
+        // Check for a valid email address.
+        if (TextUtils.isEmpty(email)) {
+            fieldEmail.setError(getString(R.string.error_field_required));
+            focusView = fieldEmail;
+            cancel = true;
+        } else if (!isEmailValid()) {
+            fieldEmail.setError(getString(R.string.error_invalid_email));
+            focusView = fieldEmail;
+            cancel = true;
+        }
+
+        // Check for a phone number.
+        if (TextUtils.isEmpty(phoneNumber)) {
+            fieldPhone.setError(getString(R.string.error_field_required));
+            focusView = fieldPhone;
+            cancel = true;
+        } else if(!isPhoneValid()){
+            fieldPhone.setError("Invalid phone number");
+        }
+
+        // Check for a zip code.
+        if (TextUtils.isEmpty(fieldZipCode.getText().toString())) {
+            fieldZipCode.setError(getString(R.string.error_field_required));
+            focusView = fieldZipCode;
+            cancel = true;
+        }
+
+        // Check for a valid password, if the user entered one.
+        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
+            fieldPassword.setError(getString(R.string.error_invalid_password));
+            focusView = fieldPassword;
+            cancel = true;
+        } else if (TextUtils.isEmpty(password)) {
+            fieldPassword.setError(getString(R.string.error_field_required));
+            focusView = fieldPassword;
+            cancel = true;
+        }
+
+        // Check for a valid confirm password, if the user entered one.
+        if (!TextUtils.isEmpty(confirmPassword) && !passwordMatch()) {
+            fieldConfirmPassword.setError("Password does not match");
+            focusView = fieldConfirmPassword;
+            cancel = true;
+        } else if (TextUtils.isEmpty(confirmPassword)) {
+            fieldConfirmPassword.setError(getString(R.string.error_field_required));
+            focusView = fieldConfirmPassword;
+            cancel = true;
+        }
+
+        if (cancel) {
+            // There was an error; don't attempt login and focus the first
+            // form field with an error.
+            focusView.requestFocus();
+        } else {
+            // Show a progress spinner, and kick off a background task to
+            // perform the user login attempt.
+            insertIntoDB();
+            login = true;
+
+        }
+    }
+
+    private void insertIntoDB(){
+
+        String insertIntoTableString = fName + "', '" + lName + "', '" + zipCode + "', '" + phoneNumber + "', '" + isTutor + "', '" + email + "', '" + password +
+                "', '" + loggedIn + "', '" + math + "', '" + science + "', '" + literature + "', '" + history + "', '" + musicInstrument + "', '" + musicTheory +
+                "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "0" + "', '" +  "0" + "', '" +  "0";
+
+        System.out.println(insertIntoTableString);
+
+        db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
+
+        String query = "INSERT INTO userst VALUES('" + insertIntoTableString + "');";
+
+        db.execSQL(query);
+    }
 
 }

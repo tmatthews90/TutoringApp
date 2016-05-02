@@ -137,7 +137,6 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
             @Override
             public void onClick(View view) {
                 // Mapping logic here
-//                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + tempUser.getZipCode());
                 Uri gmmIntentUri = Uri.parse("http://maps.google.com/maps?" + "saddr=" + startCoords + "&daddr=" + targetCoords);
 
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);

@@ -84,7 +84,7 @@ public class landingPage extends AppCompatActivity {
                     query = "INSERT INTO userst VALUES('" + c.getFirstName() + b + c.getLastName() + b + c.getZipCode() + b + c.getPhoneNumber() + b + c.getIsTutor() + b +
                             c.getEmail() + b + c.getPassword() + b + c.getLoggedIn() + b + c.isMath() + b + c.isScience() + b + c.isLiterature() + b +
                             c.isHistory() + b + c.isMusicInstrument() + b + c.isMusicTheory() + b + c.isT_math() + b + c.isT_science() + b + c.isT_literature() +
-                            b + c.isT_history() + b + c.isT_musicInstrument() + b + c.isT_musicTheory() + b + c.getTutorRate() + b + c.getReviewRate() + "', 0);";
+                            b + c.isT_history() + b + c.isT_musicInstrument() + b + c.isT_musicTheory() + b + c.getTutorRate() + b + c.getReviewRate() + b + "0" + "');";
                     db.execSQL(query);
                 }
             } catch (IOException|SQLiteConstraintException e) {
