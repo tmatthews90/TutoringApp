@@ -56,6 +56,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
     TextView fieldRate;
     TextView fieldOverallRating;
     TextView fieldZipCode;
+    TextView fieldDistance;
 
 
 
@@ -155,6 +156,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
         fieldRate = (TextView) findViewById(R.id.fieldRate);
         fieldOverallRating = (TextView) findViewById(R.id.fieldOverallRating);
         fieldZipCode = (TextView) findViewById(R.id.fieldZipCode);
+        fieldDistance = (TextView) findViewById(R.id.fieldDistance);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
