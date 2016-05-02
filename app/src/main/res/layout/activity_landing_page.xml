@@ -14,10 +14,11 @@
         android:layout_height="wrap_content"
         android:text="Welcome to the Tutoring App"
         android:id="@+id/textView"
+        android:textColor="#000000"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#000000"
-        android:textSize="@dimen/abc_text_size_large_material" />
+        android:layout_marginTop="111dp"
+        android:textStyle="bold" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -29,15 +30,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="179dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_marginTop="39dp"
-        android:src="@drawable/sign"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,12 +38,5 @@
         android:layout_alignTop="@+id/registerButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="73dp" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
