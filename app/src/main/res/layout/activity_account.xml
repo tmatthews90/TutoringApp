@@ -16,9 +16,7 @@
         android:id="@+id/btnLogout"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -28,8 +26,8 @@
         android:layout_above="@+id/btnLogout">
 
         <ImageView
-            android:layout_width="363dp"
-            android:layout_height="232dp"
+            android:layout_width="248dp"
+            android:layout_height="164dp"
             android:id="@+id/imageView3"
             android:src="@drawable/user"
             android:paddingTop="20dp"
@@ -45,14 +43,15 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Name:"
                 android:textStyle="bold"
-                android:layout_column="1"
+                android:layout_column="0"
                 android:paddingRight="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/fieldName" />
+                android:id="@+id/fieldName"
+                android:layout_column="1" />
 
         </TableRow>
 
@@ -66,13 +65,15 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Email:"
                 android:textStyle="bold"
-                android:layout_column="1" />
+                android:layout_column="0"
+                android:paddingTop="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/fieldEmail" />
+                android:id="@+id/fieldEmail"
+                android:layout_column="1" />
 
         </TableRow>
 
@@ -86,15 +87,133 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Phone:"
                 android:textStyle="bold"
-                android:layout_column="1" />
+                android:layout_column="0"
+                android:paddingTop="15dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/fieldPhone"
+                android:layout_column="1"
+                android:textSize="16dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/fieldPhone" />
+                android:text="Zip Code:"
+                android:textStyle="bold"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/fieldZipCode"
+                android:layout_column="1"
+                android:textSize="16dp" />
 
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Subject Interests:"
+                android:id="@+id/textView10"
+                android:layout_column="0"
+                android:paddingTop="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:text="Math"
+                android:id="@+id/checkBoxMath"
+                android:layout_column="0"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:id="@+id/checkBoxScience"
+                android:layout_column="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:text="Literature"
+                android:id="@+id/checkBoxLiterature"
+                android:layout_column="0"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:id="@+id/checkBoxHistory"
+                android:layout_column="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:text="Music Theory"
+                android:id="@+id/checkBoxMusicTheory"
+                android:layout_column="0"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musical Instruments"
+                android:id="@+id/checkBoxMusicInstrument"
+                android:layout_column="1"
+                android:checked="false" />
+        </TableRow>
+
+
     </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/btnSave"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

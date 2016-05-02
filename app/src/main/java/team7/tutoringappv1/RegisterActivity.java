@@ -41,6 +41,14 @@ public class RegisterActivity extends AppCompatActivity {
 
     Boolean login = false;
 
+    CheckBox cbMath;
+    CheckBox cbScience;
+    CheckBox cbLiterature;
+    CheckBox cbHistory;
+    CheckBox cbMusicTheory;
+    CheckBox cbMusicIns;
+    CheckBox cbTutor;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,107 +90,92 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
 
-        CheckBox cbMath = (CheckBox) findViewById(R.id.checkBoxMath);
+        cbMath = (CheckBox) findViewById(R.id.checkBoxMath);
         assert cbMath != null;
         cbMath.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);
                 if (isChecked){
-                    math = "1";
+                    math = "true";
                 }
                 else{
-                    math = "0";
+                    math = "false";
                 }
             }
         });
 
-        CheckBox cbScience = (CheckBox) findViewById(R.id.checkBoxScience);
+        cbScience = (CheckBox) findViewById(R.id.checkBoxScience);
         assert cbScience != null;
         cbScience.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);
                 if (isChecked){
-                    science = "1";
+                    science = "true";
                 }
                 else{
-                    science = "0";
+                    science = "false";
                 }
             }
         });
 
-        CheckBox cbLiterature = (CheckBox) findViewById(R.id.checkBoxLiterature);
+        cbLiterature = (CheckBox) findViewById(R.id.checkBoxLiterature);
         assert cbLiterature != null;
         cbLiterature.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);
                 if (isChecked){
-                    literature = "1";
+                    literature = "true";
                 }
                 else{
-                    literature = "0";
+                    literature = "false";
                 }
             }
         });
 
-        CheckBox cbHistory = (CheckBox) findViewById(R.id.checkBoxHistory);
+        cbHistory = (CheckBox) findViewById(R.id.checkBoxHistory);
         assert cbHistory != null;
         cbHistory.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);
                 if (isChecked){
-                    history = "1";
+                    history = "true";
                 }
                 else{
-                    history = "0";
+                    history = "false";
                 }
             }
         });
 
-        CheckBox cbMusicTheory = (CheckBox) findViewById(R.id.checkBoxMusicTheory);
+        cbMusicTheory = (CheckBox) findViewById(R.id.checkBoxMusicTheory);
         assert cbMusicTheory != null;
         cbMusicTheory.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);
                 if (isChecked){
-                    musicTheory = "1";
+                    musicTheory = "true";
                 }
                 else{
-                    musicTheory = "0";
+                    musicTheory = "false";
                 }
             }
         });
 
-        CheckBox cbMusicIns = (CheckBox) findViewById(R.id.checkBoxMusicInstrument);
+        cbMusicIns = (CheckBox) findViewById(R.id.checkBoxMusicInstrument);
         assert cbMusicIns != null;
         cbMusicIns.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 System.out.println("Checkbox checked: " + isChecked);
                 if (isChecked){
-                    musicInstrument = "1";
+                    musicInstrument = "true";
                 }
                 else{
-                    musicInstrument = "0";
-                }
-            }
-        });
-
-        CheckBox cbTutor = (CheckBox) findViewById(R.id.checkBoxTutor);
-        assert cbTutor != null;
-        cbTutor.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                System.out.println("Checkbox checked: " + isChecked);
-                if (isChecked){
-                    isTutor = "1";
-                }
-                else{
-                    isTutor = "0";
+                    musicInstrument = "false";
                 }
             }
         });
