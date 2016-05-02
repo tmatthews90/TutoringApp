@@ -244,7 +244,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
 
             float distanceInMeters = loc1.distanceTo(loc2);
             float distanceInMiles = distanceInMeters * 0.000621371f;
-            String distance = String.format("%.2f", distanceInMiles);
+            String distance = String.format("%.2f", distanceInMiles) + " miles";
 
 
             fieldName.setText(name);
@@ -254,6 +254,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
             fieldRate.setText(rateMoneySign);
             fieldOverallRating.setText(ratingString);
             fieldZipCode.setText(tempUser.getZipCode());
+            fieldDistance.setText(distance);
         }
     }
 
