@@ -2,7 +2,6 @@ package team7.tutoringappv1;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;

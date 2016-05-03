@@ -7,13 +7,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Spinner;
+import android.widget.AdapterView.OnItemSelectedListener;
 
-public class AccountActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class AccountActivity extends AppCompatActivity implements  OnItemSelectedListener{
 
     SQLiteDatabase db;
     String selectedTutor;
@@ -26,6 +33,13 @@ public class AccountActivity extends AppCompatActivity {
     String musicTheory;
     String musicInstrument;
     String isTutor;
+
+    String tMath;
+    String tScience;
+    String tLiterature;
+    String tHistory;
+    String tMusicTheory;
+    String tMusicInstrument;
 
     TextView fieldName;
     TextView fieldEmail;
@@ -49,6 +63,8 @@ public class AccountActivity extends AppCompatActivity {
 
     Boolean submit = false;
 
+    Spinner spinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +74,32 @@ public class AccountActivity extends AppCompatActivity {
         fieldZipCode = (EditText)findViewById(R.id.fieldZipCode);
         fieldPassword = (EditText)findViewById(R.id.fieldPassword);
         fieldConfirmPassword = (EditText)findViewById(R.id.fieldConfirmPassword);
+
+        // Spinner element
+        spinner = (Spinner) findViewById(R.id.tutorSpinner);
+
+        // Spinner click listener
+        spinner.setOnItemSelectedListener(this);
+
+        // Spinner Drop down elements
+        List<String> subjects = new ArrayList<String>();
+        subjects.add("Select a subject if you would like to tutor.");
+        subjects.add("Math");
+        subjects.add("Science");
+        subjects.add("Literature");
+        subjects.add("History");
+        subjects.add("Music Instrument");
+        subjects.add("Music Theory");
+        subjects.add("No thank you");
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, subjects);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spinner.setAdapter(dataAdapter);
 
         Button btnLogout = (Button) findViewById(R.id.btnLogout);
         assert btnLogout != null;
@@ -241,6 +283,8 @@ public class AccountActivity extends AppCompatActivity {
             cbHistory.setChecked(tempUser.isHistory());
             cbMusicIns.setChecked(tempUser.isMusicInstrument());
             cbMusicTheory.setChecked(tempUser.isMusicTheory());
+
+            setSelection();
         }
     }
 
@@ -324,9 +368,114 @@ public class AccountActivity extends AppCompatActivity {
 
         db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
 
-        String query = "UPDATE userst SET phonenumber = '" + fieldPhone.getText() + "', zipcode = '" + fieldZipCode.getText() + "', math = '" + cbMath.isChecked() + "', science = '" + cbScience.isChecked() + "', literature = '" + cbLiterature.isChecked() + "', history = '" + cbHistory.isChecked() + "', musicTheory = '" + cbMusicTheory.isChecked() + "', musicInstrument = '" + cbMusicIns.isChecked() + "', password = '" + fieldPassword.getText() + "' WHERE loggedIn = '1';";
+        String query = "UPDATE userst SET phonenumber = '" + fieldPhone.getText() +
+                "', zipcode = '" + fieldZipCode.getText() + "', math = '" + cbMath.isChecked() +
+                "', science = '" + cbScience.isChecked() + "', literature = '" + cbLiterature.isChecked() +
+                "', history = '" + cbHistory.isChecked() + "', musicTheory = '" + cbMusicTheory.isChecked() +
+                "', musicInstrument = '" + cbMusicIns.isChecked() + "', t_math = '" +  tMath +
+                "', t_science = '" +  tScience + "', t_literature = '" +  tLiterature +
+                "', t_history = '" +  tHistory + "', t_musicInstrument = '" +  tMusicInstrument +
+                "', t_musicTheory = '" + tMusicTheory + "', password = '" + fieldPassword.getText() + "' WHERE loggedIn = '1';";
 
         db.execSQL(query);
     }
 
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        // On selecting a spinner item
+        String item = parent.getItemAtPosition(position).toString();
+
+        switch(item){
+            case "Math":
+                tMath = "true";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "Science":
+                tMath = "false";
+                tScience = "true";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "Literature":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "true";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "History":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "true";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "Music Instrument":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "true";
+                isTutor = "1";
+                break;
+            case "Music Theory":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "true";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "default":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "0";
+                break;
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+        tMath = "false";
+        tScience = "false";
+        tLiterature = "false";
+        tHistory = "false";
+        tMusicTheory = "false";
+        tMusicInstrument = "false";
+        isTutor = "0";
+    }
+
+    private void setSelection(){
+        if (tempUser.isT_math()){
+            spinner.setSelection(1);
+        } else if (tempUser.isT_science()){
+            spinner.setSelection(2);
+        } else if (tempUser.isT_literature()){
+            spinner.setSelection(3);
+        } else if (tempUser.isT_history()){
+            spinner.setSelection(4);
+        } else if (tempUser.isT_musicInstrument()){
+            spinner.setSelection(5);
+        } else if (tempUser.isT_musicTheory()){
+            spinner.setSelection(6);
+        }
+    }
 }
