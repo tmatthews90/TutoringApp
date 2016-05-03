@@ -144,6 +144,17 @@ public class TutorListActivity extends ListActivity {
     public void createListWithThreeFilters(String maxFilter1, String maxFilterValue1, String maxFilter2, String maxFilterValue2, String minFilter, String minFilterValue) {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
+        Cursor subjectsQuery = mydatabase.rawQuery("SELECT math, science, literature, history, musicInstrument, musicTheory FROM userst WHERE loggedIn = '1'", null);
+        subjectsQuery.moveToFirst();
+        boolean subjects[] = new boolean[6];
+        boolean showTutor = false;
+
+        for (int i = 0; i < 6; i++) {
+            if (subjectsQuery.getString(i).equals("true"))
+                subjects[i] = true;
+            else
+                subjects[i] = false;
+        }
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
                 "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + maxFilter1 + " <= " + maxFilterValue1
                 +
@@ -193,18 +204,25 @@ public class TutorListActivity extends ListActivity {
             rate = tutor.getTutorRate();
             distance = tutor.getDistance();
 
-            if (tutor.isT_math()) {
-                subject = "Math";
-            } else if (tutor.isT_science()) {
-                subject = "Science";
-            } else if (tutor.isT_literature()) {
-                subject = "Literature";
-            } else if (tutor.isT_history()) {
-                subject = "History";
-            } else if (tutor.isT_musicInstrument()) {
-                subject = "Musical Instruments";
-            } else if (tutor.isT_musicTheory()) {
-                subject = "Music Theory";
+            showTutor = false;
+            if (tutor.isT_math() && subjects[0]) {
+                subject = "Math ";
+                showTutor = true;
+            } else if (tutor.isT_science() && subjects[1]) {
+                subject = "Science ";
+                showTutor = true;
+            } else if (tutor.isT_literature() && subjects[2]) {
+                subject = "Literature ";
+                showTutor = true;
+            } else if (tutor.isT_history() && subjects[3]) {
+                subject = "History ";
+                showTutor = true;
+            } else if (tutor.isT_musicInstrument() && subjects[4]) {
+                subject = "Musical Instruments ";
+                showTutor = true;
+            } else if (tutor.isT_musicTheory() && subjects[5]) {
+                subject = "Music Theory ";
+                showTutor = true;
             } else {
                 subject = "N/A";
             }
@@ -237,7 +255,8 @@ public class TutorListActivity extends ListActivity {
             }
             entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
-            tutorNames.add(entry);
+            if (showTutor == true)
+                tutorNames.add(entry);
         }
     }
 
@@ -245,6 +264,17 @@ public class TutorListActivity extends ListActivity {
     public void createListWithMaxAndMaxFilter(String maxFilter1, String maxFilterValue1, String maxFilter2, String maxFilterValue2) {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
+        Cursor subjectsQuery = mydatabase.rawQuery("SELECT math, science, literature, history, musicInstrument, musicTheory FROM userst WHERE loggedIn = '1'", null);
+        subjectsQuery.moveToFirst();
+        boolean subjects[] = new boolean[6];
+        boolean showTutor = false;
+
+        for (int i = 0; i < 6; i++) {
+            if (subjectsQuery.getString(i).equals("true"))
+                subjects[i] = true;
+            else
+                subjects[i] = false;
+        }
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
                 "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + maxFilter1 + " <= " + maxFilterValue1
                 +
@@ -290,18 +320,25 @@ public class TutorListActivity extends ListActivity {
             rate = tutor.getTutorRate();
             distance = tutor.getDistance();
 
-            if (tutor.isT_math()) {
-                subject = "Math";
-            } else if (tutor.isT_science()) {
-                subject = "Science";
-            } else if (tutor.isT_literature()) {
-                subject = "Literature";
-            } else if (tutor.isT_history()) {
-                subject = "History";
-            } else if (tutor.isT_musicInstrument()) {
-                subject = "Musical Instruments";
-            } else if (tutor.isT_musicTheory()) {
-                subject = "Music Theory";
+            showTutor = false;
+            if (tutor.isT_math() && subjects[0]) {
+                subject = "Math ";
+                showTutor = true;
+            } else if (tutor.isT_science() && subjects[1]) {
+                subject = "Science ";
+                showTutor = true;
+            } else if (tutor.isT_literature() && subjects[2]) {
+                subject = "Literature ";
+                showTutor = true;
+            } else if (tutor.isT_history() && subjects[3]) {
+                subject = "History ";
+                showTutor = true;
+            } else if (tutor.isT_musicInstrument() && subjects[4]) {
+                subject = "Musical Instruments ";
+                showTutor = true;
+            } else if (tutor.isT_musicTheory() && subjects[5]) {
+                subject = "Music Theory ";
+                showTutor = true;
             } else {
                 subject = "N/A";
             }
@@ -334,7 +371,8 @@ public class TutorListActivity extends ListActivity {
             }
             entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
-            tutorNames.add(entry);
+            if (showTutor == true)
+                tutorNames.add(entry);
         }
     }
 
@@ -343,6 +381,17 @@ public class TutorListActivity extends ListActivity {
     public void createListWithMaxAndMinFilter(String maxFilter, String maxFilterValue, String minFilter, String minFilterValue) {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
+        Cursor subjectsQuery = mydatabase.rawQuery("SELECT math, science, literature, history, musicInstrument, musicTheory FROM userst WHERE loggedIn = '1'", null);
+        subjectsQuery.moveToFirst();
+        boolean subjects[] = new boolean[6];
+        boolean showTutor = false;
+
+        for (int i = 0; i < 6; i++) {
+            if (subjectsQuery.getString(i).equals("true"))
+                subjects[i] = true;
+            else
+                subjects[i] = false;
+        }
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
                 "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + maxFilter + " <= " + maxFilterValue
                 +
@@ -388,18 +437,25 @@ public class TutorListActivity extends ListActivity {
             rate = tutor.getTutorRate();
             distance = tutor.getDistance();
 
-            if (tutor.isT_math()) {
-                subject = "Math";
-            } else if (tutor.isT_science()) {
-                subject = "Science";
-            } else if (tutor.isT_literature()) {
-                subject = "Literature";
-            } else if (tutor.isT_history()) {
-                subject = "History";
-            } else if (tutor.isT_musicInstrument()) {
-                subject = "Musical Instruments";
-            } else if (tutor.isT_musicTheory()) {
-                subject = "Music Theory";
+            showTutor = false;
+            if (tutor.isT_math() && subjects[0]) {
+                subject = "Math ";
+                showTutor = true;
+            } else if (tutor.isT_science() && subjects[1]) {
+                subject = "Science ";
+                showTutor = true;
+            } else if (tutor.isT_literature() && subjects[2]) {
+                subject = "Literature ";
+                showTutor = true;
+            } else if (tutor.isT_history() && subjects[3]) {
+                subject = "History ";
+                showTutor = true;
+            } else if (tutor.isT_musicInstrument() && subjects[4]) {
+                subject = "Musical Instruments ";
+                showTutor = true;
+            } else if (tutor.isT_musicTheory() && subjects[5]) {
+                subject = "Music Theory ";
+                showTutor = true;
             } else {
                 subject = "N/A";
             }
@@ -432,13 +488,25 @@ public class TutorListActivity extends ListActivity {
             }
             entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
-            tutorNames.add(entry);
+            if (showTutor == true)
+                tutorNames.add(entry);
         }
     }
 
     public void createListWithMaxFilter(String filter, String filterValue) {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
+        Cursor subjectsQuery = mydatabase.rawQuery("SELECT math, science, literature, history, musicInstrument, musicTheory FROM userst WHERE loggedIn = '1'", null);
+        subjectsQuery.moveToFirst();
+        boolean subjects[] = new boolean[6];
+        boolean showTutor = false;
+
+        for (int i = 0; i < 6; i++) {
+            if (subjectsQuery.getString(i).equals("true"))
+                subjects[i] = true;
+            else
+                subjects[i] = false;
+        }
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
                 "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + filter + " <= " + filterValue
                 + " ORDER BY " + filter, null);
@@ -479,19 +547,25 @@ public class TutorListActivity extends ListActivity {
             rate = tutor.getTutorRate();
             distance = tutor.getDistance();
 
-
-            if (tutor.isT_math()) {
-                subject = "Math";
-            } else if (tutor.isT_science()) {
-                subject = "Science";
-            } else if (tutor.isT_literature()) {
-                subject = "Literature";
-            } else if (tutor.isT_history()) {
-                subject = "History";
-            } else if (tutor.isT_musicInstrument()) {
-                subject = "Musical Instruments";
-            } else if (tutor.isT_musicTheory()) {
-                subject = "Music Theory";
+            showTutor = false;
+            if (tutor.isT_math() && subjects[0]) {
+                subject = "Math ";
+                showTutor = true;
+            } else if (tutor.isT_science() && subjects[1]) {
+                subject = "Science ";
+                showTutor = true;
+            } else if (tutor.isT_literature() && subjects[2]) {
+                subject = "Literature ";
+                showTutor = true;
+            } else if (tutor.isT_history() && subjects[3]) {
+                subject = "History ";
+                showTutor = true;
+            } else if (tutor.isT_musicInstrument() && subjects[4]) {
+                subject = "Musical Instruments ";
+                showTutor = true;
+            } else if (tutor.isT_musicTheory() && subjects[5]) {
+                subject = "Music Theory ";
+                showTutor = true;
             } else {
                 subject = "N/A";
             }
@@ -524,13 +598,25 @@ public class TutorListActivity extends ListActivity {
             }
             entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
-            tutorNames.add(entry);
+            if (showTutor == true)
+                tutorNames.add(entry);
         }
     }
 
     public void createListWithRatingFilter(String filter, String filterValue) {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
+        Cursor subjectsQuery = mydatabase.rawQuery("SELECT math, science, literature, history, musicInstrument, musicTheory FROM userst WHERE loggedIn = '1'", null);
+        subjectsQuery.moveToFirst();
+        boolean subjects[] = new boolean[6];
+        boolean showTutor = false;
+
+        for (int i = 0; i < 6; i++) {
+            if (subjectsQuery.getString(i).equals("true"))
+                subjects[i] = true;
+            else
+                subjects[i] = false;
+        }
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
                 "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + filter + " >= " + filterValue
                 + " ORDER BY " + filter, null);
@@ -570,19 +656,25 @@ public class TutorListActivity extends ListActivity {
             rating = tutor.getReviewRate();
             rate = tutor.getTutorRate();
             distance = tutor.getDistance();
-
-            if (tutor.isT_math()) {
-                subject = "Math";
-            } else if (tutor.isT_science()) {
-                subject = "Science";
-            } else if (tutor.isT_literature()) {
-                subject = "Literature";
-            } else if (tutor.isT_history()) {
-                subject = "History";
-            } else if (tutor.isT_musicInstrument()) {
-                subject = "Musical Instruments";
-            } else if (tutor.isT_musicTheory()) {
-                subject = "Music Theory";
+            showTutor = false;
+            if (tutor.isT_math() && subjects[0]) {
+                subject = "Math ";
+                showTutor = true;
+            } else if (tutor.isT_science() && subjects[1]) {
+                subject = "Science ";
+                showTutor = true;
+            } else if (tutor.isT_literature() && subjects[2]) {
+                subject = "Literature ";
+                showTutor = true;
+            } else if (tutor.isT_history() && subjects[3]) {
+                subject = "History ";
+                showTutor = true;
+            } else if (tutor.isT_musicInstrument() && subjects[4]) {
+                subject = "Musical Instruments ";
+                showTutor = true;
+            } else if (tutor.isT_musicTheory() && subjects[5]) {
+                subject = "Music Theory ";
+                showTutor = true;
             } else {
                 subject = "N/A";
             }
@@ -615,15 +707,27 @@ public class TutorListActivity extends ListActivity {
             }
             entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
-            tutorNames.add(entry);
+            if (showTutor == true)
+                tutorNames.add(entry);
         }
     }
 
     public void createDefaultList() {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
+        Cursor subjectsQuery = mydatabase.rawQuery("SELECT math, science, literature, history, musicInstrument, musicTheory FROM userst WHERE loggedIn = '1'", null);
+        subjectsQuery.moveToFirst();
+        boolean subjects[] = new boolean[6];
+        boolean showTutor = false;
+
+        for (int i = 0; i < 6; i++) {
+            if (subjectsQuery.getString(i).equals("true"))
+                subjects[i] = true;
+            else
+                subjects[i] = false;
+        }
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
-                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND distance <= 1 ORDER BY lastName", null);
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND distance <= 100000 ORDER BY lastName", null);
         dbEntry.moveToFirst();
 
         for (int i = 0; i < dbEntry.getCount(); i++) {
@@ -660,19 +764,25 @@ public class TutorListActivity extends ListActivity {
             rating = tutor.getReviewRate();
             rate = tutor.getTutorRate();
             distance = tutor.getDistance();
-
-            if (tutor.isT_math()) {
-                subject = "Math";
-            } else if (tutor.isT_science()) {
-                subject = "Science";
-            } else if (tutor.isT_literature()) {
-                subject = "Literature";
-            } else if (tutor.isT_history()) {
-                subject = "History";
-            } else if (tutor.isT_musicInstrument()) {
-                subject = "Musical Instruments";
-            } else if (tutor.isT_musicTheory()) {
-                subject = "Music Theory";
+            showTutor = false;
+            if (tutor.isT_math() && subjects[0]) {
+                subject = "Math ";
+                showTutor = true;
+            } else if (tutor.isT_science() && subjects[1]) {
+                subject = "Science ";
+                showTutor = true;
+            } else if (tutor.isT_literature() && subjects[2]) {
+                subject = "Literature ";
+                showTutor = true;
+            } else if (tutor.isT_history() && subjects[3]) {
+                subject = "History ";
+                showTutor = true;
+            } else if (tutor.isT_musicInstrument() && subjects[4]) {
+                subject = "Musical Instruments ";
+                showTutor = true;
+            } else if (tutor.isT_musicTheory() && subjects[5]) {
+                subject = "Music Theory ";
+                showTutor = true;
             } else {
                 subject = "N/A";
             }
@@ -704,8 +814,8 @@ public class TutorListActivity extends ListActivity {
                 }
             }
             entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
-
-            tutorNames.add(entry);
+            if (showTutor == true)
+                tutorNames.add(entry);
         }
     }
 
