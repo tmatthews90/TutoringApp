@@ -6,4 +6,24 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+    <style name="TutoringTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/material_grey_800</item>
+        <item name="colorPrimaryDark">@color/dim_foreground_disabled_material_dark</item>
+        <item name="android:colorBackground">@color/material_grey_800</item>
+        <item name="android:colorForeground">@color/abc_search_url_text_normal</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorTertiary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/design_textinput_error_color_light
+        </item>
+        <item name="android:textColorSecondaryInverse">@color/accent_material_light</item>
+        <item name="android:windowBackground">@color/material_grey_800</item>
+        <item name="android:editTextColor">@color/colorPrimary</item>
+
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/material_grey_800</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/blue</item>
+    </style>
 </resources>
