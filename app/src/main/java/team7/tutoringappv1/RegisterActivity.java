@@ -2,16 +2,24 @@ package team7.tutoringappv1;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.AdapterView.OnItemSelectedListener;
 
-public class RegisterActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class RegisterActivity extends AppCompatActivity implements OnItemSelectedListener {
 
     SQLiteDatabase db;
 
@@ -22,14 +30,21 @@ public class RegisterActivity extends AppCompatActivity {
     int zipCode;
     String password;
     String confirmPassword;
-    String math = "0";
-    String science = "0";
-    String literature = "0";
-    String history = "0";
-    String musicTheory = "0";
-    String musicInstrument = "0";
+    String math;
+    String science;
+    String literature;
+    String history;
+    String musicTheory;
+    String musicInstrument;
     String isTutor = "0";
     String loggedIn = "1";
+    String tMath;
+    String tScience;
+    String tLiterature;
+    String tHistory;
+    String tMusicTheory;
+    String tMusicInstrument;
+
 
     EditText fieldFName;
     EditText fieldLName;
@@ -47,8 +62,8 @@ public class RegisterActivity extends AppCompatActivity {
     CheckBox cbHistory;
     CheckBox cbMusicTheory;
     CheckBox cbMusicIns;
-    CheckBox cbTutor;
 
+    Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +77,32 @@ public class RegisterActivity extends AppCompatActivity {
         fieldZipCode = (EditText)findViewById(R.id.fieldZipCode);
         fieldPassword = (EditText)findViewById(R.id.fieldPassword);
         fieldConfirmPassword = (EditText)findViewById(R.id.fieldConfirmPassword);
+
+        // Spinner element
+        spinner = (Spinner) findViewById(R.id.tutorSpinner);
+
+        // Spinner click listener
+        spinner.setOnItemSelectedListener(this);
+
+        // Spinner Drop down elements
+        List<String> subjects = new ArrayList<String>();
+        subjects.add("Select a subject if you would like to tutor.");
+        subjects.add("Math");
+        subjects.add("Science");
+        subjects.add("Literature");
+        subjects.add("History");
+        subjects.add("Music Instrument");
+        subjects.add("Music Theory");
+        subjects.add("No thank you");
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, subjects);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spinner.setAdapter(dataAdapter);
 
 
         Button registerButton = (Button) findViewById(R.id.btnSubmit);
@@ -182,6 +223,89 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        // On selecting a spinner item
+        String item = parent.getItemAtPosition(position).toString();
+
+        switch(item){
+            case "Math":
+                tMath = "true";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "Science":
+                tMath = "false";
+                tScience = "true";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "Literature":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "true";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "History":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "true";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "Music Instrument":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "true";
+                isTutor = "1";
+                break;
+            case "Music Theory":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "true";
+                tMusicInstrument = "false";
+                isTutor = "1";
+                break;
+            case "default":
+                tMath = "false";
+                tScience = "false";
+                tLiterature = "false";
+                tHistory = "false";
+                tMusicTheory = "false";
+                tMusicInstrument = "false";
+                isTutor = "0";
+                break;
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+        tMath = "false";
+        tScience = "false";
+        tLiterature = "false";
+        tHistory = "false";
+        tMusicTheory = "false";
+        tMusicInstrument = "false";
+        isTutor = "0";
+    }
+
     private boolean isEmailValid() {
         //TODO: Replace this with your own logic
         return email.contains("@");
@@ -300,7 +424,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         String insertIntoTableString = fName + "', '" + lName + "', '" + zipCode + "', '" + phoneNumber + "', '" + isTutor + "', '" + email + "', '" + password +
                 "', '" + loggedIn + "', '" + math + "', '" + science + "', '" + literature + "', '" + history + "', '" + musicInstrument + "', '" + musicTheory +
-                "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "false" + "', '" + "0" + "', '" +  "0" + "', '" +  "0";
+                "', '" + tMath + "', '" + tScience + "', '" + tLiterature + "', '" + tHistory + "', '" + tMusicInstrument + "', '" + tMusicTheory + "', '" + "0" + "', '" +  "0" + "', '" +  "0";
 
         System.out.println(insertIntoTableString);
 
