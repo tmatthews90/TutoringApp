@@ -30,17 +30,12 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="131dp"
+        android:layout_height="wrap_content"
         android:id="@+id/imageView4"
-        android:src="@mipmap/ic_tutorme"
-        android:layout_gravity="center_vertical|right"
-        android:cropToPadding="true"
-        android:layout_weight="0.30"
-        android:layout_column="10"
+        android:src="@drawable/slogan"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="30dp" />
 
 </RelativeLayout>
