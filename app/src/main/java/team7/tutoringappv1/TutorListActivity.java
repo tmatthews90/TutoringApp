@@ -68,10 +68,11 @@ public class TutorListActivity extends ListActivity {
         listActivity = this;
 
 
-        if (filters == null || (!filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating"))) {
+        if (filters == null || (!filters.containsKey("maxDistance") && !filters.containsKey("maxPrice") && !filters.containsKey("minRating"))) {
             createDefaultList();
-        } else if ((filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating")) ||
-                (!filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating"))){
+        } else if ((filters.containsKey("maxDistance") && !filters.containsKey("maxPrice") && !filters.containsKey("minRating")) ||
+                (!filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && !filters.containsKey("minRating")) ||
+                (!filters.containsKey("maxDistance") && !filters.containsKey("maxPrice") && filters.containsKey("minRating"))){
 
             if (filters.containsKey("maxDistance")) {
                 String maxDistance = filters.getString("maxDistance");
@@ -87,9 +88,7 @@ public class TutorListActivity extends ListActivity {
             }
 
             // if two filters are active
-        } else if (/*(filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == true && filters.containsKey("minRating") == false)*/
-                /*(filters.containsKey("maxDistance") == true && filters.containsKey("maxPrice") == false && filters.containsKey("minRating") == true)*/
-                (filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating"))) {
+        } else if (!filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating")) {
 
             mydatabase.close();
 
@@ -97,12 +96,12 @@ public class TutorListActivity extends ListActivity {
             String rating = filters.getString("minRating");
             createListWithMaxAndMinFilter("tutorRate", tutorRate, "rating", rating);
         }
-        else if (filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating")) {
+        else if (filters.containsKey("maxDistance") && !filters.containsKey("maxPrice") && filters.containsKey("minRating")) {
 
             String maxDistance = filters.getString("maxDistance");
             String rating = filters.getString("minRating");
             createListWithMaxAndMinFilter("distance", maxDistance, "rating", rating);
-        } else if (filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && filters.containsKey("minRating")) {
+        } else if (filters.containsKey("maxDistance") && filters.containsKey("maxPrice") && !filters.containsKey("minRating")) {
 
             String maxDistance = filters.getString("maxDistance");
             String tutorRate = filters.getString("maxPrice");
@@ -533,7 +532,7 @@ public class TutorListActivity extends ListActivity {
         mydatabase = openOrCreateDatabase("Users", MODE_PRIVATE, null);
 //            mydatabase.rawQuery("DROP TABLE userst;", null);
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
-                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email FROM userst WHERE isTutor = '1' AND " + filter + " >= " + filterValue
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND " + filter + " >= " + filterValue
                 + " ORDER BY " + filter, null);
         dbEntry.moveToFirst();
 
@@ -553,6 +552,7 @@ public class TutorListActivity extends ListActivity {
             tempUser.setT_musicInstrument(Boolean.parseBoolean(dbEntry.getString(9)));
             tempUser.setT_musicTheory(Boolean.parseBoolean(dbEntry.getString(10)));
             tempUser.setEmail(dbEntry.getString(11));
+            tempUser.setDistance(dbEntry.getString(12));
 
             tutorList.add(tempUser);
 
@@ -569,6 +569,7 @@ public class TutorListActivity extends ListActivity {
             name = fName + " " + lName;
             rating = tutor.getReviewRate();
             rate = tutor.getTutorRate();
+            distance = tutor.getDistance();
 
             if (tutor.isT_math()) {
                 subject = "Math";
@@ -612,7 +613,7 @@ public class TutorListActivity extends ListActivity {
                     ratingString += partialStar;
                 }
             }
-            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign;
+            entry = name + "\nSubject:  " + subject + "\nRating:    " + ratingString + "\nRate:       " + rateMoneySign + "\nDistance:   " + distance + " miles";
 
             tutorNames.add(entry);
         }

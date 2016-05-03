@@ -56,7 +56,7 @@ public class FilterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Apply btn logic here
                 priceFilter = "$$$";
-                maxPrice = "1";
+                maxPrice = "3";
                 txtPriceValue.setText("≤ " + priceFilter);
             }
         });
