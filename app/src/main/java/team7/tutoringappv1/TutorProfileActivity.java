@@ -57,9 +57,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
     TextView fieldOverallRating;
     TextView fieldZipCode;
     TextView fieldDistance;
-
-
-
+    int callback;
 
     Users tempUser;
 
@@ -80,11 +78,17 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
             // here to request the missing permissions, and then overriding
             //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
             //                                          int[] grantResults)
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    callback);
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+                    callback);
+
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
 
+        }
 
 
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
@@ -95,18 +99,17 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
 
 
         Button btnCall = (Button) findViewById(R.id.btnCall);
-        assert btnCall != null;
         btnCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:" + tempUser.getPhoneNumber()));
+                System.out.println("call");
                 startActivity(callIntent);
             }
         });
 
         Button btnText = (Button) findViewById(R.id.btnText);
-        assert btnText != null;
         btnText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
