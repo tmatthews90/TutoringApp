@@ -68,7 +68,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor_profile);
 
-        setTextFields();
+
 
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -84,7 +84,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
 
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
-
+        setTextFields();
         startCoords = String.format("%f, %f", startLatitude, startlongitude);
 
         getCoorFromZip();
