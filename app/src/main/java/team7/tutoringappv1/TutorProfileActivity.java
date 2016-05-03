@@ -68,31 +68,23 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor_profile);
 
-        setTextFields();
 
-        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
-                    callback);
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
-                    callback);
+            try {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
+                        callback);
+            }
+            catch (Exception e){
 
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-
+            }
         }
 
-
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
-
+        setTextFields();
         startCoords = String.format("%f, %f", startLatitude, startlongitude);
 
         getCoorFromZip();
@@ -115,7 +107,7 @@ public class TutorProfileActivity extends AppCompatActivity implements LocationL
             public void onClick(View view) {
                 Intent sendIntent = new Intent(Intent.ACTION_VIEW);
                 sendIntent.setData(Uri.parse("sms:" + tempUser.getPhoneNumber()));
-                sendIntent.putExtra("sms_body", "Hi, I Found you on the tutoring app and would like to meet up for some tutoring.\n\n");
+                sendIntent.putExtra("sms_body", "Hi, I Found you on TutorMe, would like to meet up for some tutoring?\n\n");
                 startActivity(sendIntent);
             }
         });
