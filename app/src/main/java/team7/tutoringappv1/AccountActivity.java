@@ -96,7 +96,7 @@ public class AccountActivity extends AppCompatActivity implements  OnItemSelecte
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, subjects);
 
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter.setDropDownViewResource(R.layout.spinner_item);
 
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);
