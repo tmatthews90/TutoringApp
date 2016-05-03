@@ -21,7 +21,6 @@ public class PostLogin extends AppCompatActivity {
     SQLiteDatabase db;
     int callback;
     public static Activity postLoginInstance;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
