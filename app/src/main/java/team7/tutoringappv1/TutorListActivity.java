@@ -805,7 +805,7 @@ public class TutorListActivity extends ListActivity {
                 subjects[i] = false;
         }
         Cursor dbEntry = mydatabase.rawQuery("SELECT firstName, lastName, rating, tutorRate, isTutor, t_math, " +
-                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND distance <= 100000 ORDER BY lastName", null);
+                "t_science, t_literature, t_history, t_musicInstrument, t_musicTheory, email, distance FROM userst WHERE isTutor = '1' AND distance <= 3 ORDER BY lastName", null);
         dbEntry.moveToFirst();
 
         for (int i = 0; i < dbEntry.getCount(); i++) {
