@@ -5,10 +5,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class AccountActivity extends AppCompatActivity {
@@ -32,6 +34,8 @@ public class AccountActivity extends AppCompatActivity {
     TextView fieldRate;
     TextView fieldOverallRating;
     TextView fieldZipCode;
+    TextView fieldPassword;
+    TextView fieldConfirmPassword;
 
     CheckBox cbMath;
     CheckBox cbScience;
@@ -43,10 +47,17 @@ public class AccountActivity extends AppCompatActivity {
 
     Users tempUser;
 
+    Boolean submit = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+
+        fieldPhone = (EditText)findViewById(R.id.fieldPhoneNumber);
+        fieldZipCode = (EditText)findViewById(R.id.fieldZipCode);
+        fieldPassword = (EditText)findViewById(R.id.fieldPassword);
+        fieldConfirmPassword = (EditText)findViewById(R.id.fieldConfirmPassword);
 
         Button btnLogout = (Button) findViewById(R.id.btnLogout);
         assert btnLogout != null;
@@ -66,10 +77,13 @@ public class AccountActivity extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                insertIntoDB();
-                Intent saveIntent = new Intent(view.getContext(), PostLogin.class);
-                startActivityForResult(saveIntent, 0);
-                finish();
+                checkFields();
+                if (submit) {
+                    insertIntoDB();
+                    Intent saveIntent = new Intent(view.getContext(), PostLogin.class);
+                    startActivityForResult(saveIntent, 0);
+                    finish();
+                }
             }
         });
 
@@ -175,6 +189,8 @@ public class AccountActivity extends AppCompatActivity {
         fieldRate = (TextView) findViewById(R.id.fieldRate);
         fieldOverallRating = (TextView) findViewById(R.id.fieldOverallRating);
         fieldZipCode = (TextView) findViewById(R.id.fieldZipCode);
+        fieldPassword = (TextView) findViewById(R.id.fieldPassword);
+        fieldConfirmPassword = (TextView) findViewById(R.id.fieldConfirmPassword);
 
         db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
 
@@ -216,6 +232,8 @@ public class AccountActivity extends AppCompatActivity {
             fieldEmail.setText(tempUser.getEmail());
             fieldPhone.setText(tempUser.getPhoneNumber());
             fieldZipCode.setText(tempUser.getZipCode());
+            fieldPassword.setText(tempUser.getPassword());
+            fieldConfirmPassword.setText(tempUser.getPassword());
 
             cbMath.setChecked(tempUser.isMath());
             cbScience.setChecked(tempUser.isScience());
@@ -226,11 +244,87 @@ public class AccountActivity extends AppCompatActivity {
         }
     }
 
+    private boolean isPasswordValid(String password) {
+        //TODO: Replace this with your own logic
+        return password.length() > 4;
+    }
+
+    private boolean isPhoneValid() {
+        //TODO: Replace this with your own logic
+        return fieldPhone.getText().length() >= 10;
+    }
+
+    private boolean passwordMatch() {
+        //TODO: Replace this with your own logic
+
+        return (fieldPassword.getText().toString().equals(fieldConfirmPassword.getText().toString()));
+    }
+
+
+    private void checkFields(){
+
+        // Reset errors.
+        fieldEmail.setError(null);
+        fieldPassword.setError(null);
+
+        boolean cancel = false;
+        View focusView = null;
+
+        // Check for a phone number.
+        if (TextUtils.isEmpty(fieldPhone.getText())) {
+            fieldPhone.setError(getString(R.string.error_field_required));
+            focusView = fieldPhone;
+            cancel = true;
+        } else if(!isPhoneValid()){
+            fieldPhone.setError("Invalid phone number");
+        }
+
+        // Check for a zip code.
+        if (TextUtils.isEmpty(fieldZipCode.getText().toString())) {
+            fieldZipCode.setError(getString(R.string.error_field_required));
+            focusView = fieldZipCode;
+            cancel = true;
+        }
+
+        // Check for a valid password, if the user entered one.
+        if (!TextUtils.isEmpty(fieldPassword.getText()) && !isPasswordValid(fieldPassword.getText().toString())) {
+            fieldPassword.setError(getString(R.string.error_invalid_password));
+            focusView = fieldPassword;
+            cancel = true;
+        } else if (TextUtils.isEmpty(fieldPassword.getText())) {
+            fieldPassword.setError(getString(R.string.error_field_required));
+            focusView = fieldPassword;
+            cancel = true;
+        }
+
+        // Check for a valid confirm password, if the user entered one.
+        if (!TextUtils.isEmpty(fieldConfirmPassword.getText()) && !passwordMatch()) {
+            fieldConfirmPassword.setError("Password does not match");
+            focusView = fieldConfirmPassword;
+            cancel = true;
+        } else if (TextUtils.isEmpty(fieldConfirmPassword.getText())) {
+            fieldConfirmPassword.setError(getString(R.string.error_field_required));
+            focusView = fieldConfirmPassword;
+            cancel = true;
+        }
+
+        if (cancel) {
+            // There was an error; don't attempt login and focus the first
+            // form field with an error.
+            focusView.requestFocus();
+        } else {
+            // Show a progress spinner, and kick off a background task to
+            // perform the user login attempt.
+            insertIntoDB();
+            submit = true;
+        }
+    }
+
     private void insertIntoDB(){
 
         db = openOrCreateDatabase("Users",MODE_PRIVATE,null);
 
-        String query = "UPDATE userst SET phonenumber = '" + fieldPhone.getText() + "', zipcode = '" + fieldZipCode.getText() + "', math = '" + cbMath.isChecked() + "', science = '" + cbScience.isChecked() + "', literature = '" + cbLiterature.isChecked() + "', history = '" + cbHistory.isChecked() + "', musicTheory = '" + cbMusicTheory.isChecked() + "', musicInstrument = '" + cbMusicIns.isChecked() + "' WHERE loggedIn = '1';";
+        String query = "UPDATE userst SET phonenumber = '" + fieldPhone.getText() + "', zipcode = '" + fieldZipCode.getText() + "', math = '" + cbMath.isChecked() + "', science = '" + cbScience.isChecked() + "', literature = '" + cbLiterature.isChecked() + "', history = '" + cbHistory.isChecked() + "', musicTheory = '" + cbMusicTheory.isChecked() + "', musicInstrument = '" + cbMusicIns.isChecked() + "', password = '" + fieldPassword.getText() + "' WHERE loggedIn = '1';";
 
         db.execSQL(query);
     }

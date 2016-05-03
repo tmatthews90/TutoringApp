@@ -26,8 +26,8 @@
         android:layout_above="@+id/btnLogout">
 
         <ImageView
-            android:layout_width="248dp"
-            android:layout_height="164dp"
+            android:layout_width="320dp"
+            android:layout_height="120dp"
             android:id="@+id/imageView3"
             android:src="@drawable/user"
             android:paddingTop="20dp"
@@ -111,7 +111,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Zip Code:"
                 android:textStyle="bold"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:paddingTop="15dp" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -119,6 +120,54 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/fieldZipCode"
+                android:layout_column="1"
+                android:textSize="16dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password:"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:paddingTop="15dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/fieldPassword"
+                android:layout_column="1"
+                android:textSize="16dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Confirm Password:"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:paddingTop="15dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/fieldConfirmPassword"
                 android:layout_column="1"
                 android:textSize="16dp" />
 
@@ -135,8 +184,9 @@
                 android:text="Subject Interests:"
                 android:id="@+id/textView10"
                 android:layout_column="0"
-                android:paddingTop="15dp"
-                android:textStyle="bold" />
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:paddingBottom="5dp" />
         </TableRow>
 
         <TableRow
@@ -213,13 +263,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Change Password"
-        android:id="@+id/button2"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
