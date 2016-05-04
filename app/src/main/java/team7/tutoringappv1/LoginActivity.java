@@ -1,3 +1,5 @@
+// LoginActivity.java
+
 package team7.tutoringappv1;
 
 import android.animation.Animator;
@@ -401,4 +403,3 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     }
 }
-
